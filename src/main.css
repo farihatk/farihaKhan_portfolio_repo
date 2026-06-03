@@ -17,9 +17,19 @@
     --pacing-section: 96px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
 /* font-style */
 h1 {
-    font-size: 128px;
+    font-size: 96px;
     font-family: var(--articulat);
     font-weight: 700;
     color: var(--violet);

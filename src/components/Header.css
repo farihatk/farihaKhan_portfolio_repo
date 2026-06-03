@@ -11,13 +11,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 56px;
+  padding: 1rem 3rem;
 }
 
 .header__brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 1rem;
 }
 
 .header__logo {
