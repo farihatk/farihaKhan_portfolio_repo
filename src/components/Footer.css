@@ -1,0 +1,79 @@
+.footer {
+  background-color: var(--violet);
+  width: 100%;
+  padding: 80px 90px 40px;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 64px;
+}
+
+.footer__name {
+  font-family: "DM Sans", sans-serif;
+  font-size: 96px;
+  font-weight: 600;
+  color: var(--lime);
+  line-height: 1;
+  margin-bottom: 32px;
+}
+
+.footer__cta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer__hi-btn {
+  font-size: 40px;
+  padding: 20px 40px;
+}
+
+.footer__mail-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.footer__mail-icon img {
+  width: 32px;
+  height: 32px;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 96px;
+  margin-top: 16px;
+}
+
+.footer__nav-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__nav-col a {
+  font-family: var(--articulat);
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--lime);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.footer__nav-col a:hover {
+  text-decoration: underline;
+}
+
+.footer__credit {
+  text-align: center;
+  font-family: var(--articulat);
+  font-size: 24px;
+  color: rgba(202, 216, 59, 0.59);
+}

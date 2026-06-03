@@ -1,0 +1,16 @@
+.page-wrapper {
+  position: relative;
+  min-height: 100vh;
+}
+
+.grid-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-color: #fafafa;
+  background-image:
+    linear-gradient(to right, #c3c3c3 1px, transparent 1px),
+    linear-gradient(to bottom, #c3c3c3 1px, transparent 1px);
+  background-size: 3rem 3rem;
+  opacity: 20%;
+}

@@ -20,9 +20,9 @@ function Header() {
           <Link to="/playground" className="nav-buttons">Playground</Link>
         </nav>
 
-        <a href="mailto:fariha.khan2805@outlook.com" className="header__mail icon-buttons" aria-label="Send email">
+        {/* <a href="mailto:fariha.khan2805@outlook.com" className="header__mail icon-buttons" aria-label="Send email">
           <img src="/assets/mail-icon.svg" alt="Mail" />
-        </a>
+        </a> */}
 
       </div>
     </header>
