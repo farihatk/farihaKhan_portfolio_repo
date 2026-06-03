@@ -1,0 +1,148 @@
+@import url("https://use.typekit.net/pne6nlj.css");
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+
+:root {
+    /* color palette */
+    --violet: #7647E4;
+    --lavender: #A88AEE;
+    --lime: #CAD83B;
+    /* typography */
+    --articulat: "articulat-cf", sans-serif;
+    --handrawn: "Delicious Handrawn", sans-serif;
+    /* spacing */
+    --spacing-line: 8px;
+    --spacing-title: 16px;
+    --spacing-object: 64px;
+    --pacing-section: 96px;
+}
+
+/* font-style */
+h1 {
+    font-size: 128px;
+    font-family: var(--articulat);
+    font-weight: 700;
+    color: var(--violet);
+}
+
+h2 {
+    font-size: 96px;
+    font-family: var(--articulat);
+    font-weight: 700;
+    color: var(--violet);
+}
+
+h3 {
+    font-size: 64px;
+    font-family: var(--articulat);
+    font-weight: 700;
+}
+
+/* buttons */
+.buttons {
+    background-color: var(--lime);
+    color: var(--violet);
+    box-shadow: 0 3px 0 6px var(--violet);
+    border-radius: 20px;
+    font-family: var(--articulat);
+    font-size: 32px;
+    font-weight: 700;
+    padding: 60px 30px;
+}
+
+.nav-buttons {
+    background-color: var(--lime);
+    color: var(--violet);
+    box-shadow: 0 2px 0 5px var(--violet);
+    border-radius: 20px;
+    font-family: var(--articulat);
+    font-size: 24px;
+    font-weight: 700;
+    padding: 30px 15px;
+}
+
+.icon-buttons {
+    background-color: var(--lime);
+    box-shadow: 0 2px 0 5px var(--violet);
+    border-radius: 20px;
+}
+
+/* grid system */
+.container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+}
+
+.col-1 { grid-column: span 1; }
+.col-2 { grid-column: span 2; }
+.col-3 { grid-column: span 3; }
+.col-4 { grid-column: span 4; }
+.col-5 { grid-column: span 5; }
+.col-6 { grid-column: span 6; }
+.col-7 { grid-column: span 7; }
+.col-8 { grid-column: span 8; }
+.col-9 { grid-column: span 9; }
+.col-10 { grid-column: span 10; }
+.col-11 { grid-column: span 11; }
+.col-12 { grid-column: span 12; }
+
+@media screen and (min-width: 568px) {
+    
+    .col-1-sm { grid-column: span 1; }
+    .col-2-sm { grid-column: span 2; }
+    .col-3-sm { grid-column: span 3; }
+    .col-4-sm { grid-column: span 4; }
+    .col-5-sm { grid-column: span 5; }
+    .col-6-sm { grid-column: span 6; }
+    .col-7-sm { grid-column: span 7; }
+    .col-8-sm { grid-column: span 8; }
+    .col-9-sm { grid-column: span 9; }
+    .col-10-sm { grid-column: span 10; }
+    .col-11-sm { grid-column: span 11; }
+    .col-12-sm { grid-column: span 12; }
+
+}
+
+@media screen and (min-width: 834px) {
+    
+    .col-1-md { grid-column: span 1; }
+    .col-2-md { grid-column: span 2; }
+    .col-3-md { grid-column: span 3; }
+    .col-4-md { grid-column: span 4; }
+    .col-5-md { grid-column: span 5; }
+    .col-6-md { grid-column: span 6; }
+    .col-7-md { grid-column: span 7; }
+    .col-8-md { grid-column: span 8; }
+    .col-9-md { grid-column: span 9; }
+    .col-10-md { grid-column: span 10; }
+    .col-11-md { grid-column: span 11; }
+    .col-12-md { grid-column: span 12; }
+
+}
+
+@media screen and (min-width: 1080px) {
+    
+    .col-1-lg { grid-column: span 1; }
+    .col-2-lg { grid-column: span 2; }
+    .col-3-lg { grid-column: span 3; }
+    .col-4-lg { grid-column: span 4; }
+    .col-5-lg { grid-column: span 5; }
+    .col-6-lg { grid-column: span 6; }
+    .col-7-lg { grid-column: span 7; }
+    .col-8-lg { grid-column: span 8; }
+    .col-9-lg { grid-column: span 9; }
+    .col-10-lg { grid-column: span 10; }
+    .col-11-lg { grid-column: span 11; }
+    .col-12-lg { grid-column: span 12; }
+
+    .row-span-2 { grid-row: span 2; }
+    .row-span-3 { grid-row: span 3; }
+
+}
