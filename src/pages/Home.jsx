@@ -1,6 +1,11 @@
 import "./Home.css"
 
 import FkLogo from "../assets/fk-logo.png"
+import Cat from "../assets/object-cat.png"
+import Headphones from "../assets/object-headphones.png"
+import Switch from "../assets/object-switch.png"
+import Flower from "../assets/object-flower.png"
+import Boba from "../assets/object-boba.png"
 
 function Home() {
   return (
@@ -19,6 +24,11 @@ function Home() {
 
         <div className="hero__visuals" aria-hidden="true">
           <img src={FkLogo} alt="" className="hero__avatar" />
+          <img src={Boba} alt="" className="hero__obj hero__obj--boba" />
+          <img src={Cat} alt="" className="hero__obj hero__obj--cat" />
+          <img src={Flower} alt="" className="hero__obj hero__obj--flower" />
+          <img src={Headphones} alt="" className="hero__obj hero__obj--headphones" />
+          <img src={Switch} alt="" className="hero__obj hero__obj--switch" />
         </div>
       </section>
 

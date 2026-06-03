@@ -76,21 +76,21 @@
   transform: rotate(-9deg);
 }
 
-.hero__obj--obj1 {
+.hero__obj--boba {
   top: 200px;
   right: 500px;
   width: 76px;
   transform: rotate(10deg);
 }
 
-.hero__obj--obj2 {
+.hero__obj--cat {
   top: 230px;
   right: 100px;
   width: 93px;
   transform: rotate(-11deg);
 }
 
-.hero__obj--obj3 {
+.hero__obj--switch {
   top: 190px;
   right: 40px;
   width: 95px;
