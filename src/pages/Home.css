@@ -63,49 +63,50 @@
 }
 
 .hero__obj--headphones {
-  top: 60px;
-  right: 180px;
+  top: 160px;
+  right: 120px;
   width: 138px;
   transform: rotate(19deg);
 }
 
 .hero__obj--flower {
-  top: 130px;
-  right: 320px;
-  width: 118px;
+  top: 550px;
+  right: 300px;
+  width: 140px;
   transform: rotate(-9deg);
 }
 
 .hero__obj--boba {
-  top: 200px;
+  top: 180px;
   right: 500px;
-  width: 76px;
-  transform: rotate(10deg);
+  width: 100px;
+  transform: rotate(-10deg);
 }
 
 .hero__obj--cat {
-  top: 230px;
+  top: 500px;
   right: 100px;
-  width: 93px;
+  width: 100px;
   transform: rotate(-11deg);
 }
 
 .hero__obj--switch {
-  top: 190px;
-  right: 40px;
-  width: 95px;
-  transform: rotate(2deg);
+  top: 500px;
+  right: 530px;
+  width: 130px;
+  transform: rotate(5deg);
 }
 
 /* ── Featured Projects ─────────────────────────── */
 .projects-section {
-  padding: 96px 90px 64px;
-  background-color: #fafafa;
+  /* padding: 96px 90px 64px; */
+  /* background-color: var(--lavender); */
+  margin-top: 17rem;
 }
 
 .projects-band {
   background-color: var(--lavender);
-  padding: 64px 0 48px;
+  /* padding: 64px 0 48px; */
   margin-top: 48px;
   overflow: hidden;
   text-align: center;

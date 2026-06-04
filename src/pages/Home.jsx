@@ -7,9 +7,13 @@ import Switch from "../assets/object-switch.png"
 import Flower from "../assets/object-flower.png"
 import Boba from "../assets/object-boba.png"
 
+import HeyloFeatured from "../assets/heylo-featured.jpg"
+import PalaceFeatured from "../assets/palace-featured.jpg"
+import MakioFeatured from "../assets/makio-placeholder.jpg"
+
 function Home() {
   return (
-    <div className="home">
+    <>
 
       {/* Hero */}
       <section className="hero">
@@ -32,7 +36,30 @@ function Home() {
         </div>
       </section>
 
-    </div>
+      <section className="projects-section" id="work">
+        <h2>Featured Projects</h2>
+
+        <div className="projects-band">
+          <p className="projects-band__tag">brand identity, content creation</p>
+          <h3 className="projects-band__title">The Palace</h3>
+
+          {/* <div className="projects-band__carousel">
+            {[...projects, ...projects].map((p, i) => (
+              <img key={i} src={p.img} alt={p.alt} className="projects-band__card" />
+            ))}
+          </div>
+
+          <p className="projects-band__desc">
+            An experience brand case study about a renovated Indie cinema theatre.
+          </p>
+        </div>
+
+        <div className="projects-section__cta">
+          <a href="/projects" className="buttons">See more projects &gt;&gt;</a> */}
+        </div>
+      </section>
+
+    </>
   )
 }
 

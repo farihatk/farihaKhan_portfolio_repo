@@ -36,14 +36,14 @@ h1 {
 }
 
 h2 {
-    font-size: 96px;
+    font-size: 64px;
     font-family: var(--articulat);
     font-weight: 700;
     color: var(--violet);
 }
 
 h3 {
-    font-size: 64px;
+    font-size: 48px;
     font-family: var(--articulat);
     font-weight: 700;
 }
