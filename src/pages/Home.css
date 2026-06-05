@@ -104,61 +104,7 @@
   margin-top: 17rem;
 }
 
-.projects-band {
-  background-color: var(--lavender);
-  /* padding: 64px 0 48px; */
-  margin-top: 48px;
-  overflow: hidden;
-  text-align: center;
-}
 
-.projects-band__tag {
-  font-family: var(--handrawn);
-  font-size: 24px;
-  color: var(--lime);
-  margin-bottom: 8px;
-}
-
-.projects-band__title {
-  color: white;
-  margin: 0 0 32px;
-}
-
-.projects-band__carousel {
-  display: flex;
-  gap: 63px;
-  overflow-x: auto;
-  padding: 0 64px 16px;
-  scrollbar-width: none;
-}
-
-.projects-band__carousel::-webkit-scrollbar {
-  display: none;
-}
-
-.projects-band__card {
-  height: 368px;
-  width: 586px;
-  flex-shrink: 0;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.projects-band__desc {
-  font-family: var(--articulat);
-  font-size: 20px;
-  font-weight: 500;
-  color: white;
-  max-width: 589px;
-  margin: 32px auto 0;
-  padding: 0 16px;
-}
-
-.projects-section__cta {
-  display: flex;
-  justify-content: center;
-  margin-top: 48px;
-}
 
 /* ── Kind Words ────────────────────────────────── */
 .testimonials-section {
