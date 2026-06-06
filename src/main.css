@@ -55,9 +55,11 @@ h3 {
     box-shadow: 0 3px 0 6px var(--violet);
     border-radius: 20px;
     font-family: var(--articulat);
-    font-size: 32px;
+    font-size: 1.5rem;
     font-weight: 700;
-    padding: 60px 30px;
+    padding: 15px 30px;
+    /* display: inline-block; */
+
 }
 
 .nav-buttons {

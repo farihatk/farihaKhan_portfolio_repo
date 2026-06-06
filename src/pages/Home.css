@@ -104,12 +104,22 @@
   margin-top: 17rem;
 }
 
+.projects-section__title {
+  text-align: right;
+}
+
+.projects-section__button {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+
 
 
 /* ── Kind Words ────────────────────────────────── */
 .testimonials-section {
-  padding: 96px 90px;
-  background-color: #fafafa;
+  margin-top: 17rem;
 }
 
 .testimonials-grid {

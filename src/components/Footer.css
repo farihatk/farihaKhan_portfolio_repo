@@ -12,8 +12,7 @@
 }
 
 .footer__name {
-  font-family: "DM Sans", sans-serif;
-  font-size: 96px;
+  font-family: var(--articulat);
   font-weight: 600;
   color: var(--lime);
   line-height: 1;
@@ -60,7 +59,7 @@
 
 .footer__nav-col a {
   font-family: var(--articulat);
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 500;
   color: var(--lime);
   text-decoration: none;

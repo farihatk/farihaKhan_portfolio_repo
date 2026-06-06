@@ -38,10 +38,16 @@ function Home() {
         </div>
       </section>
 
-      <section className="projects-section" id="work">
-        <h2>Featured Projects</h2>
+      <section className="projects-section">
+        <h2 className='projects-section__title'>Featured Projects</h2>
         <FeaturedProjects />
-        
+        <div className="projects-section__button">
+          <a className="buttons" href="">See All Projects</a>
+        </div>
+      </section>
+
+      <section className="testimonial-section">
+        <h2 className="testimonial-section__title">Kind Words</h2>
       </section>
 
     </>

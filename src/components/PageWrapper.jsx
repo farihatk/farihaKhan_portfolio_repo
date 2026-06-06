@@ -12,7 +12,7 @@ function PageWrapper() {
       <main>
         <Outlet />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }

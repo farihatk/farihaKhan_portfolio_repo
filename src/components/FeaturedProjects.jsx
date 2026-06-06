@@ -1,4 +1,7 @@
 import { useState, useRef, useEffect } from "react"
+
+import useEmblaCarousel from 'embla-carousel-react'
+
 import "./FeaturedProjects.css"
 
 import HeyloFeatured from "../assets/heylo-featured.jpg"
@@ -27,104 +30,65 @@ const projects = [
     img: MakioFeatured,
     description: "A motion graphics project exploring bold typographic animation and visual storytelling.",
   },
+
+  {
+    id: 4,
+    title: "Makio",
+    tag: "motion graphics",
+    img: MakioFeatured,
+    description: "A motion graphics project exploring bold typographic animation and visual storytelling.",
+  },
+
+  {
+    id: 5,
+    title: "Makio",
+    tag: "motion graphics",
+    img: MakioFeatured,
+    description: "A motion graphics project exploring bold typographic animation and visual storytelling.",
+  },
+
+  {
+    id: 6,
+    title: "Makio",
+    tag: "motion graphics",
+    img: MakioFeatured,
+    description: "A motion graphics project exploring bold typographic animation and visual storytelling.",
+  },
 ]
 
-// clone last card at start, first card at end
-// so the list is: [Makio, Heylo, Palace, Makio, Heylo]
-const loopedProjects = [
-  projects[projects.length - 1],
-  ...projects,
-  projects[0],
-]
 
 function FeaturedProjects() {
-  const [activeIndex, setActiveIndex] = useState(1) // start on first real card
-  const scrollRef = useRef(null)
-  const cardRefs = useRef([])
-  const isJumping = useRef(false)
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
 
-  // on mount: scroll to first real card (index 1) without animation
-  useEffect(() => {
-    const container = scrollRef.current
-    const card = cardRefs.current[1]
-    if (container && card) {
-      container.scrollLeft = card.offsetLeft - (container.offsetWidth - card.offsetWidth) / 2
-    }
-  }, [])
-
-  useEffect(() => {
-    const container = scrollRef.current
-
-    function getClosestIndex() {
-      const containerCenter = container.scrollLeft + container.offsetWidth / 2
-      let closestIndex = 1
-      let closestDistance = Infinity
-      cardRefs.current.forEach((card, i) => {
-        if (!card) return
-        const cardCenter = card.offsetLeft + card.offsetWidth / 2
-        const distance = Math.abs(containerCenter - cardCenter)
-        if (distance < closestDistance) {
-          closestDistance = distance
-          closestIndex = i
-        }
-      })
-      return closestIndex
-    }
-
-    function jumpTo(index) {
-      const card = cardRefs.current[index]
-      if (!card) return
-      isJumping.current = true
-      container.style.scrollBehavior = "auto"
-      container.scrollLeft = card.offsetLeft - (container.offsetWidth - card.offsetWidth) / 2
-      setActiveIndex(index)
-      requestAnimationFrame(() => {
-        container.style.scrollBehavior = ""
-        isJumping.current = false
-      })
-    }
-
-    let timer
-    function handleScroll() {
-      if (isJumping.current) return
-      const closest = getClosestIndex()
-      setActiveIndex(closest)
-
-      // after scrolling stops, check if we're on a clone and jump to real card
-      clearTimeout(timer)
-      timer = setTimeout(() => {
-        const settled = getClosestIndex()
-        if (settled === 0) {
-          // on clone of last — jump to real last
-          jumpTo(loopedProjects.length - 2)
-        } else if (settled === loopedProjects.length - 1) {
-          // on clone of first — jump to real first
-          jumpTo(1)
-        }
-      }, 150)
-    }
-
-    container.addEventListener("scroll", handleScroll)
-    return () => {
-      container.removeEventListener("scroll", handleScroll)
-      clearTimeout(timer)
-    }
-  }, [])
+  const scrollPrev = () => emblaApi?.scrollPrev()
+  const scrollNext = () => emblaApi?.scrollNext()
 
   return (
-    <div className="projects-scroll" ref={scrollRef}>
-      {loopedProjects.map((project, i) => (
-        <div
-          key={`${project.id}-${i}`}
-          ref={el => cardRefs.current[i] = el}
-          className={`projects-card ${i === activeIndex ? "projects-card--active" : "projects-card--inactive"}`}
-        >
-          <img src={project.img} alt={project.title} className="projects-card__img" />
-          <p className="projects-card__tags">{project.tag}</p>
-          <h3 className="projects-card__title">{project.title}</h3>
-          <p className="projects-card__description">{project.description}</p>
+    <div className="embla">
+      <div className="embla__viewport" ref={emblaRef}>
+        <div className="embla__container">
+          {projects.map((project) => (
+
+            <div className="embla__slide featured-card" key={project.id}>
+              <img src={project.img} alt="" className="featured-card__img" />
+              <p className="featured-card__tag">{project.tag}</p>
+              <h3 className="featured-card__title">{project.title}</h3>
+              <p className="featured-card__desc">{project.description}</p>
+              
+
+            </div>
+          ))}
+
+
         </div>
-      ))}
+      </div>
+
+      <button className="embla__prev" onClick={scrollPrev}>
+        Scroll to prev
+      </button>
+      <button className="embla__next" onClick={scrollNext}>
+        Scroll to next
+      </button>
     </div>
   )
 }
