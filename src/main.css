@@ -84,13 +84,14 @@ h3 {
 .container {
     max-width: 80rem;
     margin: 0 auto;
-    padding: 0 3rem;
+    padding: 0 1rem;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 1rem;
+    
 }
 
 .col-1 { grid-column: span 1; }

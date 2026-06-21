@@ -55,6 +55,7 @@
   border-radius: 8px;
   cursor: pointer;
   height: 480px;
+  text-decoration: none;
 }
 
 .project-card__img {

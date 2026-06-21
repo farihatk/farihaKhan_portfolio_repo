@@ -1,0 +1,23 @@
+.project-page-nav nav {
+  position: sticky;
+  top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-page-nav__link {
+  font-family: var(--handrawn);
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.project-page-nav__link:hover {
+  color: var(--violet);
+}
+
+.project-page-nav__link--active {
+  color: var(--lime);
+}

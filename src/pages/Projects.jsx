@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 import "./Projects.css"
 
 import HeyloFeatured from "../assets/heylo-featured.jpg"
@@ -12,6 +13,7 @@ const allProjects = [
     tags: ["branding", "poster design"],
     img: PalaceFeatured,
     size: "full",
+    path: "/projects/palace"
   },
   {
     id: 2,
@@ -59,13 +61,13 @@ const filters = [
 
 function ProjectCard({ project }) {
   return (
-    <div className={`project-card ${project.size === "full" ? "col-12" : "col-6"}`}>
+    <Link to={project.path || "#"} className={`project-card ${project.size === "full" ? "col-12" : "col-6"}`}>
       <img src={project.img} alt={project.title} className="project-card__img" />
       <div className="project-card__overlay">
         <h3 className="project-card__title">{project.title}</h3>
         <p className="project-card__tags">{project.tags.join(", ")}</p>
       </div>
-    </div>
+    </Link>
   )
 }
 

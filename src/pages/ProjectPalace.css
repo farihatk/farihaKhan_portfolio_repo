@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap');
+
+/* ── Page body layout ──────────────────────── */
+.project-body {
+    display: flex;
+    padding: 4rem 2.5rem 6rem;
+    gap: 2rem;
+}
+
+.project-page-nav {
+    width: 140px;
+    flex-shrink: 0;
+}
+
+.project-content {
+    flex: 1;
+    max-width: 1280px;
+    padding-right: 4rem;
+}
+
+/* ── Sections ──────────────────────────────── */
+.palace-section {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.palace-section__heading {
+    font-family: var(--handrawn);
+    font-size: 4rem;
+    font-weight: 400;
+    color: var(--violet);
+}
+
+.palace-subsection__heading {
+    font-family: var(--handrawn);
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--violet);
+}
+
+.palace-body {
+    font-family: var(--articulat);
+    font-size: 1.25rem;
+    color: black;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* ── Challenge / Solution cards ────────────── */
+.palace-card {
+    background-color: var(--violet);
+    border-radius: 20px;
+    padding: 2.5rem 3rem;
+}
+
+.palace-card__title {
+    font-family: var(--handrawn);
+    font-size: 3rem;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 1.25rem;
+}
+
+.palace-card__body {
+    font-family: var(--articulat);
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--lime);
+    line-height: 1.5;
+}
+
+/* ── Research text ─────────────────────────── */
+.palace-research {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.palace-research__subheading {
+    font-family: var(--articulat);
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+    margin-top: 1rem;
+}
+
+/* ── Logo concepts ─────────────────────────── */
+.palace-logo-section {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.palace-logo-left {
+    flex: 1.25;
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.palace-logo-right {
+    flex: 1;
+}
+
+.palace-concept {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.palace-concept__label {
+    font-family: var(--handrawn);
+    font-size: 2rem;
+    color: var(--violet);
+}
+
+.palace-concept__img {
+    max-height: 120px;
+    object-fit: contain;
+}
+
+.palace-concept__critique {
+    font-family: var(--handrawn);
+    font-size: 1rem;
+    color: var(--violet);
+    max-width: 220px;
+}
+
+/* Brand Rationale */
+.palace-section__cover {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* ── Color palette ─────────────────────────── */
+.palace-palette {
+    display: flex;
+    gap: 0;
+    height: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.palace-palette__swatch--tall {
+    width: 30%;
+    display: flex;
+    align-items: flex-end;
+    padding: 1.5rem;
+}
+
+.palace-palette__grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.palace-palette__swatch {
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem 1.25rem;
+}
+
+.palace-palette__label {
+    font-family: var(--articulat);
+    font-size: 1.1rem;
+    line-height: 1.4;
+    text-align: center;
+    width: 100%;
+    align-self: center;
+}
+
+/* ── Typography showcase ───────────────────── */
+.palace-typography {
+    display: flex;
+    gap: 4rem;
+}
+
+.palace-type-showcase {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+    flex-direction: column ;
+}
+
+.palace-type-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.palace-type__name {
+    font-size: 2.5rem;
+}
+
+.palace-type__size {
+    font-family: var(--articulat);
+    font-size: 1rem;
+    color: black;
+}
+
+.palace-type__example {
+    color: black;
+    line-height: 1.2;
+}
+
+.palace-type__example--bold {
+    font-weight: 700;
+}
+
+.palace-type__desc {
+    display: flex;
+    flex: 1;
+    align-self: center;
+    font-family: var(--articulat);
+    font-size: 1.25rem;
+    color: black;
+    line-height: 1.6;
+    margin-top: 1rem;
+    padding: 0 4rem;
+}
+
+/* ── Image helpers ─────────────────────────── */
+.palace-full-img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.palace-img-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.palace-half-img {
+    flex: 1;
+    min-width: 0;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+    height: 500px;
+}
