@@ -187,7 +187,7 @@
     display: flex;
     gap: 3rem;
     align-items: flex-start;
-    flex-direction: column ;
+    flex-direction: column;
 }
 
 .palace-type-block {
@@ -228,6 +228,24 @@
     padding: 0 4rem;
 }
 
+/* Mockups */
+.palace-mockup-full {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Posters */
+.palace-poster-img {
+    /* flex: 1; */
+    min-width: 0;
+    display: block;
+    border-radius: 8px;
+    object-fit: contain;
+    height: 400px;
+}
+
 /* ── Image helpers ─────────────────────────── */
 .palace-full-img {
     width: 100%;
@@ -249,3 +267,4 @@
     object-fit: cover;
     height: 500px;
 }
+

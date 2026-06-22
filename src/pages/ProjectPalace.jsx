@@ -10,10 +10,17 @@ import LogoConcept2 from "../assets/palace-var2.png"
 import LogoConcept3 from "../assets/palace-var3.png"
 import EnvMockup1 from "../assets/palace-envMockup1.jpg"
 import EnvMockup2 from "../assets/palace-envMockup2.jpg"
+import EnvMockup3 from "../assets/palace-envMockup5.jpg"
+import EnvMockup4 from "../assets/palace-envMockup4.jpg"
 import Mockup1 from "../assets/palace-mockup1.jpg"
 import Mockup2 from "../assets/palace-mockup2.jpg"
 import Mockup3 from "../assets/palace-mockup3.jpg"
 import Mockup4 from "../assets/palace-mockup4.jpg"
+import Mockup5 from "../assets/palace-mockup5.jpg"
+import Mockup6 from "../assets/palace-mockup6.jpg"
+import Mockup7 from "../assets/palace-mockup7.jpg"
+import Mockup8 from "../assets/palace-mockup8.jpg"
+import Mockup9 from "../assets/palace-featured.jpg"
 import PosterBlueVelvet from "../assets/palace-blue-velvet.jpg"
 import PosterDateNight from "../assets/palace-date-night.jpg"
 import PosterOutdoorFilm from "../assets/palace-outdoor-film.jpg"
@@ -122,7 +129,7 @@ function ProjectPalace() {
                     </section>
 
                     {/* ── Brand Rationale ── */}
-                    <section id="rationale" className="palace-section">
+                    <section className="palace-section">
                         <h2 className="palace-section__heading">Brand Rationale</h2>
                         <img src={Mockup3} alt="Brand rationale" className="palace-section__cover" />
                     </section>
@@ -192,15 +199,28 @@ function ProjectPalace() {
                     {/* ── Mock ups ── */}
                     <section id="mockup" className="palace-section">
                         <h2 className="palace-section__heading">Mock ups</h2>
-                        <img src={EnvMockup1} alt="Environment mockup" className="palace-full-img" />
+                        <img src={Mockup2} alt="Environment mockup" className="palace-mockup-full" />
                         <div className="palace-img-row">
-                            <img src={Mockup1} alt="Mockup" className="palace-half-img" />
-                            <img src={Mockup2} alt="Mockup" className="palace-half-img" />
-                        </div>
-                        <img src={EnvMockup2} alt="Environment mockup" className="palace-full-img" />
-                        <div className="palace-img-row">
-                            <img src={Mockup3} alt="Mockup" className="palace-half-img" />
+                            <img src={Mockup8} alt="Mockup" className="palace-half-img" />
                             <img src={Mockup4} alt="Mockup" className="palace-half-img" />
+                        </div>
+                        <img src={Mockup9} alt="Environment mockup" className="palace-mockup-full" />
+                        <div className="palace-img-row">
+                            <img src={Mockup5} alt="Mockup" className="palace-half-img" />
+                            <img src={Mockup6} alt="Mockup" className="palace-half-img" />
+                        </div>
+                    </section>
+
+                    {/* Environmental Mockups */}
+                    <section className="palace-section">
+                        <h2 className="palace-section__heading">Environmental Mock ups</h2>
+                        <div className="palace-img-row">
+                            <img src={EnvMockup4} alt="Mockup" className="palace-half-img" />
+                            <img src={EnvMockup2} alt="Mockup" className="palace-half-img" />
+                        </div>
+                        <div className="palace-img-row">
+                            <img src={EnvMockup3} alt="Mockup" className="palace-half-img" />
+                            <img src={EnvMockup1} alt="Mockup" className="palace-half-img" />
                         </div>
                     </section>
 
@@ -208,15 +228,10 @@ function ProjectPalace() {
                     <section className="palace-section">
                         <h2 className="palace-section__heading">Promotional Posters</h2>
                         <div className="palace-img-row">
-                            <img src={PosterBlueVelvet} alt="Blue Velvet poster" className="palace-half-img" />
-                            <img src={PosterDateNight} alt="Date Night poster" className="palace-half-img" />
-                        </div>
-                        <div className="palace-img-row">
-                            <img src={PosterOutdoorFilm} alt="Outdoor Film Festival poster" className="palace-half-img" />
-                            <img src={PosterSilentMovie} alt="Silent Movie poster" className="palace-half-img" />
-                        </div>
-                        <div className="palace-img-row">
-                            <img src={PosterBreakfastClub} alt="The Breakfast Club poster" className="palace-half-img" />
+                            <img src={PosterBlueVelvet} alt="Blue Velvet poster" className="palace-poster-img" />
+                            <img src={PosterDateNight} alt="Date Night poster" className="palace-poster-img" />
+                            <img src={PosterOutdoorFilm} alt="Outdoor Film Festival poster" className="palace-poster-img" />
+                            <img src={PosterSilentMovie} alt="Silent Movie poster" className="palace-poster-img" />
                         </div>
                     </section>
 
