@@ -8,6 +8,7 @@ import Projects from "./pages/Projects"
 import Playground from "./pages/Playground"
 
 import ProjectPalace from "./pages/ProjectPalace"
+import ProjectHeylo from "./pages/ProjectHeylo"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="projects" element={<Projects />} />
           <Route path="playground" element={<Playground />} />
           <Route path="projects/palace" element={<ProjectPalace/>} />
+          <Route path="projects/heylo" element={<ProjectHeylo/>} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap');
+
+/* ── Page body layout (self-contained so Heylo doesn't depend on Palace.css) ── */
+.project-body {
+    display: flex;
+    padding: 4rem 2.5rem 6rem;
+    gap: 2rem;
+}
+
+.project-content {
+    flex: 1;
+    max-width: 1280px;
+}
+
+/* ── Sections ────────────────────────────────── */
+.heylo-section {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.heylo-section__heading {
+    font-family: var(--handrawn);
+    font-size: 4rem;
+    font-weight: 400;
+    color: var(--violet);
+}
+
+.heylo-subsection__heading {
+    font-family: var(--handrawn);
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--violet);
+}
+
+/* ── Challenge / Solution cards ─────────────── */
+.heylo-card {
+    background-color: var(--violet);
+    border-radius: 20px;
+    padding: 2.5rem 3rem;
+}
+
+.heylo-card__title {
+    font-family: var(--handrawn);
+    font-size: 4rem;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 1.25rem;
+}
+
+.heylo-card__body {
+    font-family: var(--articulat);
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--lime);
+    line-height: 1.5;
+}
+
+/* ── Research text ───────────────────────────── */
+.heylo-research {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.heylo-body {
+    font-family: var(--articulat);
+    font-size: 1.5rem;
+    color: black;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* ── Logo concepts ───────────────────────────── */
+.heylo-logo-section {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.heylo-logo-left {
+    flex: 1.5;
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.heylo-logo-right {
+    flex: 1;
+}
+
+.heylo-concept {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.heylo-concept__label {
+    font-family: var(--handrawn);
+    font-size: 1.5rem;
+    color: var(--violet);
+}
+
+.heylo-concept__img {
+    max-height: 120px;
+    object-fit: contain;
+}
+
+.heylo-concept__critique {
+    font-family: var(--handrawn);
+    font-size: 1rem;
+    color: var(--violet);
+    max-width: 180px;
+}
+
+/* ── Color palette ───────────────────────────── */
+.heylo-palette {
+    display: flex;
+    height: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.heylo-palette__swatch--tall {
+    width: 30%;
+    display: flex;
+    align-items: flex-end;
+    padding: 1.5rem;
+}
+
+.heylo-palette__grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.heylo-palette__swatch {
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem 1.25rem;
+}
+
+.heylo-palette__label {
+    font-family: var(--articulat);
+    font-size: 1.1rem;
+    line-height: 1.4;
+    text-align: center;
+    width: 100%;
+}
+
+/* ── Typography ──────────────────────────────── */
+.heylo-typography {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.heylo-type-showcase {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.heylo-type-desc {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.heylo-type__name {
+    font-size: 2.5rem;
+}
+
+.heylo-type__size {
+    font-family: var(--articulat);
+    font-size: 1rem;
+    color: black;
+}
+
+.heylo-type__example {
+    color: black;
+    line-height: 1.2;
+}
+
+.heylo-type__example--bold {
+    font-weight: 700;
+}
+
+/* ── Image helpers ───────────────────────────── */
+.heylo-full-img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.heylo-img-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.heylo-half-img {
+    flex: 1;
+    min-width: 0;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+    height: 500px;
+}
+
+/* ── Social media row ────────────────────────── */
+.heylo-social-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.heylo-social-img {
+    flex: 1;
+    min-width: 0;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}

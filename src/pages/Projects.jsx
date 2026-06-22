@@ -21,6 +21,7 @@ const allProjects = [
     tags: ["branding", "content creation"],
     img: HeyloFeatured,
     size: "half",
+    path: "/projects/heylo"
   },
   {
     id: 3,
