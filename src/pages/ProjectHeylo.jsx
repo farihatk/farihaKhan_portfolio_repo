@@ -3,17 +3,20 @@ import ProjectPageNav from "../components/ProjectPageNav"
 import "./ProjectHeylo.css"
 
 import CoverImage from "../assets/heylo-hero.jpg"
-import MoodboardImage from "../assets/heylo-featured.jpg"
+import MoodboardImage from "../assets/heylo_moodboard.jpg"
 import LogoConcept1 from "../assets/heylo-var1.png"
 import LogoConcept2 from "../assets/heylo-var2.png"
 import LogoConcept3 from "../assets/heylo-var3.png"
 import BrandRationaleImage from "../assets/heylo-logoExplain.png"
-import Mockup1 from "../assets/heylo-mockup2.jpg"
-import Mockup2 from "../assets/heylo-mockup8.jpg"
-import Mockup3 from "../assets/heylo-mockup4.jpg"
-import Mockup4 from "../assets/heylo-mockup5.jpg"
-import Mockup5 from "../assets/heylo-mockup6.jpg"
-import Mockup6 from "../assets/heylo-mockup7.jpg"
+import Mockup1 from "../assets/heylo-mockup1.jpg"
+import Mockup2 from "../assets/heylo-mockup2.jpg"
+import Mockup3 from "../assets/heylo-mockup3.jpg"
+import Mockup4 from "../assets/heylo-mockup4.jpg"
+import Mockup5 from "../assets/heylo-mockup5.jpg"
+import Mockup6 from "../assets/heylo-mockup6.jpg"
+import Mockup7 from "../assets/heylo-mockup7.jpg"
+import Mockup8 from "../assets/heylo-mockup8.jpg"
+import Mockup9 from "../assets/heylo-featured.jpg"
 import Social1 from "../assets/heylo-social1.png"
 import Social2 from "../assets/heylo-social2.png"
 import Social3 from "../assets/heylo-social3.png"
@@ -102,7 +105,7 @@ function ProjectHeylo() {
 
                             <div className="heylo-logo-right">
                                 <p className="heylo-body">
-                                    Three concepts were developed and brought forward for review. Concepts 1 and 3 captured the brand's playful tone but risked feeling similar to existing identities in the space. Concept 2 was selected for its distinctiveness. Its chunky, retro-inspired letterforms felt closer to the brand's visual. Its approach to expressing energy and play through stars customized within the type set Heylo apart rather than blending in.
+                                    Three logo concepts were developed before the final iteration. Concepts 2 and 3 captured the brand's playful tone but risked feeling similar to existing identities in the space. Concept 1 had a chunky and retro-inspired letterform that felt closer to the brand's visual identity.
                                 </p>
                             </div>
 
@@ -112,12 +115,13 @@ function ProjectHeylo() {
                     {/* ── Brand Rationale ── */}
                     <section id="rationale" className="heylo-section">
                         <h2 className="heylo-section__heading">Brand Rationale</h2>
-                        <img src={BrandRationaleImage} alt="Brand rationale" className="heylo-full-img" />
+                        <img src={Mockup7} alt="Brand rationale" className="heylo-cover-img" />
                     </section>
 
                     {/* ── Final Logo ── */}
                     <section className="heylo-section">
                         <h3 className="heylo-subsection__heading">Final Logo</h3>
+                        <img src={BrandRationaleImage} alt="Brand rationale" className="heylo-cover-img heylo-img-shift-up" />
                         <p className="heylo-body">
                             The final logo is built on a customized version of the typeface Cosmos. The counters of the "e" and "o" were replaced with star shapes — a subtle nod to glowing skin and the brand's energetic character. The ascenders and descenders were extended to give the wordmark more breathing room and a sense of balance across the full lockup. The overall weight of the letterforms was also reduced to complement the brand's softer, more delicate side and the quiet vulnerability of the teenage experience.
                         </p>
@@ -167,25 +171,25 @@ function ProjectHeylo() {
                                 <p className="heylo-type__size">Regular 16px</p>
                                 <p className="heylo-type__example" style={{ fontFamily: "'Figtree', sans-serif", fontSize: "24px" }}>This is an example of a body text.</p>
                             </div>
-                            <div className="heylo-type-desc">
-                                <p className="heylo-body">
+                            
+                                <p className="heylo-type-desc">
                                     New Kansas was selected as the primary typeface for its soft serif character, pairing naturally with Blueberry from the color palette to position Heylo as elevated without feeling overly luxurious. Figtree accompanies it as the sans-serif pairing — its rounded forms reinforce the brand's friendly voice while keeping body copy clean and readable for a younger audience.
                                 </p>
-                            </div>
+                            
                         </div>
                     </section>
 
                     {/* ── Mockups ── */}
                     <section id="mockup" className="heylo-section">
                         <h2 className="heylo-section__heading">Mockups</h2>
-                        <img src={Mockup1} alt="Mockup" className="heylo-full-img" />
+                        <img src={Mockup4} alt="Mockup" className="heylo-cover-img" />
                         <div className="heylo-img-row">
-                            <img src={Mockup2} alt="Mockup" className="heylo-half-img" />
-                            <img src={Mockup3} alt="Mockup" className="heylo-half-img" />
+                            <img src={Mockup9} alt="Mockup" className="heylo-half-img" />
+                            <img src={Mockup3} alt="Mockup" className="heylo-half-img heylo-img-shift-up" />
                         </div>
-                        <img src={Mockup4} alt="Mockup" className="heylo-full-img" />
+                        <img src={Mockup5} alt="Mockup" className="heylo-cover-img" />
                         <div className="heylo-img-row">
-                            <img src={Mockup5} alt="Mockup" className="heylo-half-img" />
+                            <img src={Mockup1} alt="Mockup" className="heylo-half-img" />
                             <img src={Mockup6} alt="Mockup" className="heylo-half-img" />
                         </div>
                     </section>
