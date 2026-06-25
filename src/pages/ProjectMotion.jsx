@@ -112,7 +112,7 @@ function ProjectMotion() {
 
                         {/* The Girl — video left, text right */}
                         <div className="grid motion-comp">
-                            <GifVideo src={GirlComp} label="The Girl component" />
+                            <GifVideo src={GirlComp} label="The Girl component" className="motion-comp__video--girl" />
                             <div className="col-6 motion-comp__text">
                                 <h3 className="motion-comp__heading">The Girl</h3>
                                 <p className="motion-comp__body">Our main character, the female fan, was first hand-drawn on Procreate, then traced on Illustrator for a more polished but still organic look. Her hair was later animated using path animation on After Effects.</p>

@@ -135,6 +135,10 @@
     justify-self: end;
 }
 
+.motion-comp__video--girl {
+    object-position: left center;
+}
+
 /* ── Image helper ────────────────────────────── */
 .motion-full-img {
     width: 100%;
