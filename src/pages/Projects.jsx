@@ -25,10 +25,11 @@ const allProjects = [
   },
   {
     id: 3,
-    title: "Makio App",
-    tags: ["ui/ux", "product design"],
+    title: "BTS Swim Motion",
+    tags: ["motion graphics", "video editing"],
     img: MakioFeatured,
     size: "half",
+    path: "/projects/motion"
   },
   {
     id: 4,

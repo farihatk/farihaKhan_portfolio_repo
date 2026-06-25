@@ -1,0 +1,144 @@
+/* ── Page body layout ────────────────────────── */
+.project-body {
+    display: flex;
+    padding: 4rem 2.5rem 6rem;
+    gap: 2rem;
+}
+
+.project-content {
+    flex: 1;
+    max-width: 1280px;
+    min-width: 0;
+}
+
+/* ── Sections ────────────────────────────────── */
+.motion-section {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.motion-section__heading {
+    font-family: var(--handrawn);
+    font-size: 4rem;
+    font-weight: 400;
+    color: var(--violet);
+}
+
+/* ── Inspo card ──────────────────────────────── */
+.motion-card {
+    background-color: var(--violet);
+    border-radius: 20px;
+    padding: 2.5rem 3rem;
+}
+
+.motion-card__title {
+    font-family: var(--handrawn);
+    font-size: 3rem;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 1.25rem;
+}
+
+.motion-card__body {
+    font-family: var(--articulat);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+    line-height: 1.6;
+}
+
+/* ── Body text ───────────────────────────────── */
+.motion-body {
+    font-family: var(--articulat);
+    font-size: 1.25rem;
+    color: black;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* ── Color palette ───────────────────────────── */
+.motion-palette {
+    display: flex;
+    height: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.motion-palette__swatch--tall {
+    width: 30%;
+    display: flex;
+    align-items: flex-end;
+    padding: 1.5rem;
+}
+
+.motion-palette__grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.motion-palette__swatch {
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem 1.25rem;
+}
+
+.motion-palette__label {
+    font-family: var(--articulat);
+    font-size: 1.1rem;
+    line-height: 1.4;
+    text-align: center;
+    width: 100%;
+    align-self: center;
+}
+
+/* ── Component pairs ─────────────────────────── */
+.motion-comp {
+    align-items: center;
+    row-gap: 3rem;
+}
+
+.motion-comp__video {
+    width: 500px;
+    height: 500px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+.motion-comp__text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.motion-comp__heading {
+    font-family: var(--handrawn);
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--violet);
+}
+
+.motion-comp__body {
+    font-family: var(--articulat);
+    font-size: 1.25rem;
+    color: black;
+    line-height: 1.6;
+}
+
+.motion-comp__video--right {
+    justify-self: end;
+}
+
+/* ── Image helper ────────────────────────────── */
+.motion-full-img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+}

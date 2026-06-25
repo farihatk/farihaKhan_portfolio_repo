@@ -9,6 +9,7 @@ import Playground from "./pages/Playground"
 
 import ProjectPalace from "./pages/ProjectPalace"
 import ProjectHeylo from "./pages/ProjectHeylo"
+import ProjectMotion from "./pages/ProjectMotion"
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="playground" element={<Playground />} />
           <Route path="projects/palace" element={<ProjectPalace/>} />
           <Route path="projects/heylo" element={<ProjectHeylo/>} />
+          <Route path="projects/motion" element={<ProjectMotion/>} />
         </Route>
       </Routes>
     </BrowserRouter>

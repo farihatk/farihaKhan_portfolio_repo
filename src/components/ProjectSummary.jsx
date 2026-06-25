@@ -1,6 +1,6 @@
 import "./ProjectSummary.css"
 
-function ProjectSummary({ tag, title, role, tools, description, coverImage }) {
+function ProjectSummary({ tag, title, role, tools, description, coverImage, coverVideo }) {
   return (
     <section className="project-summary">
       <div className="container">
@@ -25,7 +25,11 @@ function ProjectSummary({ tag, title, role, tools, description, coverImage }) {
       </div>
 
       <div className="project-summary__cover">
-        <img src={coverImage} alt={title} />
+        {coverVideo ? (
+          <video src={coverVideo} autoPlay muted controls playsInline />
+        ) : (
+          <img src={coverImage} alt={title} />
+        )}
       </div>
     </section>
   )
