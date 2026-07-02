@@ -1,9 +1,9 @@
 {
   "name": "farihakhan-portfolio2",
   "private": true,
+  "homepage": "https://farihatk.github.io/farihaKhan_portfolio_repo",
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://farihatk.github.io/farihaKhan_portfolio_repo",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
