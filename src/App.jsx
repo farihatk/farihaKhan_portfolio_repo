@@ -13,7 +13,7 @@ import ProjectMotion from "./pages/ProjectMotion"
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/farihaKhan_portfolio_repo">
       <Routes>
         <Route path="/" element={<PageWrapper />}>
           <Route index element={<Home />} />
