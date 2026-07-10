@@ -30,11 +30,31 @@ function Home() {
 
         <div className="hero__visuals" aria-hidden="true">
           <img src={FkLogo} alt="" className="hero__avatar" />
-          <img src={Boba} alt="" className="hero__obj hero__obj--boba" />
-          <img src={Cat} alt="" className="hero__obj hero__obj--cat" />
-          <img src={Flower} alt="" className="hero__obj hero__obj--flower" />
-          <img src={Headphones} alt="" className="hero__obj hero__obj--headphones" />
-          <img src={Switch} alt="" className="hero__obj hero__obj--switch" />
+
+          <div className="hero__obj-wrap hero__obj--boba">
+            <img src={Boba} alt="" className="hero__obj" />
+            <div className="hero__textpop">My Energy Drink</div>
+          </div>
+
+          <div className="hero__obj-wrap hero__obj--cat">
+            <img src={Cat} alt="" className="hero__obj" />
+            <div className="hero__textpop">My void baby Theo</div>
+          </div>
+
+          <div className="hero__obj-wrap hero__obj--flower">
+            <img src={Flower} alt="" className="hero__obj" />
+            <div className="hero__textpop">My favourite flower</div>
+          </div>
+
+          <div className="hero__obj-wrap hero__obj--headphones">
+            <img src={Headphones} alt="" className="hero__obj" />
+            <div className="hero__textpop">My motivation</div>
+          </div>
+
+          <div className="hero__obj-wrap hero__obj--switch">
+            <img src={Switch} alt="" className="hero__obj" />
+            <div className="hero__textpop">My creative release</div>
+          </div>
         </div>
       </section>
 

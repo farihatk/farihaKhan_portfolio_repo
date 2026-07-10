@@ -1,4 +1,7 @@
 @import url("https://use.typekit.net/pne6nlj.css");
+
+@import url("https://use.typekit.net/pne6nlj.css");
+
 @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
 
 
@@ -10,6 +13,7 @@
     /* typography */
     --articulat: "articulat-cf", sans-serif;
     --handrawn: "Delicious Handrawn", sans-serif;
+    --chorine: "chorine-large", sans-serif;
     /* spacing */
     --spacing-line: 8px;
     --spacing-title: 16px;
