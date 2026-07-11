@@ -26,6 +26,7 @@ function Home() {
           <p className="hero__bio">
             I am a multidisciplinary designer focusing on branding, graphic design, motion graphics and UI/UX
           </p>
+          <a href="#featured" className="hero__scroll-btn">scroll down ↓</a>
         </div>
 
         <div className="hero__visuals" aria-hidden="true">
@@ -58,7 +59,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="projects-section">
+      <section className="projects-section" id='featured'>
         <h2 className='projects-section__title'>Featured Projects</h2>
         <FeaturedProjects />
         <div className="projects-section__button">

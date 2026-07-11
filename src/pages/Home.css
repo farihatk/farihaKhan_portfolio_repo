@@ -10,6 +10,18 @@
   margin-top: 9rem;
 }
 
+.hero__scroll-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  font-family: var(--handrawn);
+  font-size: 1.5rem;
+  color: var(--violet);
+  text-decoration: none;
+  border: 1.5px solid var(--violet);
+  border-radius: 999px;
+  padding: 0.4rem 1.25rem;
+}
+
 .hero__text {
   /* position: relative; */
   z-index: 1;
