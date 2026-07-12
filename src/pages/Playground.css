@@ -1,0 +1,109 @@
+.playground {
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+}
+
+/* ── Header ── */
+.playground__header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.playground__title {
+  font-size: 8rem;
+  color: var(--violet);
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.playground__desc {
+  font-family: var(--articulat);
+  font-size: 1.5rem;
+  color: var(--violet);
+  max-width: 55rem;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ── Filters ── */
+.playground__filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.playground__filter-btn {
+  font-family: var(--articulat);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--violet);
+  background: transparent;
+  border: 2px solid var(--violet);
+  border-radius: 999px;
+  padding: 0.4rem 1.25rem;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.playground__filter-btn--active {
+  background: var(--violet);
+  color: white;
+}
+
+/* ── Masonry grid ── */
+.playground__grid {
+  column-count: 3;
+  column-gap: 1rem;
+}
+
+.playground__item {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.playground__item img {
+  width: 100%;
+  display: block;
+}
+
+/* ── Hover overlay ── */
+.playground__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+}
+
+.playground__item:hover .playground__overlay {
+  opacity: 1;
+}
+
+.playground__overlay-title {
+  font-family: var(--articulat);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.25rem;
+}
+
+.playground__overlay-desc {
+  font-family: var(--articulat);
+  font-size: 1rem;
+  color: white;
+  line-height: 1.4;
+}
+
+/* ── Mobile (leave room for responsive later) ── */
+@media (max-width: 768px) {
+  .playground__grid {
+    column-count: 1;
+  }
+}
