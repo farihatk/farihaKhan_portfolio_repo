@@ -18,19 +18,20 @@ function Home() {
     <>
 
       {/* Hero */}
-      <section className="hero">
+      <section className="hero grid">
 
-        <div className="hero__text">
+        <div className="hero__text col-6">
           <div className="hero__title-label">Visual Designer</div>
           <h1 className="hero__name">Fariha Khan</h1>
           <p className="hero__bio">
             I am a multidisciplinary designer focusing on branding, graphic design, motion graphics and UI/UX
           </p>
-          <a href="#featured" className="hero__scroll-btn">scroll down ↓</a>
         </div>
 
-        <div className="hero__visuals" aria-hidden="true">
-          <img src={FkLogo} alt="" className="hero__avatar" />
+        <div className="hero__visuals col-6" aria-hidden="true">
+          <div className="hero__avatar">
+            <img src={FkLogo} alt="" />
+          </div>
 
           <div className="hero__obj-wrap hero__obj--boba">
             <img src={Boba} alt="" className="hero__obj" />
@@ -57,6 +58,8 @@ function Home() {
             <div className="hero__textpop">My creative release</div>
           </div>
         </div>
+
+        <div className="scroll-down-btn">scroll down</div>
       </section>
 
       <section className="projects-section" id='featured'>
