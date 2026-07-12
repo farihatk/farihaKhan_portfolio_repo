@@ -10,7 +10,6 @@
 }
 
 .playground__title {
-  font-size: 8rem;
   color: var(--violet);
   line-height: 1;
   margin-bottom: 1.5rem;
@@ -28,26 +27,32 @@
 /* ── Filters ── */
 .playground__filters {
   display: flex;
-  gap: 1rem;
-  margin-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .playground__filter-btn {
-  font-family: var(--articulat);
-  font-size: 1rem;
+  font-family: var(--handrawn);
+  font-size: 2rem;
   font-weight: 700;
   color: var(--violet);
-  background: transparent;
-  border: 2px solid var(--violet);
-  border-radius: 999px;
-  padding: 0.4rem 1.25rem;
+  background: none;
+  border: none;
+  border-radius: 12px;
+  padding: 0.4rem 1rem;
   cursor: pointer;
-  transition: background 0.2s ease, color 0.2s ease;
+  transition: background-color 0.2s;
 }
 
 .playground__filter-btn--active {
-  background: var(--violet);
-  color: white;
+  background-color: var(--lime);
+  text-decoration: underline;
+}
+
+.playground__filter-btn:hover:not(.playground__filter-btn--active) {
+    background-color: rgba(202, 216, 59, 0.2);
 }
 
 /* ── Masonry grid ── */
