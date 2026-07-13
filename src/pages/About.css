@@ -1,0 +1,280 @@
+.about {
+    margin-top: 3rem;
+}
+
+/* ── Intro ── */
+.about-intro {
+  position: relative;
+  min-height: 37.9rem;
+}
+
+.about-intro__photo-wrap {
+  position: absolute;
+  left: 3%;
+  top: 0;
+  width: 500px;
+}
+
+.about-intro__photo {
+  width: 100%;
+  display: block;
+}
+
+.about-intro__title {
+  position: absolute;
+  left: 34%;
+  top: 0;
+  font-family: var(--chorine);
+  font-size: 8rem;
+  color: var(--violet);
+  white-space: nowrap;
+}
+
+/* ── Pointer groups ── */
+.about-pointer-wrap {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about-pointer__line {
+  width: 300px;
+  display: block;
+  flex-shrink: 0;
+}
+
+.about-pointer__text {
+  font-family: var(--handrawn);
+  font-size: 2.5rem;
+  color: var(--violet);
+  white-space: nowrap;
+  margin: 0;
+}
+
+.about-pointer--1 { left: 38%; top: 30%; }
+.about-pointer--2 { left: 38%; top: 47%; }
+.about-pointer--3 { left: 38%; top: 65%; }
+.about-pointer--4 { left: 38%; top: 80%; }
+
+/* ── My Story ── */
+.about-story {
+  background-color: var(--violet);
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 3rem 5rem;
+}
+
+.about-story__photo-wrap {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.about-story__photo-frame {
+  rotate: -3.86deg;
+  background-color: #f7f7f7;
+  padding: 1.25rem 1.25rem 6rem;
+  display: inline-block;
+  border-radius: 0.5rem;
+  box-shadow: -8px 9px #470084;
+}
+
+.about-story__photo {
+  display: block;
+  width: 500px;
+  height: 530px;
+  object-fit: cover;
+}
+
+.about-story__text {
+  flex: 1;
+}
+
+.about-story__title {
+  font-family: var(--articulat);
+  font-weight: 900;
+  font-size: 6rem;
+  color: var(--lime);
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
+.about-story__subtitle {
+  font-family: var(--articulat);
+  font-weight: 700;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.about-story__body {
+  font-family: var(--articulat);
+  font-size: 1.25rem;
+  color: white;
+  line-height: 1.6;
+}
+
+/* ── Education ── */
+.about-education {
+  background-color: var(--lavender);
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 3rem 5rem;
+}
+
+.about-education__text {
+  flex: 1;
+}
+
+.about-education__title {
+  font-family: var(--articulat);
+  font-weight: 900;
+  font-size: 6rem;
+  color: var(--lime);
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
+.about-education__subtitle {
+  font-family: var(--articulat);
+  font-weight: 700;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.about-education__body {
+  font-family: var(--articulat);
+  font-size: 1.25rem;
+  color: white;
+  line-height: 1.6;
+  max-width: 36rem;
+}
+
+.about-education__photo-wrap {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.about-education__photo-frame {
+  rotate: 3.21deg;
+  background-color: #f7f7f7;
+  padding: 1.25rem 1.25rem 4rem;
+  display: inline-block;
+  border-radius: 0.5rem;
+  box-shadow: 8px 9px var(--violet);
+}
+
+.about-education__photo {
+  display: block;
+  width: 500px;
+  height: 530px;
+  object-fit: cover;
+}
+
+/* ── My Inspo ── */
+.about-inspo {
+  padding: 3rem 0;
+}
+
+.about-inspo__title {
+  font-family: var(--articulat);
+  font-weight: 900;
+  font-size: 6rem;
+  color: var(--violet);
+  margin-bottom: 1rem;
+}
+
+.about-inspo__card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.about-inspo__card-img-wrap {
+  background-color: var(--lime);
+  padding: 1rem 1rem 4.5rem;
+  border: 3px solid var(--violet);
+  border-radius: 0.5rem;
+  box-shadow: 0 8px var(--violet);
+  
+}
+
+.about-inspo__card-img {
+  width: 100%;
+  display: block;
+  height: 400px;
+  object-fit: cover;
+}
+
+.about-inspo__card-label {
+  font-family: var(--handrawn);
+  font-size: 3rem;
+  color: var(--violet);
+  
+}
+
+.about-inspo__card-desc {
+  font-family: var(--articulat);
+  font-size: 1.25rem;
+  color: black;
+  line-height: 1.6;
+}
+
+/* ── My Values ── */
+.about-values {
+  padding: 3rem 0;
+}
+
+.about-values__title {
+  font-family: var(--articulat);
+  font-weight: 900;
+  font-size: 6rem;
+  color: var(--violet);
+  text-align: right;
+  margin-bottom: 3rem;
+}
+
+.about-values__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-values__circle {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.about-values__circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-values__label {
+  font-family: var(--handrawn);
+  font-size: 3rem;
+  color: var(--violet);
+  margin-bottom: 0.75rem;
+}
+
+.about-values__desc {
+  font-family: var(--articulat);
+  font-size: 1.25rem;
+  color: black;
+  line-height: 1.6;
+}
