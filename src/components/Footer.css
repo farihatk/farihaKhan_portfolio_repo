@@ -1,52 +1,69 @@
 .footer {
   background-color: var(--violet);
   width: 100%;
-  padding: 80px 90px 40px;
+  padding: 2rem 3rem;
 }
 
-.footer__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 64px;
+.footer__left {
+  align-self: center;
 }
 
 .footer__name {
-  font-family: var(--articulat);
-  font-weight: 600;
+  font-family: var(--handrawn);
+  font-size: 3rem;
+  /* font-weight: 600; */
   color: var(--lime);
   line-height: 1;
-  margin-bottom: 32px;
-}
-
-.footer__cta {
-  display: flex;
-  align-items: center;
-  gap: 16px;
+  margin-bottom: 1rem;
 }
 
 .footer__hi-btn {
-  font-size: 40px;
-  padding: 20px 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--lime);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 3px 0 6px rgba(0, 0, 0, 0.25);
+  padding: 12px 25px;
+  cursor: pointer;
+  font-family: var(--articulat);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--violet);
 }
 
-.footer__mail-icon {
+.footer__hi-btn-icon {
+  padding: 12px;
+  border-radius: 2rem;
+  background-color: var(--violet);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  padding: 0;
+  color: var(--lime);
+  font-size: 1.25rem;
+  flex-shrink: 0;
 }
 
-.footer__mail-icon img {
-  width: 32px;
-  height: 32px;
+.footer__email-tooltip {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  color: var(--violet);
+  font-family: var(--articulat);
+  font-size: 0.85rem;
+  white-space: nowrap;
+  padding: 0.3rem 0.75rem;
+  border-radius: 8px;
 }
 
 .footer__nav {
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
   gap: 96px;
   margin-top: 16px;
 }
@@ -59,20 +76,30 @@
 
 .footer__nav-col a {
   font-family: var(--articulat);
-  font-size: 32px;
+  font-size: 1.25rem;
   font-weight: 500;
   color: var(--lime);
   text-decoration: none;
   white-space: nowrap;
 }
 
-.footer__nav-col a:hover {
-  text-decoration: underline;
+.footer__social-icon {
+  width: 20px;
+  height: 20px;
+  padding: 1.5rem;
+  border-radius: 50%;
+  background-color: var(--lime);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--violet);
+  font-size: 1.5rem;
 }
 
 .footer__credit {
   text-align: center;
   font-family: var(--articulat);
-  font-size: 24px;
+  font-size: 16px;
   color: rgba(202, 216, 59, 0.59);
+  padding-top: 1.5rem;
 }
