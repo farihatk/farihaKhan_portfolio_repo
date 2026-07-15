@@ -48,7 +48,8 @@
 .featured-card {
   background-color: var(--lime);
   border-radius: 16px;
-  padding: 1rem;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
   /* width: 640px; */
   /* height: 500px; */
   box-shadow: 5px 6px 0 4px var(--violet);
@@ -66,12 +67,14 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease, opacity 0.3s ease;
+  
 }
 
 .featured-card__tag {
   font-family: var(--handrawn);
   color: white;
   font-size: 24px;
+  padding-top: 0.5rem;
 }
 
 .featured-card__title {
@@ -79,16 +82,11 @@
   font-size: 42px;
 }
 
-.featured-card__info {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
 .featured-card__desc {
   font-family: var(--articulat);
   font-size: 18px;
   color: var(--violet);
+  padding-bottom: 0.5rem;
 }
 
 /* .featured-card--focused {
