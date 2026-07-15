@@ -3,7 +3,7 @@
  position: relative;
   width: 100%;
   margin-top: 8rem;
-  min-height: 100vh;
+  min-height: 70vh;
 }
 
 .scroll-down-btn {
@@ -11,7 +11,7 @@
   color: var(--violet);
   font-size: 1.5rem;
   position: absolute;
-  top: 55%;
+  top: 75%;
   left: 46%;
   transform: translateX(-50%);
   animation: float 3s ease-in-out infinite;
@@ -174,7 +174,7 @@
 .projects-section {
   /* padding: 96px 90px 64px; */
   /* background-color: var(--lavender); */
-  margin-top: 17rem;
+  /* margin-top: 17rem; */
 }
 
 .projects-section__title {
