@@ -8,6 +8,7 @@
 :root {
     /* color palette */
     --violet: #7647E4;
+    --violet-shadow: #3b0fa2;
     --lavender: #A88AEE;
     --lime: #CAD83B;
     /* typography */
@@ -62,6 +63,7 @@ h3 {
     font-size: 1.25rem;
     font-weight: 700;
     padding: 15px 30px;
+    text-decoration: none;
     /* display: inline-block; */
 
 }

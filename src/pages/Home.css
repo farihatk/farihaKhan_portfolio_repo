@@ -172,19 +172,21 @@
 
 /* ── Featured Projects ─────────────────────────── */
 .projects-section {
-  /* padding: 96px 90px 64px; */
-  /* background-color: var(--lavender); */
-  /* margin-top: 17rem; */
+  background-color: var(--violet);
 }
 
 .projects-section__title {
+  color: #fefefe;
   text-align: right;
+  padding: 0.5rem 2rem;
+  font-family: var(--chorine);
+  font-weight: normal;
 }
 
 .projects-section__button {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 
