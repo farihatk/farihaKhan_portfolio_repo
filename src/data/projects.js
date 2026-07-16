@@ -1,5 +1,7 @@
 import HeyloFeatured from "../assets/heylo-featured.jpg"
 import PalaceFeatured from "../assets/palace-featured.jpg"
+import BTSPreviewVideo from "../assets/bts-motion-preview.mov"
+import BTSPreviewImg from "../assets/bts-motion-previewImg.png"
 import MakioFeatured from "../assets/makio-placeholder.jpg"
 
 export const projects = [
@@ -31,7 +33,8 @@ export const projects = [
     id: 3,
     title: "BTS Swim Motion",
     tags: ["motion graphics", "video editing"],
-    img: MakioFeatured,
+    video: BTSPreviewVideo,
+    img: BTSPreviewImg,
     role: "Motion Designer",
     summary: "A motion graphics project exploring bold typographic animation and visual storytelling.",
     description: "",

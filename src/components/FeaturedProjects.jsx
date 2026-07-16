@@ -1,4 +1,5 @@
 import { useState, useCallback, useEffect } from "react"
+import { Link } from "react-router-dom"
 
 import useEmblaCarousel from 'embla-carousel-react'
 
@@ -26,7 +27,7 @@ function FeaturedProjects() {
   const scrollPrev = () => emblaApi?.scrollPrev()
   const scrollNext = () => emblaApi?.scrollNext()
 
-  const featuredProjects = projects.filter( p => p.featured);
+  const featuredProjects = projects.filter(p => p.featured);
 
   return (
     <div className="embla">
@@ -35,17 +36,21 @@ function FeaturedProjects() {
           {featuredProjects.map((project, index) => {
             const isFocused = index === selectedIndex
             return (
-              <div
+              <Link
+                to={project.path || "#"}
                 className={`embla__slide featured-card ${isFocused ? "featured-card--focused" : ""}`}
                 key={project.id}
               >
-                <img src={project.img} alt="" className="featured-card__img" />
+                {project.video
+                  ? <video src={project.video} autoPlay loop muted playsInline className="featured-card__img" />
+                  : <img src={project.img} alt="" className="featured-card__img" />
+                }
                 <div className="featured-card__details">
                   <p className="featured-card__tag">{project.tags.join(", ")}</p>
                   <h3 className="featured-card__title">{project.title}</h3>
                   <p className="featured-card__desc">{project.summary}</p>
                 </div>
-              </div>
+              </Link>
             )
           })}
         </div>
@@ -57,7 +62,7 @@ function FeaturedProjects() {
       <button className="embla__btn embla__btn--next" onClick={scrollNext}>
         <ion-icon name="chevron-forward-outline"></ion-icon>
       </button>
-      
+
     </div>
   )
 }

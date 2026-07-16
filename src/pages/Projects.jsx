@@ -21,7 +21,10 @@ const filters = [
 function ProjectCard({ project }) {
   return (
     <Link to={project.path || "#"} className={`project-card col-${project.colSpan}`}>
-      <img src={project.img} alt={project.title} className="project-card__img" />
+      {project.video
+        ? <video src={project.video} autoPlay loop muted playsInline className="project-card__img" />
+        : <img src={project.img} alt="" className="project-card__img" />
+      }
       <div className="project-card__overlay">
         <h3 className="project-card__title">{project.title}</h3>
         <p className="project-card__tags">{project.tags.join(", ")}</p>

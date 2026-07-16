@@ -1,12 +1,7 @@
-.playground {
-  padding-top: 4rem;
-  padding-bottom: 6rem;
-}
-
 /* ── Header ── */
 .playground__header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin: 3rem 0;
 }
 
 .playground__title {
@@ -58,15 +53,18 @@
 /* ── Masonry grid ── */
 .playground__grid {
   column-count: 3;
-  column-gap: 1rem;
+  column-gap: 2rem;
+  margin-bottom: 3rem;
 }
 
 .playground__item {
   break-inside: avoid;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   position: relative;
   overflow: hidden;
+  border: 1px solid var(--violet);
   border-radius: 8px;
+  box-shadow: 6px 6px 0 3px var(--violet);
 }
 
 .playground__item img {
