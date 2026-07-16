@@ -19,7 +19,7 @@
     --spacing-line: 8px;
     --spacing-title: 16px;
     --spacing-object: 64px;
-    --pacing-section: 96px;
+    --spacing-section: 96px;
 }
 
 * {
@@ -96,7 +96,7 @@ h3 {
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 1rem;
+    gap: 2rem;
     
 }
 

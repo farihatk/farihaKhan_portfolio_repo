@@ -46,16 +46,18 @@
 
 /* ── Cards ──────────────────────────────── */
 .projects-grid {
-  row-gap: 1rem;
+  margin-bottom: 3rem;
 }
 
 .project-card {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
+  border: 1px solid var(--violet);
+  border-radius: 1rem;
   cursor: pointer;
   height: 480px;
   text-decoration: none;
+  box-shadow: 6px 6px 0 3px var(--violet);
 }
 
 .project-card__img {

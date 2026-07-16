@@ -1,58 +1,15 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
+
+import { projects } from "../data/projects"
+
 import "./Projects.css"
 
 import HeyloFeatured from "../assets/heylo-featured.jpg"
 import PalaceFeatured from "../assets/palace-featured.jpg"
 import MakioFeatured from "../assets/makio-placeholder.jpg"
 
-const allProjects = [
-  {
-    id: 1,
-    title: "The Palace Theatre",
-    tags: ["branding", "poster design"],
-    img: PalaceFeatured,
-    size: "full",
-    path: "/projects/palace"
-  },
-  {
-    id: 2,
-    title: "Heylo Skin Care",
-    tags: ["branding", "content creation"],
-    img: HeyloFeatured,
-    size: "half",
-    path: "/projects/heylo"
-  },
-  {
-    id: 3,
-    title: "BTS Swim Motion",
-    tags: ["motion graphics", "video editing"],
-    img: MakioFeatured,
-    size: "half",
-    path: "/projects/motion"
-  },
-  {
-    id: 4,
-    title: "Swim - BTS Motion Music Video",
-    tags: ["motion graphics", "video editing"],
-    img: MakioFeatured,
-    size: "full",
-  },
-  {
-    id: 5,
-    title: "Heylo Skin Care",
-    tags: ["branding", "content creation"],
-    img: HeyloFeatured,
-    size: "half",
-  },
-  {
-    id: 6,
-    title: "Makio App",
-    tags: ["ui/ux", "product design"],
-    img: PalaceFeatured,
-    size: "half",
-  },
-]
+
 
 const filters = [
   { label: "All", value: "all" },
@@ -63,7 +20,7 @@ const filters = [
 
 function ProjectCard({ project }) {
   return (
-    <Link to={project.path || "#"} className={`project-card ${project.size === "full" ? "col-12" : "col-6"}`}>
+    <Link to={project.path || "#"} className={`project-card col-${project.colSpan}`}>
       <img src={project.img} alt={project.title} className="project-card__img" />
       <div className="project-card__overlay">
         <h3 className="project-card__title">{project.title}</h3>
@@ -77,8 +34,8 @@ function Projects() {
   const [activeFilter, setActiveFilter] = useState("all")
 
   const filtered = activeFilter === "all"
-    ? allProjects
-    : allProjects.filter(p => p.tags.some(t => t.includes(activeFilter)))
+    ? projects
+    : projects.filter(p => p.tags.some(t => t.includes(activeFilter)))
 
   return (
     <div className="projects-page container">

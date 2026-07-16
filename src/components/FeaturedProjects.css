@@ -47,12 +47,13 @@
 
 .featured-card {
   background-color: var(--lime);
-  border-radius: 16px;
+  border: 1px solid var(--violet);
+  border-radius: 1rem;
   padding: 1.25rem;
   margin-bottom: 1rem;
   /* width: 640px; */
   /* height: 500px; */
-  box-shadow: 5px 6px 0 4px var(--violet-shadow);
+  box-shadow: 5px 6px 0 4px var(--violet);
 
 }
 

@@ -1,55 +1,11 @@
 import { useState, useCallback, useEffect } from "react"
+
 import useEmblaCarousel from 'embla-carousel-react'
+
+import { projects } from "../data/projects"
+
 import "./FeaturedProjects.css"
 
-import HeyloFeatured from "../assets/heylo-featured.jpg"
-import PalaceFeatured from "../assets/palace-featured.jpg"
-import MakioFeatured from "../assets/makio-placeholder.jpg"
-
-const projects = [
-  {
-    id: 1,
-    title: "Heylo",
-    tag: "ui/ux, branding",
-    img: HeyloFeatured,
-    description: "A social app designed to help people find and join local communities around shared interests.",
-  },
-  {
-    id: 2,
-    title: "The Palace",
-    tag: "brand identity, content creation",
-    img: PalaceFeatured,
-    description: "An experience brand case study about a renovated Indie cinema theatre.",
-  },
-  {
-    id: 3,
-    title: "Makio",
-    tag: "motion graphics",
-    img: MakioFeatured,
-    description: "A motion graphics project exploring bold typographic animation and visual storytelling.",
-  },
-  {
-    id: 4,
-    title: "Makio",
-    tag: "motion graphics",
-    img: MakioFeatured,
-    description: "A motion graphics project exploring bold typographic animation and visual storytelling.",
-  },
-  {
-    id: 5,
-    title: "Makio",
-    tag: "motion graphics",
-    img: MakioFeatured,
-    description: "A motion graphics project exploring bold typographic animation and visual storytelling.",
-  },
-  {
-    id: 6,
-    title: "Makio",
-    tag: "motion graphics",
-    img: MakioFeatured,
-    description: "A motion graphics project exploring bold typographic animation and visual storytelling.",
-  },
-]
 
 function FeaturedProjects() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
@@ -70,11 +26,13 @@ function FeaturedProjects() {
   const scrollPrev = () => emblaApi?.scrollPrev()
   const scrollNext = () => emblaApi?.scrollNext()
 
+  const featuredProjects = projects.filter( p => p.featured);
+
   return (
     <div className="embla">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {projects.map((project, index) => {
+          {featuredProjects.map((project, index) => {
             const isFocused = index === selectedIndex
             return (
               <div
@@ -83,9 +41,9 @@ function FeaturedProjects() {
               >
                 <img src={project.img} alt="" className="featured-card__img" />
                 <div className="featured-card__details">
-                  <p className="featured-card__tag">{project.tag}</p>
+                  <p className="featured-card__tag">{project.tags.join(", ")}</p>
                   <h3 className="featured-card__title">{project.title}</h3>
-                  <p className="featured-card__desc">{project.description}</p>
+                  <p className="featured-card__desc">{project.summary}</p>
                 </div>
               </div>
             )

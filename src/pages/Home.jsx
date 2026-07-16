@@ -1,6 +1,8 @@
 import { useState } from 'react'
 
 import FeaturedProjects from "../components/FeaturedProjects";
+import TestimonialCard from "../components/TestimonialCard"
+import { testimonials } from "../data/testimonials"
 
 import "./Home.css"
 
@@ -70,8 +72,17 @@ function Home() {
         </div>
       </section>
 
-      <section className="testimonial-section">
-        <h2 className="testimonial-section__title">Kind Words</h2>
+      <section className="kind-words">
+        <h2 className="kind-words__title">Kind Words</h2>
+        <div className="container">
+          <div className="grid">
+            {testimonials.map(t => (
+              <div className="col-6" key={t.id}>
+                <TestimonialCard {...t} />
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
     </>

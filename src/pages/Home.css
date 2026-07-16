@@ -172,13 +172,13 @@
 
 /* ── Featured Projects ─────────────────────────── */
 .projects-section {
-  background-color: var(--violet);
+  /* background-color: var(--violet); */
 }
 
 .projects-section__title {
-  color: #fefefe;
+  color: var(--violet);
   text-align: right;
-  padding: 0.5rem 2rem;
+  padding: 1rem 3rem;
   font-family: var(--chorine);
   font-weight: normal;
 }
@@ -189,62 +189,13 @@
   margin-top: 2.5rem;
 }
 
-
-
-
-/* ── Kind Words ────────────────────────────────── */
-.testimonials-section {
-  margin-top: 17rem;
+/* Kind Words */
+.kind-words {
+  margin: 3rem 0;
 }
 
-.testimonials-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
-  margin-top: 64px;
-}
-
-.testimonial__name-wrap {
-  display: inline-block;
-  position: relative;
-  margin-bottom: 12px;
-}
-
-.testimonial__name-wrap::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  height: 42px;
-  background-color: var(--highlight);
-  z-index: 0;
-}
-
-.testimonial__name {
-  position: relative;
-  z-index: 1;
-  font-size: 32px;
-  white-space: nowrap;
-}
-
-.testimonial__name--handwritten {
-  font-family: var(--handrawn);
-}
-
-.testimonial__name--bold {
-  font-family: var(--articulat);
-  font-weight: 700;
-}
-
-.testimonial__bubble {
-  background-color: rgba(168, 138, 238, 0.2);
-  border-radius: 16px;
-  padding: 24px;
-  max-width: 511px;
-}
-
-.testimonial__quote {
-  font-family: var(--articulat);
-  font-size: 20px;
-  font-style: italic;
-  line-height: 1.6;
+.kind-words__title {
+  padding: 1rem 3rem;
+  font-family: var(--chorine);
+  font-weight: normal;
 }

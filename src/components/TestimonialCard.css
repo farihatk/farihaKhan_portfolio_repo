@@ -1,0 +1,55 @@
+.testimonial-card {
+  border-radius: 1.5rem;
+  border: 2px solid var(--violet);
+  box-shadow: 5px 6px 0 1px var(--violet);
+  padding: 2rem;
+  height: 100%;
+}
+
+.testimonial-card--lavender {
+  background-color: var(--lavender);
+}
+
+.testimonial-card--lavender .testimonial-card__name,
+.testimonial-card--lavender .testimonial-card__role,
+.testimonial-card--lavender .testimonial-card__quote,
+.testimonial-card--lavender .testimonial-card__star {
+  color: white;
+}
+
+.testimonial-card--lime {
+  background-color: var(--lime);
+}
+
+.testimonial-card--lime .testimonial-card__name,
+.testimonial-card--lime .testimonial-card__role,
+.testimonial-card--lime .testimonial-card__quote,
+.testimonial-card--lime .testimonial-card__star {
+  color: var(--violet);
+}
+
+.testimonial-card__header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-card__name {
+  font-family: var(--articulat);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.testimonial-card__role {
+  font-family: var(--articulat);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+.testimonial-card__quote {
+  font-family: var(--articulat);
+  font-size: 1rem;
+  line-height: 1.6;
+}

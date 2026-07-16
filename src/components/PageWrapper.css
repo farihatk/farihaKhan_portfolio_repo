@@ -7,10 +7,10 @@
   position: fixed;
   inset: 0;
   z-index: -1;
-  background-color: #fafafa;
+  background-color: var(--lavender);
   background-image:
-    linear-gradient(to right, #c3c3c3 1px, transparent 1px),
-    linear-gradient(to bottom, #c3c3c3 1px, transparent 1px);
+    linear-gradient(to right, #7647E4 1px, transparent 1px),
+    linear-gradient(to bottom, #7647E4 1px, transparent 1px);
   background-size: 3rem 3rem;
-  opacity: 20%;
+  opacity: 30%;
 }
