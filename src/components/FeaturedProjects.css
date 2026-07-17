@@ -69,7 +69,7 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease, opacity 0.3s ease;
-  
+
 }
 
 .featured-card__tag {
@@ -98,4 +98,15 @@
 .featured-card--focused .featured-card__details {
   opacity: 1;
   max-height: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .embla {
+    height: auto;
+  }
+
+  .embla__slide {
+    flex: 0 0 78%;
+    margin-right: 0;
+  }
 }

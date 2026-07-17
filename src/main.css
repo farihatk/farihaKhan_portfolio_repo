@@ -114,7 +114,9 @@ h3 {
 .col-12 { grid-column: span 12; }
 
 @media screen and (max-width: 768px) {
-    
+    h2 { font-size: 50px;}
+
+
     .col-1-sm { grid-column: span 1; }
     .col-2-sm { grid-column: span 2; }
     .col-3-sm { grid-column: span 3; }
