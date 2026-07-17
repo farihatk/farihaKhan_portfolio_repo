@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { faEnvelope, faBars, faXmark } from "@fortawesome/free-solid-svg-icons"
 
 import "./Header.css"
 
@@ -9,6 +9,7 @@ import FkLogo from "../assets/fk-logo.png"
 
 function Header() {
   const [copied, setCopied] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   function copyEmail() {
     navigator.clipboard.writeText("fariha.khan2805@outlook.com")
@@ -16,16 +17,28 @@ function Header() {
     setTimeout(() => setCopied(false), 2000)
   }
 
+  function closeMenu() {
+    setIsMenuOpen(false);
+  }
+
   return (
     <header className="header">
       <div className="header__container">
 
-        <Link to="/" className="header__brand">
+        <Link to="/" className="header__brand" onClick={closeMenu}>
           <img src={FkLogo} alt="Brand logo" className="header__logo" />
           <span className="header__name">Fariha Khan</span>
         </Link>
 
-        <nav className="header__nav">
+        <button
+          className="header__hamburger"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          <FontAwesomeIcon icon={isMenuOpen ? faXmark : faBars} />
+        </button>
+
+        <nav className={`header__nav ${isMenuOpen ? "header__nav--open" : ""}`}>
           <Link to="/projects" className="nav-buttons">Work</Link>
           <Link to="/about" className="nav-buttons">Story</Link>
           <Link to="/playground" className="nav-buttons">Playground</Link>
