@@ -77,7 +77,7 @@ function Home() {
         <div className="container">
           <div className="grid">
             {testimonials.map(t => (
-              <div className="col-6" key={t.id}>
+              <div className="col-6 col-12-sm" key={t.id}>
                 <TestimonialCard {...t} />
               </div>
             ))}

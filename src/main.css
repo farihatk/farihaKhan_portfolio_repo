@@ -55,11 +55,11 @@ h3 {
 
 /* buttons */
 .buttons {
-    background-color: var(--lime);
-    color: var(--violet);
+    background-color: var(--lavender);
+    color: #fefefe;
     box-shadow: 0 3px 0 6px var(--violet);
     border-radius: 20px;
-    font-family: var(--articulat);
+    font-family: var(--handrawn);
     font-size: 1.25rem;
     font-weight: 700;
     padding: 15px 30px;
@@ -115,6 +115,18 @@ h3 {
 
 @media screen and (max-width: 768px) {
     h2 { font-size: 50px;}
+
+    .buttons {
+    box-shadow: 0 3px 0 4px var(--violet);
+    border-radius: 10px;
+    font-family: var(--articulat);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 20px;
+    text-decoration: none;
+    /* display: inline-block; */
+
+}
 
 
     .col-1-sm { grid-column: span 1; }

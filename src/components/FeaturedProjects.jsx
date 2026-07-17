@@ -9,7 +9,7 @@ import "./FeaturedProjects.css"
 
 
 function FeaturedProjects() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "center" })
   const [selectedIndex, setSelectedIndex] = useState(0)
 
   const onSelect = useCallback(() => {
