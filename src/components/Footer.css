@@ -103,3 +103,32 @@
   color: rgba(202, 216, 59, 0.59);
   padding-top: 1.5rem;
 }
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 1.5rem;
+  }
+
+  .footer__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__nav {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    /* align-items: center; */
+    gap: 16px;
+    margin-top: 0;
+  }
+
+  .footer__nav-col {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+
+}

@@ -19,7 +19,7 @@ function Footer() {
     <footer className="footer">
       <div className="container">
         <div className="grid">
-          <div className="footer__left col-6">
+          <div className="footer__left col-6 col-12-sm">
             <p className="footer__name">Fariha Khan</p>
             <button className="footer__hi-btn" onClick={copyEmail}>
               Say hi to me!
@@ -30,7 +30,7 @@ function Footer() {
             </button>
 
           </div>
-          <nav className="footer__nav col-6">
+          <nav className="footer__nav col-6 col-12-sm">
             <div className="footer__nav-col">
               <Link to="/">Home</Link>
               <Link to="/projects">Work</Link>
