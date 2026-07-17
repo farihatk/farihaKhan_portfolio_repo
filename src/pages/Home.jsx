@@ -22,7 +22,7 @@ function Home() {
       {/* Hero */}
       <section className="hero grid">
 
-        <div className="hero__text col-6">
+        <div className="hero__text col-6 col-12-sm">
           <div className="hero__title-label">Visual Designer</div>
           <h1 className="hero__name">Fariha Khan</h1>
           <p className="hero__bio">
@@ -30,7 +30,7 @@ function Home() {
           </p>
         </div>
 
-        <div className="hero__visuals col-6" aria-hidden="true">
+        <div className="hero__visuals col-6 col-12-sm" aria-hidden="true">
           <div className="hero__avatar">
             <img src={FkLogo} alt="" />
           </div>

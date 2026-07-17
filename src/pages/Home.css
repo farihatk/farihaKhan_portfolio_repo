@@ -199,3 +199,10 @@
   font-family: var(--chorine);
   font-weight: normal;
 }
+
+@media screen and (max-width: 768px) {
+  .hero__text {
+    justify-content: center;
+    /* align-items: center; */
+  }
+}
