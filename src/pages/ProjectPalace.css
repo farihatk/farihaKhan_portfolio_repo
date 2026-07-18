@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap');
+ @import url("https://use.typekit.net/pne6nlj.css");
 
 /* ── Page body layout ──────────────────────── */
-.project-body {
+/* .project-body {
     display: flex;
-    /* padding: 4rem 2.5rem 6rem; */
+    padding: 4rem;
     gap: 2rem;
-}
-
-/* .project-page-nav {
-    width: 140px;
-    flex-shrink: 0;
 } */
 
+.project-page-nav {
+    width: 140px;
+    flex-shrink: 0;
+}
+
 .project-content {
-    flex: 1;
+    /* flex: 1; */
     max-width: 1280px;
     padding-right: 4rem;
 }
@@ -185,8 +186,10 @@
 .palace-type-showcase {
     display: flex;
     gap: 1rem;
-    align-items: flex-start;
+    flex: 1;
+    /* align-items: flex-start; */
     flex-direction: column;
+    min-width: 0;
 }
 
 .palace-type-block {
@@ -215,16 +218,9 @@
     font-weight: 700;
 }
 
-.palace-type__desc {
-    display: flex;
-    flex: 1;
-    align-self: center;
-    font-family: var(--articulat);
-    /* font-size: 1.25rem; */
-    color: black;
-    line-height: 1.6;
-    margin-top: 1rem;
-    padding: 0 4rem;
+.palace-typography > .palace-body {
+  flex: 1;
+  min-width: 0;
 }
 
 /* Mockups */
