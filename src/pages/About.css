@@ -1,5 +1,5 @@
 .about {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 /* ── Intro ── */
@@ -52,10 +52,25 @@
   margin: 0;
 }
 
-.about-pointer--1 { left: 38%; top: 30%; }
-.about-pointer--2 { left: 38%; top: 47%; }
-.about-pointer--3 { left: 38%; top: 65%; }
-.about-pointer--4 { left: 38%; top: 80%; }
+.about-pointer--1 {
+  left: 38%;
+  top: 30%;
+}
+
+.about-pointer--2 {
+  left: 38%;
+  top: 47%;
+}
+
+.about-pointer--3 {
+  left: 38%;
+  top: 65%;
+}
+
+.about-pointer--4 {
+  left: 38%;
+  top: 80%;
+}
 
 /* ── My Story ── */
 .about-story {
@@ -205,7 +220,7 @@
   border: 3px solid var(--violet);
   border-radius: 0.5rem;
   box-shadow: 0 8px var(--violet);
-  
+
 }
 
 .about-inspo__card-img {
@@ -219,7 +234,7 @@
   font-family: var(--handrawn);
   font-size: 3rem;
   color: var(--violet);
-  
+
 }
 
 .about-inspo__card-desc {
@@ -277,4 +292,29 @@
   font-size: 1.25rem;
   color: black;
   line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+  .about-intro {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 20rem;
+  }
+
+  .about-intro__photo-wrap {
+    position: static;
+    width: 400px;
+  }
+
+  .about-intro__title {
+    position: static;
+    font-size: 5rem;
+  }
+
+  .about-pointer-wrap {
+    display: none;
+
+  }
 }

@@ -34,8 +34,8 @@ body {
 
 /* font-style */
 h1 {
-    font-size: 96px;
-    font-family: var(--articulat);
+    font-size: 6rem;
+    font-family: var(--chorine);
     font-weight: 700;
     color: var(--violet);
 }

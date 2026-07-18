@@ -23,6 +23,7 @@ function Header() {
 
   return (
     <header className="header">
+      {isMenuOpen && <div className="header__backdrop" onClick={closeMenu} />}
       <div className="header__container">
 
         <Link to="/" className="header__brand" onClick={closeMenu}>

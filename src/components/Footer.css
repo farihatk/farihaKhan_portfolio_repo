@@ -101,12 +101,20 @@
   font-family: var(--articulat);
   font-size: 16px;
   color: rgba(202, 216, 59, 0.59);
-  padding-top: 1.5rem;
+  padding: 1.5rem;
 }
 
 @media screen and (max-width: 768px) {
   .footer {
-    padding: 1.5rem;
+    padding: 1.5rem 0;
+  }
+
+  /* .footer__nav-col a {
+    white-space: normal;
+  } */
+
+  .footer__name {
+    text-align: center;
   }
 
   .footer__left {
@@ -130,5 +138,7 @@
     gap: 16px;
   }
 
-
+  .footer__credit {
+    padding: 1rem;
+  }
 }

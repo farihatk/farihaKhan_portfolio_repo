@@ -5,10 +5,6 @@ import { projects } from "../data/projects"
 
 import "./Projects.css"
 
-import HeyloFeatured from "../assets/heylo-featured.jpg"
-import PalaceFeatured from "../assets/palace-featured.jpg"
-import MakioFeatured from "../assets/makio-placeholder.jpg"
-
 
 
 const filters = [
@@ -20,7 +16,7 @@ const filters = [
 
 function ProjectCard({ project }) {
   return (
-    <Link to={project.path || "#"} className={`project-card col-${project.colSpan}`}>
+    <Link to={project.path || "#"} className={`project-card col-${project.colSpan} col-12-sm`}>
       {project.video
         ? <video src={project.video} autoPlay loop muted playsInline className="project-card__img" />
         : <img src={project.img} alt="" className="project-card__img" />

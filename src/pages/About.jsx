@@ -18,11 +18,12 @@ function About() {
 
       {/* ── Intro ── */}
       <section className="about-intro">
+        <h1 className="about-intro__title">Hi, I'm Fariha</h1>
         <div className="about-intro__photo-wrap">
           <img src={AboutMePic} alt="" className="about-intro__photo" />
         </div>
 
-        <h1 className="about-intro__title">Hi, I'm Fariha</h1>
+        
 
         <div className="about-pointer-wrap about-pointer--1">
           <img src={Pointer1} alt="" className="about-pointer__line" />
