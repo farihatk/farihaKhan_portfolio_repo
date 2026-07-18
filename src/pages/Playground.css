@@ -47,7 +47,7 @@
 }
 
 .playground__filter-btn:hover:not(.playground__filter-btn--active) {
-    background-color: rgba(202, 216, 59, 0.2);
+  background-color: rgba(202, 216, 59, 0.2);
 }
 
 /* ── Masonry grid ── */
@@ -108,5 +108,11 @@
 @media (max-width: 768px) {
   .playground__grid {
     column-count: 1;
+    padding: 0 2rem;
+  }
+
+  .playground__desc {
+    font-size: 1rem;
+    padding: 0 2rem;
   }
 }

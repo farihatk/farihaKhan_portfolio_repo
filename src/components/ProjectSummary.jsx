@@ -6,7 +6,7 @@ function ProjectSummary({ tag, title, role, tools, description, coverImage, cove
       <div className="container">
         <div className="project-summary__header grid">
 
-          <div className="col-6 project-summary__left">
+          <div className="col-6 col-12-sm project-summary__left">
             <p className="project-summary__tag">{tag}</p>
             <h1 className="project-summary__title">{title}</h1>
             <div className="project-summary__meta">
@@ -17,7 +17,7 @@ function ProjectSummary({ tag, title, role, tools, description, coverImage, cove
             </div>
           </div>
 
-          <div className="col-6 project-summary__right">
+          <div className="col-6 col-12-sm project-summary__right">
             <p className="project-summary__desc">{description}</p>
           </div>
 

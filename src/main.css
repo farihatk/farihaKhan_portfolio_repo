@@ -41,14 +41,14 @@ h1 {
 }
 
 h2 {
-    font-size: 64px;
+    font-size: 3rem;
     font-family: var(--articulat);
     font-weight: 700;
     color: var(--violet);
 }
 
 h3 {
-    font-size: 48px;
+    font-size: 2.5rem;
     font-family: var(--articulat);
     font-weight: 700;
 }
@@ -114,7 +114,9 @@ h3 {
 .col-12 { grid-column: span 12; }
 
 @media screen and (max-width: 768px) {
-    h2 { font-size: 50px;}
+    h1 { font-size: 5rem; }
+    h2 { font-size: 2.5rem; }
+    h3 { font-size: 2rem; }
 
     .buttons {
     box-shadow: 0 3px 0 4px var(--violet);

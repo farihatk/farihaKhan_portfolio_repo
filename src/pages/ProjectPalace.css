@@ -3,14 +3,14 @@
 /* ── Page body layout ──────────────────────── */
 .project-body {
     display: flex;
-    padding: 4rem 2.5rem 6rem;
+    /* padding: 4rem 2.5rem 6rem; */
     gap: 2rem;
 }
 
-.project-page-nav {
+/* .project-page-nav {
     width: 140px;
     flex-shrink: 0;
-}
+} */
 
 .project-content {
     flex: 1;
@@ -28,7 +28,7 @@
 
 .palace-section__heading {
     font-family: var(--handrawn);
-    font-size: 4rem;
+    /* font-size: 4rem; */
     font-weight: 400;
     color: var(--violet);
 }
@@ -45,7 +45,6 @@
     font-size: 1.25rem;
     color: black;
     line-height: 1.6;
-    text-align: justify;
 }
 
 /* ── Challenge / Solution cards ────────────── */
@@ -57,7 +56,7 @@
 
 .palace-card__title {
     font-family: var(--handrawn);
-    font-size: 3rem;
+    /* font-size: 3rem; */
     font-weight: 400;
     color: white;
     margin-bottom: 1.25rem;
@@ -81,7 +80,7 @@
 
 .palace-research__subheading {
     font-family: var(--articulat);
-    font-size: 2rem;
+    /* font-size: 2rem; */
     font-weight: 600;
     color: black;
     margin-top: 1rem;
@@ -221,7 +220,7 @@
     flex: 1;
     align-self: center;
     font-family: var(--articulat);
-    font-size: 1.25rem;
+    /* font-size: 1.25rem; */
     color: black;
     line-height: 1.6;
     margin-top: 1rem;
@@ -239,11 +238,11 @@
 /* Posters */
 .palace-poster-img {
     /* flex: 1; */
-    min-width: 0;
+    width: 100%;
     display: block;
-    border-radius: 8px;
+    border-radius: 1rem;
     object-fit: contain;
-    height: 400px;
+    height: auto;
 }
 
 /* ── Image helpers ─────────────────────────── */
@@ -260,11 +259,71 @@
 }
 
 .palace-half-img {
-    flex: 1;
-    min-width: 0;
+    width: 100%;
     display: block;
     border-radius: 8px;
     object-fit: cover;
     height: 500px;
 }
 
+@media screen and (max-width: 768px) {
+
+
+    .palace-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .project-content {
+        flex: none;
+        padding-right: 0;
+    }
+
+    .palace-section__heading {
+        text-align: center;
+    }
+
+    .palace-card__body {
+        font-size: 1.25rem;
+    }
+
+    .palace-logo-section {
+        flex-direction: column;
+    }
+
+    .palace-logo-left {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .palace-section__cover {
+        height: 200px;
+    }
+
+    .palace-palette {
+        height: 300px;
+    }
+
+    .palace-palette__label {
+        font-size: 1rem;
+    }
+
+    .palace-typography {
+        flex-direction: column;
+    }
+
+    .palace-type__desc {
+        padding: 0;
+    }
+
+    .palace-mockup-full {
+        height: 300px;
+    }
+
+    .palace-half-img {
+        height: 300px;
+    }
+}

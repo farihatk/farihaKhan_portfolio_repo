@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { useEffect } from "react"
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom"
 
 import PageWrapper from "./components/PageWrapper"
 
@@ -11,18 +12,25 @@ import ProjectPalace from "./pages/ProjectPalace"
 import ProjectHeylo from "./pages/ProjectHeylo"
 import ProjectMotion from "./pages/ProjectMotion"
 
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => { window.scrollTo(0, 0) }, [pathname])
+  return null
+}
+
 function App() {
   return (
     <BrowserRouter basename="/farihaKhan_portfolio_repo">
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<PageWrapper />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="projects" element={<Projects />} />
           <Route path="playground" element={<Playground />} />
-          <Route path="projects/palace" element={<ProjectPalace/>} />
-          <Route path="projects/heylo" element={<ProjectHeylo/>} />
-          <Route path="projects/motion" element={<ProjectMotion/>} />
+          <Route path="projects/palace" element={<ProjectPalace />} />
+          <Route path="projects/heylo" element={<ProjectHeylo />} />
+          <Route path="projects/motion" element={<ProjectMotion />} />
         </Route>
       </Routes>
     </BrowserRouter>

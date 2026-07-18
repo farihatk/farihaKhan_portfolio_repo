@@ -145,7 +145,7 @@ function ProjectPalace() {
                     {/* ── Color Palette ── */}
                     <section className="palace-section">
                         <h3 className="palace-subsection__heading">Color Palette</h3>
-                        
+
                         <div className="palace-palette">
                             <div className="palace-palette__swatch palace-palette__swatch--tall" style={{ backgroundColor: "#420000" }}>
                                 <span className="palace-palette__label" style={{ color: "#fcfcfc" }}>Mahogany<br />#420000</span>
@@ -189,49 +189,46 @@ function ProjectPalace() {
                                     <p className="palace-type__example" style={{ fontFamily: "'Figtree', sans-serif", fontSize: "24px" }}>This is an example of a body text.</p>
                                 </div>
                             </div>
-                            <p className="palace-type__desc">
-                                    Desire Pro holds the elegance of the brand is the main font for the logo. It also draws attention for title texts.
-                                    Figtree is a contrasted font against the above. It helps to visually differentiate from the title. It also acts as a readable body text for improved accessibility.
-                                </p>
+                            <p className="palace-body">
+                                Desire Pro holds the elegance of the brand is the main font for the logo. It also draws attention for title texts.
+                                Figtree is a contrasted font against the above. It helps to visually differentiate from the title. It also acts as a readable body text for improved accessibility.
+                            </p>
                         </div>
                     </section>
 
                     {/* ── Mock ups ── */}
                     <section id="mockup" className="palace-section">
                         <h2 className="palace-section__heading">Mock ups</h2>
-                        <img src={Mockup2} alt="Environment mockup" className="palace-mockup-full" />
-                        <div className="palace-img-row">
-                            <img src={Mockup8} alt="Mockup" className="palace-half-img" />
-                            <img src={Mockup4} alt="Mockup" className="palace-half-img" />
-                        </div>
-                        <img src={Mockup9} alt="Environment mockup" className="palace-mockup-full" />
-                        <div className="palace-img-row">
-                            <img src={Mockup5} alt="Mockup" className="palace-half-img" />
-                            <img src={Mockup6} alt="Mockup" className="palace-half-img" />
+                        <div className="grid">
+                            <img src={Mockup2} alt="Environment mockup" className="palace-mockup-full col-12" />
+                            <img src={Mockup8} alt="Mockup" className="palace-half-img col-6 col-12-sm" />
+                            <img src={Mockup4} alt="Mockup" className="palace-half-img col-6 col-12-sm" />
+                            <img src={Mockup9} alt="Environment mockup" className="palace-mockup-full col-12" />
+                            <img src={Mockup5} alt="Mockup" className="palace-half-img col-6 col-12-sm" />
+                            <img src={Mockup6} alt="Mockup" className="palace-half-img col-6 col-12-sm" />
+
                         </div>
                     </section>
 
                     {/* Environmental Mockups */}
                     <section className="palace-section">
                         <h2 className="palace-section__heading">Environmental Mock ups</h2>
-                        <div className="palace-img-row">
-                            <img src={EnvMockup4} alt="Mockup" className="palace-half-img" />
-                            <img src={EnvMockup2} alt="Mockup" className="palace-half-img" />
-                        </div>
-                        <div className="palace-img-row">
-                            <img src={EnvMockup3} alt="Mockup" className="palace-half-img" />
-                            <img src={EnvMockup1} alt="Mockup" className="palace-half-img" />
+                        <div className="grid">
+                            <img src={EnvMockup4} alt="Mockup" className="palace-half-img col-6 col-12-sm" />
+                            <img src={EnvMockup2} alt="Mockup" className="palace-half-img col-6 col-12-sm" />
+                            <img src={EnvMockup3} alt="Mockup" className="palace-half-img col-6 col-12-sm" />
+                            <img src={EnvMockup1} alt="Mockup" className="palace-half-img col-6 col-12-sm" />
                         </div>
                     </section>
 
                     {/* ── Promotional Posters ── */}
                     <section className="palace-section">
                         <h2 className="palace-section__heading">Promotional Posters</h2>
-                        <div className="palace-img-row">
-                            <img src={PosterBlueVelvet} alt="Blue Velvet poster" className="palace-poster-img" />
-                            <img src={PosterDateNight} alt="Date Night poster" className="palace-poster-img" />
-                            <img src={PosterOutdoorFilm} alt="Outdoor Film Festival poster" className="palace-poster-img" />
-                            <img src={PosterSilentMovie} alt="Silent Movie poster" className="palace-poster-img" />
+                        <div className="grid">
+                            <img src={PosterBlueVelvet} alt="Blue Velvet poster" className="palace-poster-img col-3 col-6-sm" />
+                            <img src={PosterDateNight} alt="Date Night poster" className="palace-poster-img col-3 col-6-sm" />
+                            <img src={PosterOutdoorFilm} alt="Outdoor Film Festival poster" className="palace-poster-img col-3 col-6-sm" />
+                            <img src={PosterSilentMovie} alt="Silent Movie poster" className="palace-poster-img col-3 col-6-sm" />
                         </div>
                     </section>
 

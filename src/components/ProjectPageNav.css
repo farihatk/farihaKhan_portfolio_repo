@@ -1,23 +1,31 @@
 .project-page-nav nav {
   position: sticky;
-  top: 2rem;
+  top: 40%;
+  /* transform: translateY(-50%); */
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1.5rem;
 }
 
 .project-page-nav__link {
   font-family: var(--handrawn);
-  font-size: 1.5rem;
-  color: black;
+  font-size: 2rem;
+  color: var(--violet);
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .project-page-nav__link:hover {
-  color: var(--violet);
+  color: var(--lime);
 }
 
 .project-page-nav__link--active {
   color: var(--lime);
+}
+
+@media (max-width: 768px) {
+  .project-page-nav {
+    display: none;
+  }
 }
