@@ -95,7 +95,7 @@ function About() {
           <h2 className="about-inspo__title">My Inspo</h2>
           <div className="grid">
 
-            <div className="about-inspo__card col-4">
+            <div className="about-inspo__card col-4 col-12-sm">
               <div className="about-inspo__card-img-wrap">
                 <img src={AboutArt} alt="" className="about-inspo__card-img" />
               </div>
@@ -106,7 +106,7 @@ function About() {
               </p>
             </div>
 
-            <div className="about-inspo__card col-4">
+            <div className="about-inspo__card col-4 col-12-sm">
               <div className="about-inspo__card-img-wrap">
                 <img src={AboutAnime} alt="" className="about-inspo__card-img" />
               </div>
@@ -117,7 +117,7 @@ function About() {
               </p>
             </div>
 
-            <div className="about-inspo__card col-4">
+            <div className="about-inspo__card col-4 col-12-sm">
               <div className="about-inspo__card-img-wrap">
                 <img src={AboutCozyGames} alt="" className="about-inspo__card-img" />
               </div>
