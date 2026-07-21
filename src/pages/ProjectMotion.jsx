@@ -31,7 +31,7 @@ function GifVideo({ src, label, className = "" }) {
             muted
             loop
             playsInline
-            className={`col-6 motion-comp__video ${className}`}
+            className={`col-6 col-12-sm motion-comp__video ${className}`}
             aria-label={label}
         />
     )
@@ -52,7 +52,7 @@ function ProjectMotion() {
             <div className="project-body">
                 <ProjectPageNav navItems={navItems} />
 
-                <div className="project-content">
+                <div className="project-content container">
 
                     {/* ── The Inspo ── */}
                     <section id="inspo" className="motion-section">
@@ -113,7 +113,7 @@ function ProjectMotion() {
                         {/* The Girl — video left, text right */}
                         <div className="grid motion-comp">
                             <GifVideo src={GirlComp} label="The Girl component" className="motion-comp__video--girl" />
-                            <div className="col-6 motion-comp__text">
+                            <div className="col-6 col-12-sm motion-comp__text">
                                 <h3 className="motion-comp__heading">The Girl</h3>
                                 <p className="motion-comp__body">Our main character, the female fan, was first hand-drawn on Procreate, then traced on Illustrator for a more polished but still organic look. Her hair was later animated using path animation on After Effects.</p>
                             </div>
@@ -121,7 +121,7 @@ function ProjectMotion() {
 
                         {/* The Waves — text left, video right */}
                         <div className="grid motion-comp">
-                            <div className="col-6 motion-comp__text">
+                            <div className="col-6 col-12-sm motion-comp__text">
                                 <h3 className="motion-comp__heading">The Waves</h3>
                                 <p className="motion-comp__body">The waves were traced using the pen tool on After Effects from a reference picture and animated using path animation. It was later used as a track matte to hide and reveal text in the video.</p>
                             </div>
@@ -130,14 +130,14 @@ function ProjectMotion() {
 
                         <div className="grid motion-comp">
                             <GifVideo src={ConcertComp} label="The Concert component" />
-                            <div className="col-6 motion-comp__text">
+                            <div className="col-6 col-12-sm motion-comp__text">
                                 <h3 className="motion-comp__heading">The Concert</h3>
                                 <p className="motion-comp__body">This part of the video was first illustrated on Illustrator as one composition neatly organized into named layers to make it easy to pre-compose in After Effects. Once in After Effects, I used the camera to arrange them in a parallax effect to give the illusion of more objects being revealed as the camera zooms out. </p>
                             </div>
                         </div>
 
                         <div className="grid motion-comp">
-                            <div className="col-6 motion-comp__text">
+                            <div className="col-6 col-12-sm motion-comp__text">
                                 <h3 className="motion-comp__heading">The Tunnel</h3>
                                 <p className="motion-comp__body">One of the lines in the song goes “I can spend a lifetime watching you.” A lifetime feels infinite to me which is why I thought an infinite tunnel motion would suit this scene the best. I mostly followed a YouTube tutorial to create this using a lot of repeated shapes and parenting the elements together for a seamless animation.</p>
                             </div>

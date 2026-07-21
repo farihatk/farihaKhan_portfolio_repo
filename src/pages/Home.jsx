@@ -12,6 +12,7 @@ import Headphones from "../assets/object-headphones.png"
 import Switch from "../assets/object-switch.png"
 import Flower from "../assets/object-flower.png"
 import Boba from "../assets/object-boba.png"
+import HeroCharcter from "../assets/hero-character.png"
 
 
 function Home() {
@@ -32,7 +33,7 @@ function Home() {
 
         <div className="hero__visuals col-6 col-12-sm" aria-hidden="true">
           <div className="hero__avatar">
-            <img src={FkLogo} alt="" />
+            <img src={HeroCharcter} alt="" />
           </div>
 
           <div className="hero__obj-wrap hero__obj--boba">
@@ -45,10 +46,10 @@ function Home() {
             <div className="hero__textpop">My void baby Theo</div>
           </div>
 
-          <div className="hero__obj-wrap hero__obj--flower">
+          {/* <div className="hero__obj-wrap hero__obj--flower">
             <img src={Flower} alt="" className="hero__obj" />
             <div className="hero__textpop">My favourite flower</div>
-          </div>
+          </div> */}
 
           <div className="hero__obj-wrap hero__obj--headphones">
             <img src={Headphones} alt="" className="hero__obj" />

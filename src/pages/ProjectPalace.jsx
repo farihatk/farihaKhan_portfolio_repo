@@ -57,7 +57,7 @@ function ProjectPalace() {
             <div className="project-body">
                 <ProjectPageNav navItems={navItems} />
 
-                <div className="project-content">
+                <div className="project-content container">
 
                     {/* ── Challenge & Solution ── */}
                     <section id="challenge" className="palace-section">

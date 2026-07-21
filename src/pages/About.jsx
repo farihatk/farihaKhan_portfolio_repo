@@ -17,7 +17,7 @@ function About() {
     <div className="about">
 
       {/* ── Intro ── */}
-      <section className="about-intro">
+      <section className="about-intro container">
         <h1 className="about-intro__title">Hi, I'm Fariha</h1>
         <div className="about-intro__photo-wrap">
           <img src={AboutMePic} alt="" className="about-intro__photo" />

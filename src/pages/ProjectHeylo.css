@@ -22,14 +22,14 @@
 
 .heylo-section__heading {
     font-family: var(--handrawn);
-    font-size: 4rem;
+    /* font-size: 4rem; */
     font-weight: 400;
     color: var(--violet);
 }
 
 .heylo-subsection__heading {
     font-family: var(--handrawn);
-    font-size: 3rem;
+    /* font-size: 3rem; */
     font-weight: 400;
     color: var(--violet);
 }
@@ -43,7 +43,7 @@
 
 .heylo-card__title {
     font-family: var(--handrawn);
-    font-size: 3rem;
+    /* font-size: 3rem; */
     font-weight: 400;
     color: white;
     margin-bottom: 1.25rem;
@@ -215,7 +215,7 @@
 
 .heylo-half-img {
     flex: 1;
-    min-width: 0;
+    width: 100%;
     display: block;
     border-radius: 8px;
     object-fit: cover;
@@ -235,16 +235,76 @@
 }
 
 /* ── Social media row ────────────────────────── */
-.heylo-social-row {
-    display: flex;
-    gap: 1rem;
-}
 
 .heylo-social-img {
     flex: 1;
-    min-width: 0;
+    width: 100%;
     display: block;
     border-radius: 8px;
     object-fit: cover;
     /* aspect-ratio: 1 / 1; */
+}
+
+@media screen and (max-width: 768px) {
+    
+
+    .project-content {
+        flex: none; /* ADD THIS */
+    }
+
+    .heylo-section {
+        align-items: center; /* ADD THIS */
+        margin-bottom: 2rem; /* CHANGE THIS from 5rem */
+    }
+
+    .heylo-body {
+    font-size: 1rem;
+    }
+
+
+    .heylo-card__body {
+        font-size: 1rem; /* ADD THIS - reduce from 1.5rem */
+    }
+
+    .heylo-logo-section {
+        flex-direction: column; /* ADD THIS */
+    }
+
+    .heylo-logo-left {
+        flex-direction: column; /* ADD THIS */
+        gap: 2rem; /* CHANGE THIS from 1.5rem */
+        align-items: center; /* ADD THIS */
+    }
+
+    .heylo-palette {
+        height: 300px; /* CHANGE THIS from 500px */
+    }
+
+    .heylo-palette__label {
+        font-size: 0.9rem; /* ADD THIS */
+    }
+
+    .heylo-typography {
+        flex-direction: column; /* ADD THIS */
+    }
+
+    .heylo-cover-img {
+        height: 300px; /* CHANGE THIS from 600px */
+    }
+
+    .heylo-img-row {
+        flex-direction: column; /* ADD THIS */
+    }
+
+    .heylo-half-img {
+        height: 300px; /* CHANGE THIS from 500px */
+    }
+
+    .heylo-social-row {
+        flex-direction: column; /* ADD THIS */
+    }
+
+    .heylo-social-img {
+        width: 100%; /* ADD THIS */
+    }
 }

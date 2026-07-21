@@ -71,12 +71,14 @@
 .hero__visuals {
   display: flex;
   justify-content: center;
+  align-self: end;
 }
 
 .hero__avatar img {
-  width: 400px;
+  display: block;
+  width: 500px;
   object-fit: cover;
-  animation: float 3.2s ease-in-out infinite;
+  /* animation: float 3.2s ease-in-out infinite; */
 }
 
 .hero__obj-wrap {
@@ -108,7 +110,7 @@
   animation: wobble 2s ease-in-out infinite;
 }
 
-.hero__obj--flower {
+.hero__obj--switch {
   top: 40%;
   right: 38%;
   width: 150px;
@@ -118,15 +120,14 @@
   animation: wobble 2s ease-in-out infinite;
 }
 
-.hero__obj--switch {
+/* .hero__obj--switch {
   top: 80%;
   right: 18%;
   width: 180px;
-  /* transform: rotate(-9deg); */
   --rotate-start: -9deg;
   --rotate-end: -2deg;
   animation: wobble 2s ease-in-out infinite;
-}
+} */
 
 .hero__obj--cat {
   top: 40%;
@@ -187,14 +188,13 @@
 
 /* ── Featured Projects ─────────────────────────── */
 .projects-section {
-  /* background-color: var(--violet); */
+  background-color: var(--violet);
 }
 
 .projects-section__title {
-  color: var(--violet);
+  color: var(--lime);
   text-align: right;
-  margin-top: 7rem;
-  padding: 0 3rem;
+  padding: 7rem 3rem 0 3rem;
   font-family: var(--chorine);
   font-weight: normal;
 }
@@ -216,7 +216,7 @@
   font-weight: normal;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .hero {
     margin-top: 2rem;
     /* min-height: 70vh; */

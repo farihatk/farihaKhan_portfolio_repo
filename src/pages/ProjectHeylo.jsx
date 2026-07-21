@@ -43,7 +43,7 @@ function ProjectHeylo() {
             <div className="project-body">
                 <ProjectPageNav navItems={navItems} />
 
-                <div className="project-content">
+                <div className="project-content container">
 
                     {/* ── Challenge & Solution ── */}
                     <section id="challenge" className="heylo-section">
@@ -171,36 +171,34 @@ function ProjectHeylo() {
                                 <p className="heylo-type__size">Regular 16px</p>
                                 <p className="heylo-type__example" style={{ fontFamily: "'Figtree', sans-serif", fontSize: "24px" }}>This is an example of a body text.</p>
                             </div>
-                            
-                                <p className="heylo-type-desc">
-                                    New Kansas was selected as the primary typeface for its soft serif character, pairing naturally with Blueberry from the color palette to position Heylo as elevated without feeling overly luxurious. Figtree accompanies it as the sans-serif pairing — its rounded forms reinforce the brand's friendly voice while keeping body copy clean and readable for a younger audience.
-                                </p>
-                            
+
+                            <p className="heylo-type-desc">
+                                New Kansas was selected as the primary typeface for its soft serif character, pairing naturally with Blueberry from the color palette to position Heylo as elevated without feeling overly luxurious. Figtree accompanies it as the sans-serif pairing — its rounded forms reinforce the brand's friendly voice while keeping body copy clean and readable for a younger audience.
+                            </p>
+
                         </div>
                     </section>
 
                     {/* ── Mockups ── */}
                     <section id="mockup" className="heylo-section">
                         <h2 className="heylo-section__heading">Mockups</h2>
-                        <img src={Mockup4} alt="Mockup" className="heylo-cover-img" />
-                        <div className="heylo-img-row">
-                            <img src={Mockup9} alt="Mockup" className="heylo-half-img" />
-                            <img src={Mockup3} alt="Mockup" className="heylo-half-img heylo-img-shift-up" />
-                        </div>
-                        <img src={Mockup5} alt="Mockup" className="heylo-cover-img" />
-                        <div className="heylo-img-row">
-                            <img src={Mockup1} alt="Mockup" className="heylo-half-img" />
-                            <img src={Mockup6} alt="Mockup" className="heylo-half-img" />
+                        <div className="grid">
+                            <img src={Mockup4} alt="Mockup" className="heylo-cover-img col-12" />
+                            <img src={Mockup9} alt="Mockup" className="heylo-half-img col-6 col-12-sm" />
+                            <img src={Mockup3} alt="Mockup" className="heylo-half-img heylo-img-shift-up col-6 col-12-sm" />
+                            <img src={Mockup5} alt="Mockup" className="heylo-cover-img col-12" />
+                            <img src={Mockup1} alt="Mockup" className="heylo-half-img col-6 col-12-sm" />
+                            <img src={Mockup6} alt="Mockup" className="heylo-half-img col-6 col-12-sm" />
                         </div>
                     </section>
 
                     {/* ── Social Media Assets ── */}
                     <section className="heylo-section">
                         <h2 className="heylo-section__heading">Social Media Assets</h2>
-                        <div className="heylo-social-row">
-                            <img src={Social1} alt="Social media asset" className="heylo-social-img" />
-                            <img src={Social2} alt="Social media asset" className="heylo-social-img" />
-                            <img src={Social3} alt="Social media asset" className="heylo-social-img" />
+                        <div className="grid">
+                            <img src={Social1} alt="Social media asset" className="heylo-social-img col-4 col-12-sm" />
+                            <img src={Social2} alt="Social media asset" className="heylo-social-img col-4 col-12-sm" />
+                            <img src={Social3} alt="Social media asset" className="heylo-social-img col-4 col-12-sm" />
                         </div>
                     </section>
 
