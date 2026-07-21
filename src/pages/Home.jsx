@@ -12,7 +12,7 @@ import Headphones from "../assets/object-headphones.png"
 import Switch from "../assets/object-switch.png"
 import Flower from "../assets/object-flower.png"
 import Boba from "../assets/object-boba.png"
-import HeroCharcter from "../assets/hero-character.png"
+import HeroCharcter from "../assets/hero-character2.png"
 
 
 function Home() {
