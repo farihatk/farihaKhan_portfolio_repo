@@ -7,12 +7,12 @@ import { testimonials } from "../data/testimonials"
 import "./Home.css"
 
 import FkLogo from "../assets/fk-logo.png"
-import Cat from "../assets/object-cat.png"
-import Headphones from "../assets/object-headphones.png"
-import Switch from "../assets/object-switch.png"
+import Cat from "../assets/hero-cat.png"
+import Headphones from "../assets/hero-headphones.png"
+import Switch from "../assets/hero-switch.png"
 import Flower from "../assets/object-flower.png"
-import Boba from "../assets/object-boba.png"
-import HeroCharcter from "../assets/hero-character2.png"
+import Boba from "../assets/hero-boba.png"
+import HeroCharacter from "../assets/fk-logo.webm"
 
 
 function Home() {
@@ -33,7 +33,7 @@ function Home() {
 
         <div className="hero__visuals col-6 col-12-sm" aria-hidden="true">
           <div className="hero__avatar">
-            <img src={HeroCharcter} alt="" />
+            <video src={HeroCharacter} autoPlay muted loop playsInline alt="" />
           </div>
 
           <div className="hero__obj-wrap hero__obj--boba">
@@ -62,7 +62,9 @@ function Home() {
           </div>
         </div>
 
-        <div className="scroll-down-btn">scroll down</div>
+        <div className="scroll-down-btn">
+          <a href="#featured">scroll down</a>
+        </div>
       </section>
 
       <section className="projects-section" id='featured'>

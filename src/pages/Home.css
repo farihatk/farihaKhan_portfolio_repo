@@ -2,20 +2,24 @@
 .hero {
   position: relative;
   width: 100%;
-  margin-top: 3rem;
+  margin-top: 4rem;
   min-height: 70vh;
   align-items: center;
 }
 
 .scroll-down-btn {
   font-family: var(--handrawn);
-  color: var(--violet);
   font-size: 1.5rem;
   position: absolute;
   top: 90%;
   left: 46%;
   transform: translateX(-50%);
   animation: float 3s ease-in-out infinite;
+}
+
+.scroll-down-btn a {
+  text-decoration: none;
+  color: var(--violet);
 }
 
 .hero__text {
@@ -71,14 +75,14 @@
 .hero__visuals {
   display: flex;
   justify-content: center;
-  align-self: end;
+  align-self: center;
 }
 
-.hero__avatar img {
+.hero__avatar video {
   display: block;
-  width: 500px;
+  width: 400px;
   object-fit: cover;
-  /* animation: float 3.2s ease-in-out infinite; */
+  animation: float 3.2s ease-in-out infinite;
 }
 
 .hero__obj-wrap {
@@ -93,7 +97,7 @@
 .hero__obj--headphones {
   top: -7%;
   right: 7%;
-  width: 150px;
+  width: 100px;
   /* transform: rotate(19deg); */
   --rotate-start: 10deg;
   --rotate-end: -2deg;
@@ -103,7 +107,7 @@
 .hero__obj--boba {
   top: -9%;
   right: 35%;
-  width: 120px;
+  width: 100px;
   /* transform: rotate(-10deg); */
   --rotate-start: -10deg;
   --rotate-end: -2deg;
@@ -114,7 +118,7 @@
   top: 40%;
   right: 38%;
   width: 150px;
-  /* transform: rotate(5deg); */
+  transform: rotate(-20deg);
   --rotate-start: 5deg;
   --rotate-end: -2deg;
   animation: wobble 2s ease-in-out infinite;
@@ -132,8 +136,8 @@
 .hero__obj--cat {
   top: 40%;
   right: 2.5%;
-  width: 130px;
-  /* transform: rotate(-11deg); */
+  width: 120px;
+  transform: rotate(15deg);
   --rotate-start: -11deg;
   --rotate-end: -2deg;
   animation: wobble 2s ease-in-out infinite;
@@ -188,11 +192,11 @@
 
 /* ── Featured Projects ─────────────────────────── */
 .projects-section {
-  background-color: var(--violet);
+  /* background-color: var(--violet); */
 }
 
 .projects-section__title {
-  color: var(--lime);
+  color: var(--violet);
   text-align: right;
   padding: 7rem 3rem 0 3rem;
   font-family: var(--chorine);
