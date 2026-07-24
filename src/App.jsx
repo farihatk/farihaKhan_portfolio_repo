@@ -1,6 +1,8 @@
 import { useEffect } from "react"
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom"
 
+import Lenis from 'lenis';
+
 import PageWrapper from "./components/PageWrapper"
 
 import Home from "./pages/Home"
@@ -19,6 +21,19 @@ function ScrollToTop() {
 }
 
 function App() {
+  useEffect(() => {
+    const lenis = new Lenis({ duration: 1.2 })
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+
+    return () => lenis.destroy()
+  }, [])
+
   return (
     <BrowserRouter basename="/farihaKhan_portfolio_repo">
       <ScrollToTop />
