@@ -35,7 +35,7 @@ function App() {
   }, [])
 
   return (
-    <BrowserRouter basename="/farihaKhan_portfolio_repo">
+    <BrowserRouter>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<PageWrapper />}>

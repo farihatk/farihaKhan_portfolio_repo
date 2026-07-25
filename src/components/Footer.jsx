@@ -38,12 +38,12 @@ function Footer() {
               <Link to="/playground">Playground</Link>
             </div>
             <div className="footer__nav-col">
-              <a href="https://instagram.com/yourhandle" target="_blank" rel="noreferrer">
+              <a href="https://www.instagram.com/fariha.k.designs/" target="_blank" rel="noreferrer">
                 <span className="footer__social-icon">
                   <FontAwesomeIcon icon={faInstagram} />
                 </span>
               </a>
-              <a href="https://instagram.com/yourhandle" target="_blank" rel="noreferrer">
+              <a href="https://www.linkedin.com/in/fariha-khan1999/" target="_blank" rel="noreferrer">
                 <span className="footer__social-icon">
                   <FontAwesomeIcon icon={faLinkedinIn} />
                 </span>

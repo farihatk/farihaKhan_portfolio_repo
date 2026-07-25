@@ -42,6 +42,7 @@
   width: 300px;
   display: block;
   flex-shrink: 0;
+  z-index: -1;
 }
 
 .about-pointer__text {
@@ -110,8 +111,8 @@
 }
 
 .about-story__title {
-  font-family: var(--articulat);
-  font-weight: 900;
+  font-family: var(--chorine);
+  /* font-weight: 900; */
   /* font-size: 6rem; */
   color: var(--lime);
   line-height: 1;
@@ -147,8 +148,8 @@
 }
 
 .about-education__title {
-  font-family: var(--articulat);
-  font-weight: 900;
+  font-family: var(--chorine);
+  /* font-weight: 900; */
   /* font-size: 6rem; */
   color: var(--lime);
   line-height: 1;
@@ -201,8 +202,8 @@
 }
 
 .about-inspo__title {
-  font-family: var(--articulat);
-  font-weight: 900;
+  font-family: var(--chorine);
+  /* font-weight: 900; */
   /* font-size: 6rem; */
   color: var(--violet);
   margin-bottom: 1rem;
@@ -250,8 +251,8 @@
 }
 
 .about-values__title {
-  font-family: var(--articulat);
-  font-weight: 900;
+  font-family: var(--chorine);
+  /* font-weight: 900; */
   /* font-size: 6rem; */
   color: var(--violet);
   text-align: right;

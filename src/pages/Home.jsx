@@ -10,7 +10,6 @@ import FkLogo from "../assets/fk-logo.png"
 import Cat from "../assets/hero-cat.png"
 import Headphones from "../assets/hero-headphones.png"
 import Switch from "../assets/hero-switch.png"
-import Flower from "../assets/object-flower.png"
 import Boba from "../assets/hero-boba.png"
 import HeroCharacter from "../assets/fk-logo.webm"
 
@@ -80,7 +79,7 @@ function Home() {
         <div className="container">
           <div className="grid">
             {testimonials.map(t => (
-              <div className="col-6 col-12-sm" key={t.id}>
+              <div className="col-12" key={t.id}>
                 <TestimonialCard {...t} />
               </div>
             ))}

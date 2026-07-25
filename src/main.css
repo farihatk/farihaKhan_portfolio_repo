@@ -40,14 +40,14 @@ body {
 h1 {
     font-size: 6rem;
     font-family: var(--chorine);
-    font-weight: 700;
+    /* font-weight: 700; */
     color: var(--violet);
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: var(--articulat);
-    font-weight: 700;
+    /* font-weight: 700; */
     color: var(--violet);
 }
 
@@ -61,32 +61,50 @@ h3 {
 .buttons {
     background-color: var(--lavender);
     color: #fefefe;
-    box-shadow: 0 3px 0 6px var(--violet);
+    box-shadow: 0 4px 0 3px var(--violet);
+    border: 1px solid var(--violet);
     border-radius: 20px;
     font-family: var(--handrawn);
     font-size: 1.25rem;
     font-weight: 700;
     padding: 15px 30px;
     text-decoration: none;
-    /* display: inline-block; */
+    transition: 0.15s ease, background-color 0.15s ease;
+    display: inline-block;
 
+}
+
+.buttons:hover {
+    box-shadow: 0 0px 0 3px var(--violet);
+    transform: translateY(2px);
+    background-color: #987cd9;
 }
 
 .nav-buttons {
     background-color: var(--lime);
     color: var(--violet);
-    box-shadow: 0 2px 0 5px var(--violet);
+    box-shadow: 0 4px 0 3px var(--violet);
+    border: 1px solid var(--violet);
     border-radius: 20px;
-    font-family: var(--articulat);
-    font-size: 1.25rem;
+    font-family: var(--handrawn);
+    font-size: 1.5rem;
     font-weight: 700;
     padding: 12px 24px;
     text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;  
+    display: inline-block;
+}
+
+.nav-buttons:hover {
+   box-shadow: 0 0px 0 3px var(--violet);
+   transform: translateY(2px);
+   background-color: #c1cd35;
+    
 }
 
 .icon-buttons {
     background-color: var(--lime);
-    box-shadow: 0 2px 0 5px var(--violet);
+    box-shadow: 0 3px 0 5px var(--violet);
     border-radius: 20px;
 }
 

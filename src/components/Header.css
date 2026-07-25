@@ -28,7 +28,7 @@
 }
 
 .header__name {
-  font-family: var(--handrawn);
+  font-family: var(--chorine);
   font-size: 40px;
   color: var(--violet);
   white-space: nowrap;
@@ -45,9 +45,9 @@
   width: 20px;
   height: 20px;
   padding: 1.5rem;
+  border: 1px solid var(--violet);
   border-radius: 2rem;
-  box-shadow: 0 2px 0 5px var(--violet);
-  border: none;
+  box-shadow: 0 4px 0 3px var(--violet);
   cursor: pointer;
   color: var(--violet);
   font-size: 1.5rem;
@@ -56,6 +56,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.header__email-btn:hover {
+  box-shadow: 0 0px 0 3px var(--violet);
+  transform: translateY(2px);
+  background-color: #c1cd35;
 }
 
 .header__email-tooltip {
