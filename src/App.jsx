@@ -14,9 +14,27 @@ import ProjectPalace from "./pages/ProjectPalace"
 import ProjectHeylo from "./pages/ProjectHeylo"
 import ProjectMotion from "./pages/ProjectMotion"
 
-function ScrollToTop() {
-  const { pathname } = useLocation()
-  useEffect(() => { window.scrollTo(0, 0) }, [pathname])
+function LenisProvider() {                              // ADD THIS — replaces both ScrollToTop and the Lenis useEffect
+  const location = useLocation()
+  const lenisRef = useRef(null)
+
+  useEffect(() => {
+    const lenis = new Lenis({ duration: 1.2 })
+    lenisRef.current = lenis
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+    requestAnimationFrame(raf)
+
+    return () => lenis.destroy()
+  }, [])
+
+  useEffect(() => {
+    lenisRef.current?.scrollTo(0, { immediate: true })
+  }, [location.pathname])
+
   return null
 }
 
@@ -36,7 +54,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <ScrollToTop />
+      <LenisProvider />
       <Routes>
         <Route path="/" element={<PageWrapper />}>
           <Route index element={<Home />} />
