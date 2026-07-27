@@ -3,7 +3,7 @@ import ProjectPageNav from "../components/ProjectPageNav"
 import "./ProjectMotion.css"
 
 import CoverVideo from "../assets/bts-motion-project.mp4"
-import GirlComp from "../assets/bts-girl-comp.mov"
+import GirlComp from "../assets/bts-girl-comp.mp4"
 import WaveComp from "../assets/bts-wave-comp.mp4"
 import ConcertComp from "../assets/bts-concert-comp.mp4"
 import TunnelComp from "../assets/bts-infinite-zoom-comp.mp4"

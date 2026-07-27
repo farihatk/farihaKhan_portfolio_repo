@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import FeaturedProjects from "../components/FeaturedProjects";
 import TestimonialCard from "../components/TestimonialCard"
@@ -70,7 +71,7 @@ function Home() {
         <h2 className='projects-section__title'>Featured Projects</h2>
         <FeaturedProjects />
         <div className="projects-section__button">
-          <a className="buttons" href="">See All Projects</a>
+          <Link className="buttons" to="/projects">See All Projects</Link>
         </div>
       </section>
 

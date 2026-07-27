@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 137.96 137.96">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        opacity: .6;
+      }
+
+      .cls-2 {
+        fill: #7647e4;
+      }
+
+      .cls-3 {
+        fill: #cad83b;
+      }
+
+      .cls-4 {
+        fill: #a88aee;
+      }
+    </style>
+  </defs>
+  <g id="Balance">
+    <g>
+      <circle class="cls-4" cx="68.98" cy="68.98" r="68.98"/>
+      <g>
+        <polygon class="cls-2" points="70.03 75.02 47.09 114.75 92.97 114.75 70.03 75.02"/>
+        <polygon class="cls-3" points="70.03 73.16 47.09 112.89 92.97 112.89 70.03 73.16"/>
+        <path class="cls-2" d="M63.08,72.64h0c-19.97-6.13-31.51-28.37-25.77-49.68h0s72.32,22.18,72.32,22.18h0c-5.74,21.31-26.58,33.62-46.55,27.5Z"/>
+        <path class="cls-3" d="M63.08,70.38h0c-19.97-6.13-31.51-28.37-25.77-49.68h0s72.32,22.18,72.32,22.18h0c-5.74,21.31-26.58,33.62-46.55,27.5Z"/>
+        <path class="cls-1" d="M84.83,64.03c2.29-.81,4.16-2.32,4.16-2.32l.68,2.33s-1.79,1.2-3.9,1.94c-2.27.81-4.89,1.14-4.89,1.14l-.62-2.25s2.48-.11,4.57-.85Z"/>
+        <rect class="cls-1" x="57.67" y="95.18" width="4.28" height="1.31" transform="translate(-53.1 99.71) rotate(-60)"/>
+      </g>
+    </g>
+  </g>
+</svg>
