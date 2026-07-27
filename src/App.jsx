@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+import { useEffect, useRef } from "react"
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom"
 
 import Lenis from 'lenis';
@@ -14,11 +14,15 @@ import ProjectPalace from "./pages/ProjectPalace"
 import ProjectHeylo from "./pages/ProjectHeylo"
 import ProjectMotion from "./pages/ProjectMotion"
 
-function LenisProvider() {                              // ADD THIS — replaces both ScrollToTop and the Lenis useEffect
+function LenisProvider() {
   const location = useLocation()
   const lenisRef = useRef(null)
 
   useEffect(() => {
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual'
+    }
+
     const lenis = new Lenis({ duration: 1.2 })
     lenisRef.current = lenis
 
