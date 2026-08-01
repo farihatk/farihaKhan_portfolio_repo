@@ -44,7 +44,7 @@
 .palace-body {
     font-family: var(--articulat);
     font-size: 1.25rem;
-    color: black;
+    color: var(--violet);
     line-height: 1.6;
 }
 
@@ -83,7 +83,7 @@
     font-family: var(--articulat);
     /* font-size: 2rem; */
     font-weight: 600;
-    color: black;
+    color: var(--violet);
     margin-top: 1rem;
 }
 

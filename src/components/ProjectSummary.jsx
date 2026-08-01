@@ -1,6 +1,6 @@
 import "./ProjectSummary.css"
 
-function ProjectSummary({ tag, title, role, tools, description, coverImage, coverVideo }) {
+function ProjectSummary({ tag, title, role, tools, description, coverImage, coverVideo, prototypeLink }) {
   return (
     <section className="project-summary">
       <div className="container">
@@ -24,11 +24,21 @@ function ProjectSummary({ tag, title, role, tools, description, coverImage, cove
         </div>
       </div>
 
-      <div className="project-summary__cover">
+      <div className={`project-summary__cover ${prototypeLink ? "project-summary__cover--prototype" : ""}`}>
         {coverVideo ? (
           <video src={coverVideo} autoPlay muted controls playsInline />
         ) : (
           <img src={coverImage} alt={title} />
+        )}
+        {prototypeLink && (
+          <a
+            href={"https://www.figma.com/proto/WUKYm5zmFkG96y12pExF8Z/makio--lofi-wireframes?node-id=252-1115&viewport=-1568%2C-531%2C1&t=fe6lNXZ87Nay4VJv-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=252%3A1329&page-id=251%3A476"}
+            target="_blank"
+            rel="noreferrer"
+            className="project-summary__prototype-overlay"
+          >
+            <span className="project-summary__prototype-btn">Go to Prototype</span>
+          </a>
         )}
       </div>
     </section>

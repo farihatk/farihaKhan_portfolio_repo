@@ -13,6 +13,7 @@ import Playground from "./pages/Playground"
 import ProjectPalace from "./pages/ProjectPalace"
 import ProjectHeylo from "./pages/ProjectHeylo"
 import ProjectMotion from "./pages/ProjectMotion"
+import ProjectMakio from "./pages/ProjectMakio"
 
 function LenisProvider() {
   const location = useLocation()
@@ -68,6 +69,7 @@ function App() {
           <Route path="projects/palace" element={<ProjectPalace />} />
           <Route path="projects/heylo" element={<ProjectHeylo />} />
           <Route path="projects/motion" element={<ProjectMotion />} />
+          <Route path="projects/makio" element={<ProjectMakio />} />
         </Route>
       </Routes>
     </BrowserRouter>

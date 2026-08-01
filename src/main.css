@@ -46,8 +46,8 @@ h1 {
 
 h2 {
     font-size: 4rem;
-    font-family: var(--articulat);
-    /* font-weight: 700; */
+    font-family: var(--handrawn);
+    font-weight: 400;
     color: var(--violet);
 }
 

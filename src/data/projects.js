@@ -1,8 +1,8 @@
 import HeyloFeatured from "../assets/heylo-featured.jpg"
-import PalaceFeatured from "../assets/palace-featured.jpg"
+import PalaceFeatured from "../assets/palace-mockup3.jpg"
 import BTSPreviewVideo from "../assets/bts-motion-preview.mov"
 import BTSPreviewImg from "../assets/bts-motion-previewImg.png"
-import MakioFeatured from "../assets/makio-featured.png"
+import MakioFeatured from "../assets/makio-featured2.png"
 
 export const projects = [
   {
@@ -20,9 +20,9 @@ export const projects = [
   {
     id: 2,
     title: "Heylo Skin Care",
-    tags: ["ui/ux", "branding"],
+    tags: ["content creation", "branding"],
     img: HeyloFeatured,
-    role: "UI/UX Designer",
+    role: "Brand Designer",
     summary: "A social app designed to help people find and join local communities around shared interests.",
     description: "",
     featured: true,
@@ -31,6 +31,18 @@ export const projects = [
   },
   {
     id: 3,
+    title: "Makio App",
+    tags: ["ui/ux", "product design"],
+    img: MakioFeatured,
+    role: "Product Designer",
+    summary: "A community app made for people who enjoy creative hobbies",
+    description: "",
+    featured: true,
+    path: "/projects/makio",
+    colSpan: 6,
+  },
+  {
+    id: 4,
     title: "BTS Swim Motion",
     tags: ["motion graphics", "video editing"],
     video: BTSPreviewVideo,
@@ -40,19 +52,8 @@ export const projects = [
     description: "",
     featured: true,
     path: "/projects/motion",
-    colSpan: 6,
-  },
-  {
-    id: 4,
-    title: "Makio App",
-    tags: ["ui/ux", "product design"],
-    img: MakioFeatured,
-    role: "Product Designer",
-    summary: "A community app made for people who enjoy creative hobbies",
-    description: "",
-    featured: true,
-    path: "/projects/makio",
     colSpan: 12,
   },
+  
 
 ]
