@@ -164,7 +164,7 @@ function About() {
               </div>
               <p className="about-values__label">Balance</p>
               <p className="about-values__desc">
-                Cozy games inform how I think about functional design — cohesive vision without sacrificing clarity.
+                Balance informs how I think about functional design — cohesive vision without sacrificing clarity.
               </p>
             </div>
 
