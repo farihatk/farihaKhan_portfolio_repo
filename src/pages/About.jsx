@@ -1,11 +1,11 @@
 import "./About.css"
 
-import AboutMePic from "../assets/about-me-pic.png"
+import AboutMePic from "../assets/about-me-pic.jpg"
 import AboutMyStory from "../assets/about-myStory.JPEG"
 import AboutEducation from "../assets/about-education.jpg"
 import AboutArt from "../assets/about-art.jpg"
 import AboutAnime from "../assets/about-anime.jpg"
-import AboutCozyGames from "../assets/about-cozyGames.png"
+import AboutCozyGames from "../assets/about-cozyGames.jpg"
 import AboutEmpathy from "../assets/about-empathy.svg"
 import AboutCuriosity from "../assets/about-curiousity.svg"
 import AboutBalance from "../assets/about-balance.svg"
