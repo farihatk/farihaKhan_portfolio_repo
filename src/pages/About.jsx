@@ -1,6 +1,6 @@
 import "./About.css"
 
-import AboutMePic from "../assets/about-me-pic.jpg"
+import AboutMePic from "../assets/about-me-pic.png"
 import AboutMyStory from "../assets/about-myStory.JPEG"
 import AboutEducation from "../assets/about-education.jpg"
 import AboutArt from "../assets/about-art.jpg"
