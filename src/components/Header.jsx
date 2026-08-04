@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faBars, faXmark } from "@fortawesome/free-solid-svg-icons"
@@ -10,6 +10,13 @@ import FkLogo from "../assets/fk-logo.png"
 function Header() {
   const [copied, setCopied] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    function onScroll() { setScrolled(window.scrollY > 0); }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   function copyEmail() {
     navigator.clipboard.writeText("fariha.khan2805@outlook.com")
@@ -22,7 +29,7 @@ function Header() {
   }
 
   return (
-    <header className="header">
+    <header className={`header${scrolled ? " header--scrolled" : ""}`}>
       {isMenuOpen && <div className="header__backdrop" onClick={closeMenu} />}
       <div className="header__container">
 

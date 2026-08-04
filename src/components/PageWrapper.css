@@ -3,6 +3,10 @@
   min-height: 100vh;
 }
 
+main {
+  padding-top: 120px;
+}
+
 .grid-bg {
   position: fixed;
   inset: 0;
@@ -13,4 +17,10 @@
     linear-gradient(to bottom, #7647E4 1px, transparent 1px);
   background-size: 3rem 3rem;
   opacity: 20%;
+}
+
+@media (max-width: 1024px) {
+  main {
+    padding-top: 92px;
+  }
 }
