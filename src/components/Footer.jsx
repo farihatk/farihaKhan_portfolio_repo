@@ -48,7 +48,7 @@ function Footer() {
                   <FontAwesomeIcon icon={faLinkedinIn} />
                 </span>
               </a>
-              <a href="#" download>
+              <a href="/resume.pdf" target="_blank" rel="noreferrer">
                 <span className="footer__social-icon">
                   <FontAwesomeIcon icon={faFileArrowDown} />
                 </span>

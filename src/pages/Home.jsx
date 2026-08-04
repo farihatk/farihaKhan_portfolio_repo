@@ -29,6 +29,7 @@ function Home() {
           <p className="hero__bio">
             I am a multidisciplinary designer focusing on branding, graphic design, motion graphics and UI/UX
           </p>
+          <a href="/resume.pdf" target="_blank" rel="noreferrer" className="buttons">Download Resume</a>
         </div>
 
         <div className="hero__visuals col-6 col-12-sm" aria-hidden="true">
