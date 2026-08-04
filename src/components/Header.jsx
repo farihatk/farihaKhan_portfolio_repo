@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faBars, faXmark } from "@fortawesome/free-solid-svg-icons"
 
@@ -47,9 +47,9 @@ function Header() {
         </button>
 
         <nav className={`header__nav ${isMenuOpen ? "header__nav--open" : ""}`}>
-          <Link to="/projects" className="nav-buttons">Work</Link>
-          <Link to="/about" className="nav-buttons">Story</Link>
-          <Link to="/playground" className="nav-buttons">Playground</Link>
+          <NavLink to="/projects" className="nav-buttons">Work</NavLink>
+          <NavLink to="/about" className="nav-buttons">Story</NavLink>
+          <NavLink to="/playground" className="nav-buttons">Playground</NavLink>
           <button className="header__email-btn" onClick={copyEmail} aria-label="Copy email address">
             <FontAwesomeIcon icon={faEnvelope} />
             {copied && <span className="header__email-tooltip">Email copied!</span>}
