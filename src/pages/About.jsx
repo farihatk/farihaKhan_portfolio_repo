@@ -1,6 +1,17 @@
+import { useState, useEffect } from 'react'
 import "./About.css"
 
-import AboutMePic from "../assets/about-me-pic.png"
+import Pic1 from "../assets/about-me-pic1.jpg"
+import Pic2 from "../assets/about-me-pic2.jpg"
+import Pic3 from "../assets/about-me-pic3.jpg"
+import Pic4 from "../assets/about-me-pic4.jpg"
+import Pic5 from "../assets/about-me-pic5.jpg"
+import Pic6 from "../assets/about-me-pic6.jpg"
+import Pic7 from "../assets/about-me-pic7.jpg"
+import Pic8 from "../assets/about-me-pic8.jpg"
+
+const PICS = [Pic1, Pic2, Pic3, Pic4, Pic5, Pic6, Pic7, Pic8]
+const ROTATIONS = [0, -8, 8, -5, 5, -3, 3, -2] // no two adjacent cards share 0deg (avoids invisible overlap behind pic1)
 import AboutMyStory from "../assets/about-myStory.JPEG"
 import AboutEducation from "../assets/about-education.jpg"
 import AboutArt from "../assets/about-art.jpg"
@@ -9,40 +20,51 @@ import AboutCozyGames from "../assets/about-cozyGames.jpg"
 import AboutEmpathy from "../assets/about-empathy.svg"
 import AboutCuriosity from "../assets/about-curiousity.svg"
 import AboutBalance from "../assets/about-balance.svg"
-import Pointer1 from "../assets/about-pointer-1.png"
-import Pointer2 from "../assets/about-pointer-2.png"
 
 function About() {
+  const [step, setStep] = useState(PICS.length) // start at second cycle so pic1 always has a card behind it
+
+  useEffect(() => {
+    let interval
+    const delay = setTimeout(() => {
+      interval = setInterval(() => setStep(s => s + 1), 1500)
+    }, 600)
+    return () => { clearTimeout(delay); clearInterval(interval) }
+  }, [])
+
+  const activeIdx = step % PICS.length
+  const prevIdx   = (step - 1) % PICS.length
+
   return (
     <div className="about">
 
       {/* ── Intro ── */}
       <section className="about-intro container">
-        <h1 className="about-intro__title">Hi, I'm Fariha</h1>
-        <div className="about-intro__photo-wrap">
-          <img src={AboutMePic} alt="" className="about-intro__photo" />
+        <div className="about-intro__stack">
+          <div className="about-card-stack">
+            {PICS.map((pic, i) => (
+              <div
+                key={i}
+                className={`about-card${i === activeIdx || i === prevIdx ? ' about-card--visible' : ''}`}
+                style={{
+                  transform: `rotate(${ROTATIONS[i]}deg)`,
+                  zIndex: i === activeIdx ? 2 : i === prevIdx ? 1 : 0
+                }}
+              >
+                <img src={pic} alt="" />
+              </div>
+            ))}
+          </div>
         </div>
 
-        
-
-        <div className="about-pointer-wrap about-pointer--1">
-          <img src={Pointer1} alt="" className="about-pointer__line" />
-          <p className="about-pointer__text">From Bangladesh to Vancity</p>
-        </div>
-
-        <div className="about-pointer-wrap about-pointer--2">
-          <img src={Pointer1} alt="" className="about-pointer__line" />
-          <p className="about-pointer__text">Always wears color coded outfits</p>
-        </div>
-
-        <div className="about-pointer-wrap about-pointer--3">
-          <img src={Pointer2} alt="" className="about-pointer__line" />
-          <p className="about-pointer__text">Quirkiest Gemini you'll meet</p>
-        </div>
-
-        <div className="about-pointer-wrap about-pointer--4">
-          <img src={Pointer2} alt="" className="about-pointer__line" />
-          <p className="about-pointer__text">OBSESSED with milk tea</p>
+        <div className="about-intro__right">
+          <h1 className="about-intro__title">Hi, I'm Fariha !</h1>
+          <div className="about-facts">
+            <p className="about-fact">From Bangladesh to Vancity</p>
+            <p className="about-fact">Always wears color-coded outfits</p>
+            <p className="about-fact">Quirkiest Gemini you'll meet</p>
+            <p className="about-fact">OBSESSED with milk tea</p>
+          </div>
         </div>
       </section>
 
