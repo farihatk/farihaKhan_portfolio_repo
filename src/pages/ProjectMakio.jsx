@@ -1,5 +1,7 @@
 import ProjectSummary from "../components/ProjectSummary"
 import ProjectPageNav from "../components/ProjectPageNav"
+import MoreProjects from "../components/MoreProjects"
+
 import "./ProjectMakio.css"
 
 import CoverImage      from "../assets/makio-cover.jpg"
@@ -292,6 +294,7 @@ function ProjectMakio() {
 
                 </div>
             </div>
+            <MoreProjects currentId={3} />
         </>
     )
 }

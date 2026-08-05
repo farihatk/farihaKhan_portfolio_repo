@@ -60,10 +60,11 @@ function About() {
         <div className="about-intro__right">
           <h1 className="about-intro__title">Hi, I'm Fariha !</h1>
           <div className="about-facts">
-            <p className="about-fact">From Bangladesh to Vancity</p>
-            <p className="about-fact">Always wears color-coded outfits</p>
-            <p className="about-fact">Quirkiest Gemini you'll meet</p>
-            <p className="about-fact">OBSESSED with milk tea</p>
+            <p className="about-fact">✈️ From DAC to YVR — Small town girl, big dreams 💜</p>
+            <p className="about-fact">👚 Self-employed outfit curator — MUST match a color palette </p>
+            <p className="about-fact">♊️ Quirkiest Gemini you'll meet 😉</p>
+            <p className="about-fact">🧋 OBSESSED with milk tea — no pearls though 😏</p>
+            <p className="about-fact">📸 I'm not shy, I don't look at the camera for the ✨mystery✨</p>
           </div>
         </div>
       </section>

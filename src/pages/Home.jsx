@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import FeaturedProjects from "../components/FeaturedProjects";
-import TestimonialCard from "../components/TestimonialCard"
+import TestimonialCarousel from "../components/TestimonialCarousel"
 import { testimonials } from "../data/testimonials"
 
 import "./Home.css"
@@ -27,7 +27,7 @@ function Home() {
           <div className="hero__title-label">Visual Designer</div>
           <h1 className="hero__name">Fariha Khan</h1>
           <p className="hero__bio">
-            I am a multidisciplinary designer focusing on branding, graphic design, motion graphics and UI/UX
+            Creating <strong>brands, products,</strong> and <strong>motion graphics</strong> with a dash of ✨whimsy✨
           </p>
           <a href="/resume.pdf" target="_blank" rel="noreferrer" className="buttons">Download Resume</a>
         </div>
@@ -78,15 +78,7 @@ function Home() {
 
       <section className="kind-words">
         <h2 className="kind-words__title">Kind Words</h2>
-        <div className="container">
-          <div className="grid">
-            {testimonials.map(t => (
-              <div className="col-12" key={t.id}>
-                <TestimonialCard {...t} />
-              </div>
-            ))}
-          </div>
-        </div>
+        <TestimonialCarousel />
       </section>
 
     </>

@@ -1,5 +1,7 @@
 import ProjectSummary from "../components/ProjectSummary"
 import ProjectPageNav from "../components/ProjectPageNav"
+import MoreProjects from "../components/MoreProjects"
+
 import "./ProjectHeylo.css"
 
 import CoverImage from "../assets/heylo-hero.jpg"
@@ -204,6 +206,7 @@ function ProjectHeylo() {
 
                 </div>
             </div>
+            <MoreProjects currentId={2} />
         </>
     )
 }

@@ -1,5 +1,7 @@
 import ProjectSummary from "../components/ProjectSummary"
 import ProjectPageNav from "../components/ProjectPageNav"
+import MoreProjects from "../components/MoreProjects"
+
 import "./ProjectMotion.css"
 
 import CoverVideo from "../assets/bts-motion-project.mp4"
@@ -161,6 +163,7 @@ function ProjectMotion() {
 
                 </div>
             </div>
+            <MoreProjects currentId={4} />
         </>
     )
 }

@@ -1,5 +1,7 @@
 import ProjectSummary from "../components/ProjectSummary"
 import ProjectPageNav from "../components/ProjectPageNav"
+import MoreProjects from "../components/MoreProjects"
+
 import "./ProjectPalace.css"
 
 import CoverImage from "../assets/palace-mockup7.jpg"
@@ -234,6 +236,7 @@ function ProjectPalace() {
 
                 </div>
             </div>
+            <MoreProjects currentId={1} />
         </>
     )
 }
