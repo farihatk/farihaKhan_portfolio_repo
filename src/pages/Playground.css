@@ -30,7 +30,7 @@
 
 /* ── Filters ── */
 .playground__filters {
-  display: flex;
+  display: none; /*turn this to flex when u have more than posters*/
   justify-content: center;
   align-items: center;
   gap: 2rem;
@@ -100,7 +100,7 @@
 
 .playground__overlay-title {
   font-family: var(--articulat);
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 700;
   color: white;
   margin-bottom: 0.25rem;
