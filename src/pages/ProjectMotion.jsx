@@ -5,6 +5,7 @@ import MoreProjects from "../components/MoreProjects"
 import "./ProjectMotion.css"
 
 import CoverVideo from "../assets/bts-motion-project.mp4"
+import Storyboard from "../assets/motionStoryboard.jpg"
 import GirlComp from "../assets/bts-girl-comp.mp4"
 import WaveComp from "../assets/bts-wave-comp.mp4"
 import ConcertComp from "../assets/bts-concert-comp.mp4"
@@ -75,7 +76,7 @@ function ProjectMotion() {
                         <p className="motion-body">
                             To map this out, I built a hand-drawn frame-by-frame storyboard in Procreate. My original plan was to illustrate each component, vectorize in Illustrator, and then animate in After Effects. However, due to a tight deadline and limitations of my illustration skills, there were moments I had to improvise certain scenes. Still, having a storyboard made that pivoting process smoother.
                         </p>
-                        {/* Add your storyboard image here: <img src={StoryboardImage} alt="Storyboard" className="motion-full-img" /> */}
+                       
                     </section>
 
                     {/* ── Color Palette and Visual Style ── */}

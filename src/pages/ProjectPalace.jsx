@@ -25,7 +25,7 @@ import Mockup8 from "../assets/palace-mockup8.jpg"
 import Mockup9 from "../assets/palace-featured.jpg"
 import PosterBlueVelvet from "../assets/palace-blue-velvet.jpg"
 import PosterDateNight from "../assets/palace-date-night.jpg"
-import PosterOutdoorFilm from "../assets/palace-outdoor-film.jpg"
+import PosterOutdoorFilm from "../assets/palace-outdoor-night.jpg"
 import PosterSilentMovie from "../assets/palace-silent-movie.jpg"
 import PosterBreakfastClub from "../assets/palace-thebreakfastclub.jpg"
 
