@@ -70,6 +70,7 @@ function ProjectMotion() {
                     {/* ── Concept & Storyboard ── */}
                     <section id="concept" className="motion-section">
                         <h2 className="motion-section__heading">Concept & Storyboard</h2>
+                        <img src={Storyboard} alt="" className="motion-full-img" />
                         <p className="motion-body">
                             The original music video for Swim follows a woman, representing the fandom who felt adrift during the group's six-year hiatus. The song is a love letter from the members telling their fans that they have been watching over them during this time. I wanted to represent this concept in my own way by positioning the animation through the eyes of a BTS fan experiencing their comeback.
                         </p>
