@@ -62,14 +62,14 @@ function ProjectPalace() {
                 <div className="project-content container">
 
                     {/* ── Challenge & Solution ── */}
-                    <section id="challenge" className="palace-section">
-                        <div className="palace-card">
+                    <section id="challenge" className="palace-section grid">
+                        <div className="palace-card col-6">
                             <h2 className="palace-card__title">The Challenge</h2>
                             <p className="palace-card__body">
                                 How do we honour the history and elegance of nostalgic film culture while making it feel relevant to today's audience?
                             </p>
                         </div>
-                        <div className="palace-card">
+                        <div className="palace-card col-6">
                             <h2 className="palace-card__title">Solution</h2>
                             <p className="palace-card__body">
                                 Building a brand identity that struck a balance between nostalgia that resonates with those who grew up with cinema, and the contemporary, to be relevant to a younger audience.
@@ -81,13 +81,13 @@ function ProjectPalace() {
                     <section id="research" className="palace-section">
 
                         <div className="palace-research">
-                            <h2 className="palace-section__heading">Concept Research</h2>
-                            <h3 className="palace-research__subheading">History of Indie Cinema:</h3>
-                            <p className="palace-body">
+                            <h2 className="palace-research__heading">Concept Research</h2>
+                            <p className="palace-research__subheading">History of Indie Cinema:</p>
+                            <p className="palace-research__body">
                                 Before starting the design process, it was important to understand what the theatre was offering: indie, classic, art house films and cult favourites. I spent time studying the history of independent cinema and its roots as a revolutionary movement against mainstream Hollywood. I drew out two key brand voices: elegant and confident.
                             </p>
-                            <h3 className="palace-research__subheading">20th Century Architecture:</h3>
-                            <p className="palace-body">
+                            <p className="palace-research__subheading">20th Century Architecture:</p>
+                            <p className="palace-research__body">
                                 Because indie cinema flourished in the 20th century, I drew visual inspirations from architectural styles of that era such as arches, columns, and triangular and dome rooftops. These structural details later helped me create the logo design itself.
                             </p>
                         </div>
@@ -95,7 +95,7 @@ function ProjectPalace() {
 
                     <section className="palace-section">
                         <h2 className="palace-section__heading">Moodboard</h2>
-                        <img src={MoodboardImage} alt="Moodboard" className="palace-full-img" />
+                        <img src={MoodboardImage} alt="Moodboard" className="palace-section__cover" />
                     </section>
 
                     {/* ── Logo Exploration ── */}
@@ -137,47 +137,59 @@ function ProjectPalace() {
                     </section>
 
                     <section id="rationale" className="palace-section">
-                        <h3 className="palace-subsection__heading">Final Logo</h3>
-                        <img src={LogoExplainImage} alt="Brand rationale" className="palace-full-img" />
-                        <p className="palace-body">
-                            The final logo was based on concept 1 and the architectural structure of an arch column. This graphic properly represented the historical background of the building itself, as well as the elegance of the name of the brand, "The Palace". It also acted as a door to welcome people into the theatre. In terms of modernity, the film strip around it was removed to keep it clean and simple. The protruded section in the middle represents a keystone, a component that connects two sides of an arch. This helps represent the connection between the nostalgic and the contemporary.
-                        </p>
+                        
+                        <div className="grid">
+                            <div className="palace-final-logo__left col-6">
+                                <img src={LogoExplainImage} alt="Brand rationale" className="palace-full-img" />
+                            </div>
+                            <div className="palace-final-logo__right col-6">
+                                <h3 className="palace-subsection__heading">Final Logo</h3>
+                                <p className="palace-body">
+                                    The final logo was based on concept 1 and the architectural structure of an arch column. This graphic
+                                    represented the historical background of the building itself, as well as the elegance of the name of the brand. It also acted as a door to welcome people into the theatre. The film strip around it was removed to keep it clean and simple. The protruded section in the middle represents a keystone, a component that connects two sides of an arch. This helps represent the connection between the nostalgic and the contemporary.
+                                </p>
+                            </div>
+                        </div>
                     </section>
 
                     {/* ── Color Palette ── */}
                     <section className="palace-section">
-                        <h3 className="palace-subsection__heading">Color Palette</h3>
+                        
 
-                        <div className="palace-palette">
-                            <div className="palace-palette__swatch palace-palette__swatch--tall" style={{ backgroundColor: "#420000" }}>
-                                <span className="palace-palette__label" style={{ color: "#fcfcfc" }}>Mahogany<br />#420000</span>
+                        <div className="grid">
+                            <div className="palace-palette col-6">
+                                <div className="palace-palette__swatch palace-palette__swatch--tall" style={{ backgroundColor: "#420000" }}>
+                                    <span className="palace-palette__label" style={{ color: "#fcfcfc" }}>Mahogany<br />#420000</span>
+                                </div>
+                                <div className="palace-palette__grid">
+                                    <div className="palace-palette__swatch" style={{ backgroundColor: "#F6DBBF" }}>
+                                        <span className="palace-palette__label" style={{ color: "#050505" }}>Cashmere<br />#F6DBBF</span>
+                                    </div>
+                                    <div className="palace-palette__swatch" style={{ backgroundColor: "#881D1B" }}>
+                                        <span className="palace-palette__label" style={{ color: "#fcfcfc" }}>Theatre Red<br />#881D1B</span>
+                                    </div>
+                                    <div className="palace-palette__swatch" style={{ backgroundColor: "#383D97" }}>
+                                        <span className="palace-palette__label" style={{ color: "#fcfcfc" }}>Blue Velvet<br />#383D97</span>
+                                    </div>
+                                    <div className="palace-palette__swatch" style={{ backgroundColor: "#AA923B" }}>
+                                        <span className="palace-palette__label" style={{ color: "#fcfcfc" }}>Golden Age<br />#AA923B</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="palace-palette__grid">
-                                <div className="palace-palette__swatch" style={{ backgroundColor: "#F6DBBF" }}>
-                                    <span className="palace-palette__label" style={{ color: "#050505" }}>Cashmere<br />#F6DBBF</span>
-                                </div>
-                                <div className="palace-palette__swatch" style={{ backgroundColor: "#881D1B" }}>
-                                    <span className="palace-palette__label" style={{ color: "#fcfcfc" }}>Theatre Red<br />#881D1B</span>
-                                </div>
-                                <div className="palace-palette__swatch" style={{ backgroundColor: "#383D97" }}>
-                                    <span className="palace-palette__label" style={{ color: "#fcfcfc" }}>Blue Velvet<br />#383D97</span>
-                                </div>
-                                <div className="palace-palette__swatch" style={{ backgroundColor: "#AA923B" }}>
-                                    <span className="palace-palette__label" style={{ color: "#fcfcfc" }}>Golden Age<br />#AA923B</span>
-                                </div>
+                            <div className="palace-palette__text col-6">
+                                <h3 className="palace-subsection__heading ">Color Palette</h3>
+                                <p className="palace-body">
+                                    The color palette was inspired by colors that were popular during the Golden Age of Hollywood. Theatre red was a must have due to its historical connection with movie theatres or events (e.g. Red Carpet events). Mahogany and Cashmere were contrasting colors to be used for backgrounds and texts. While Blue Velvet and Golden Age are accent colors to add some variation to posters and merchandise.
+                                </p>
                             </div>
                         </div>
-
-                        <p className="palace-body">
-                            The color palette was inspired by colors that were popular during the Golden Age of Hollywood. Theatre red was a must have due to its historical connection with movie theatres or events (e.g. Red Carpet events). Mahogany and Cashmere were contrasting colors to be used for backgrounds and texts. While Blue Velvet and Golden Age are accent colors to add some variation to posters and merchandise.
-                        </p>
                     </section>
 
                     {/* ── Typography ── */}
                     <section className="palace-section">
-                        <h3 className="palace-subsection__heading">Typography</h3>
-                        <div className="palace-typography">
-                            <div className="palace-type-showcase">
+                        
+                        <div className="palace-typography grid">
+                            <div className="palace-type-showcase col-6">
                                 <div className="palace-type-block">
                                     <p className="palace-type__name" style={{ color: "#881D1B", fontFamily: "'Desire Pro', serif" }}>Desire Pro</p>
                                     <p className="palace-type__size">Regular 64px</p>
@@ -191,10 +203,13 @@ function ProjectPalace() {
                                     <p className="palace-type__example" style={{ fontFamily: "'Figtree', sans-serif", fontSize: "24px" }}>This is an example of a body text.</p>
                                 </div>
                             </div>
-                            <p className="palace-body">
-                                Desire Pro holds the elegance of the brand is the main font for the logo. It also draws attention for title texts.
-                                Figtree is a contrasted font against the above. It helps to visually differentiate from the title. It also acts as a readable body text for improved accessibility.
-                            </p>
+                            <div className="palace-type__desc col-6">
+                                <h3 className="palace-subsection__heading">Typography</h3>
+                                <p className="palace-body">
+                                    Desire Pro holds the elegance of the brand is the main font for the logo. It also draws attention for title texts.
+                                    Figtree is a contrasted font against the above. It helps to visually differentiate from the title. It also acts as a readable body text for improved accessibility.
+                                </p>
+                            </div>
                         </div>
                     </section>
 

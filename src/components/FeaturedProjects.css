@@ -72,6 +72,7 @@
 
 .featured-card__tag {
   font-family: var(--handrawn);
+  font-weight: 400;
   color: white;
   font-size: 24px;
   padding-top: 0.5rem;

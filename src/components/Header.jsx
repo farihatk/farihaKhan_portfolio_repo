@@ -5,7 +5,7 @@ import { faEnvelope, faBars, faXmark } from "@fortawesome/free-solid-svg-icons"
 
 import "./Header.css"
 
-import FkLogo from "../assets/fk-logo.png"
+import FkLogo from "../assets/fk-logo.svg"
 
 function Header() {
   const [copied, setCopied] = useState(false);

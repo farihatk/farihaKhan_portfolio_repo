@@ -38,13 +38,18 @@
     font-family: var(--handrawn);
     font-size: 3rem;
     font-weight: 400;
-    color: var(--violet);
+    color: var(--lime);
+    margin-bottom: 0.5rem;
+}
+
+.palace-subheading__align-right {
+    text-align: right;
 }
 
 .palace-body {
     font-family: var(--articulat);
-    font-size: 1.25rem;
-    color: var(--violet);
+    font-size: 1rem;
+    color: white;
     line-height: 1.6;
 }
 
@@ -53,13 +58,15 @@
     background-color: var(--violet);
     border-radius: 20px;
     padding: 2.5rem 3rem;
+    border: 1px solid var(--lime);
+    box-shadow: 6px 6px 0 3px var(--lime);
 }
 
 .palace-card__title {
     font-family: var(--handrawn);
     /* font-size: 3rem; */
     font-weight: 400;
-    color: white;
+    color: var(--lime);
     margin-bottom: 1.25rem;
 }
 
@@ -68,7 +75,7 @@
     font-size: 1.5rem;
     font-style: italic;
     font-weight: 500;
-    color: var(--lime);
+    color: white;
     line-height: 1.5;
 }
 
@@ -77,14 +84,32 @@
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+    background-color: var(--violet);
+    border-radius: 20px;
+    padding: 2.5rem 3rem;
+    border: 1px solid var(--lime);
+    box-shadow: 6px 6px 0 3px var(--lime);
+}
+
+.palace-research__heading {
+    font-family: var(--handrawn);
+    font-weight: 400;
+    color: var(--lime);
 }
 
 .palace-research__subheading {
     font-family: var(--articulat);
-    /* font-size: 2rem; */
+    font-size: 1.5rem;
     font-weight: 600;
-    color: var(--violet);
+    color: var(--lime);
     margin-top: 1rem;
+}
+
+.palace-research__body {
+    font-family: var(--articulat);
+    font-size: 1.25rem;
+    color: white;
+    line-height: 1.6;
 }
 
 /* ── Logo concepts ─────────────────────────── */
@@ -103,6 +128,11 @@
 
 .palace-logo-right {
     flex: 1;
+    background-color: var(--violet);
+    border-radius: 20px;
+    padding: 2.5rem 3rem;
+    border: 1px solid var(--lime);
+    box-shadow: 6px 6px 0 3px var(--lime);
 }
 
 .palace-concept {
@@ -137,6 +167,20 @@
     height: 600px;
     object-fit: cover;
     border-radius: 8px;
+}
+
+.palace-final-logo__left {
+    align-self: center;
+}
+
+.palace-final-logo__right {
+    align-self: center;
+    background-color: var(--violet);
+    border-radius: 20px;
+    padding: 2.5rem 3rem;
+    border: 1px solid var(--lime);
+    box-shadow: 6px 6px 0 3px var(--lime);
+    
 }
 
 /* ── Color palette ─────────────────────────── */
@@ -177,26 +221,41 @@
     align-self: center;
 }
 
-/* ── Typography showcase ───────────────────── */
-.palace-typography {
-    display: flex;
-    gap: 4rem;
+.palace-palette__text {
+    align-self: center;
+    background-color: var(--violet);
+    border-radius: 20px;
+    padding: 2.5rem 3rem;
+    border: 1px solid var(--lime);
+    box-shadow: 6px 6px 0 3px var(--lime);
+    order: -1;
 }
+
+/* ── Typography showcase ───────────────────── */
 
 .palace-type-showcase {
     display: flex;
     gap: 1rem;
-    flex: 1;
+    /* flex: 1; */
     /* align-items: flex-start; */
     flex-direction: column;
     min-width: 0;
 }
 
 .palace-type-block {
-    flex: 1;
+    /* flex: 1; */
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+}
+
+.palace-type__desc {
+    align-self: center;
+    background-color: var(--violet);
+    border-radius: 20px;
+    padding: 2.5rem 3rem;
+    border: 1px solid var(--lime);
+    box-shadow: 6px 6px 0 3px var(--lime);
 }
 
 .palace-type__name {

@@ -20,7 +20,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 3rem;
+  padding: 1rem 3rem 0.5rem 3rem;
 }
 
 .header__brand {
@@ -31,14 +31,14 @@
 }
 
 .header__logo {
-  height: 88px;
-  width: 82px;
+  height: 68px;
+  width: 62px;
   object-fit: cover;
 }
 
 .header__name {
   font-family: var(--chorine);
-  font-size: 40px;
+  font-size: 2rem;
   color: var(--violet);
   white-space: nowrap;
 }
