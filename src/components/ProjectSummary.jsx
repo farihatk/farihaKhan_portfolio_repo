@@ -26,7 +26,7 @@ function ProjectSummary({ tag, title, role, tools, description, coverImage, cove
 
       <div className={`project-summary__cover ${prototypeLink ? "project-summary__cover--prototype" : ""}`}>
         {coverVideo ? (
-          <video src={coverVideo} autoPlay muted controls playsInline />
+          <video src={coverVideo} autoPlay muted controls playsInline aria-label={`${title} project cover video`} />
         ) : (
           <img src={coverImage} alt={title} />
         )}

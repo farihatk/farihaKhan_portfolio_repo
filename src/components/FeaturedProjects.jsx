@@ -53,10 +53,10 @@ function FeaturedProjects() {
         </div>
       </div>
 
-      <button className="embla__btn embla__btn--prev" onClick={scrollPrev}>
+      <button className="embla__btn embla__btn--prev" onClick={scrollPrev} aria-label="Previous project">
         <ion-icon name="chevron-back-outline"></ion-icon>
       </button>
-      <button className="embla__btn embla__btn--next" onClick={scrollNext}>
+      <button className="embla__btn embla__btn--next" onClick={scrollNext} aria-label="Next project">
         <ion-icon name="chevron-forward-outline"></ion-icon>
       </button>
     </div>

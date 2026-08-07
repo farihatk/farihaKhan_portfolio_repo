@@ -25,10 +25,10 @@ function TestimonialCarousel() {
         </div>
       </div>
 
-      <button className="t-embla__btn t-embla__btn--prev" onClick={scrollPrev} aria-label="Previous">
+      <button className="t-embla__btn t-embla__btn--prev" onClick={scrollPrev} aria-label="Previous testimonial">
         <ion-icon name="chevron-back-outline"></ion-icon>
       </button>
-      <button className="t-embla__btn t-embla__btn--next" onClick={scrollNext} aria-label="Next">
+      <button className="t-embla__btn t-embla__btn--next" onClick={scrollNext} aria-label="Next testimonial">
         <ion-icon name="chevron-forward-outline"></ion-icon>
       </button>
     </div>

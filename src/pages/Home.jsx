@@ -34,7 +34,7 @@ function Home() {
 
         <div className="hero__visuals col-6 col-12-sm" aria-hidden="true">
           <div className="hero__avatar">
-            <video src={HeroCharacter} autoPlay muted loop playsInline alt="" />
+            <video src={HeroCharacter} autoPlay muted loop playsInline />
           </div>
 
           <div className="hero__obj-wrap hero__obj--boba">
@@ -64,7 +64,7 @@ function Home() {
         </div>
 
         <div className="scroll-down-btn">
-          <a href="#featured">scroll down</a>
+          <a href="#featured" aria-label="Scroll down to featured projects">scroll down</a>
         </div>
       </section>
 

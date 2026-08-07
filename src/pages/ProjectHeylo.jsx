@@ -117,12 +117,12 @@ function ProjectHeylo() {
                     {/* ── Brand Rationale ── */}
                     <section id="rationale" className="heylo-section">
                         <h2 className="heylo-section__heading">Brand Rationale</h2>
-                        <img src={Mockup7} alt="Brand rationale" className="heylo-cover-img" />
+                        <img src={Mockup7} alt="Heylo brand rationale overview" className="heylo-cover-img" />
                     </section>
 
                     {/* ── Final Logo ── */}
                     <section className="heylo-section grid">
-                        <img src={BrandRationaleImage} alt="Brand rationale" className="heylo-full-img heylo-img-shift-up col-6" />
+                        <img src={BrandRationaleImage} alt="Heylo final logo with design annotations" className="heylo-full-img heylo-img-shift-up col-6" />
                         <div className="heylo-final-logo__desc col-6">
                             <h3 className="heylo-subsection__heading">Final Logo</h3>
                             <p className="heylo-body">
@@ -192,12 +192,12 @@ function ProjectHeylo() {
                     <section id="mockup" className="heylo-section">
                         <h2 className="heylo-section__heading">Mockups</h2>
                         <div className="grid">
-                            <img src={Mockup4} alt="Mockup" className="heylo-cover-img col-12" />
-                            <img src={Mockup9} alt="Mockup" className="heylo-half-img col-6 col-12-sm" />
-                            <img src={Mockup3} alt="Mockup" className="heylo-half-img heylo-img-shift-up col-6 col-12-sm" />
-                            <img src={Mockup5} alt="Mockup" className="heylo-cover-img col-12" />
-                            <img src={Mockup1} alt="Mockup" className="heylo-half-img col-6 col-12-sm" />
-                            <img src={Mockup6} alt="Mockup" className="heylo-half-img col-6 col-12-sm" />
+                            <img src={Mockup4} alt="Heylo packaging mockup" className="heylo-cover-img col-12" />
+                            <img src={Mockup9} alt="Heylo product bottle mockup" className="heylo-half-img col-6 col-12-sm" />
+                            <img src={Mockup3} alt="Heylo product label closeup mockup" className="heylo-half-img heylo-img-shift-up col-6 col-12-sm" />
+                            <img src={Mockup5} alt="Heylo full product line mockup" className="heylo-cover-img col-12" />
+                            <img src={Mockup1} alt="Heylo branded merchandise mockup" className="heylo-half-img col-6 col-12-sm" />
+                            <img src={Mockup6} alt="Heylo product display mockup" className="heylo-half-img col-6 col-12-sm" />
                         </div>
                     </section>
 

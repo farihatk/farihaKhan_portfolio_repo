@@ -30,12 +30,13 @@ function Playground() {
         </p>
       </div>
 
-      <nav className="playground__filters">
+      <nav className="playground__filters" aria-label="Filter playground items by category">
         {filters.map(f => (
           <button
             key={f.value}
             className={`playground__filter-btn ${activeFilter === f.value ? "playground__filter-btn--active" : ""}`}
             onClick={() => setActiveFilter(f.value)}
+            aria-pressed={activeFilter === f.value}
           >
             {f.label}
           </button>

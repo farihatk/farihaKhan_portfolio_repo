@@ -38,17 +38,17 @@ function Footer() {
               <Link to="/playground">Playground</Link>
             </div>
             <div className="footer__nav-col">
-              <a href="https://www.instagram.com/fariha.k.designs/" target="_blank" rel="noreferrer">
+              <a href="https://www.instagram.com/fariha.k.designs/" target="_blank" rel="noreferrer" aria-label="Fariha Khan on Instagram">
                 <span className="footer__social-icon">
                   <FontAwesomeIcon icon={faInstagram} />
                 </span>
               </a>
-              <a href="https://www.linkedin.com/in/fariha-khan1999/" target="_blank" rel="noreferrer">
+              <a href="https://www.linkedin.com/in/fariha-khan1999/" target="_blank" rel="noreferrer" aria-label="Fariha Khan on LinkedIn">
                 <span className="footer__social-icon">
                   <FontAwesomeIcon icon={faLinkedinIn} />
                 </span>
               </a>
-              <a href="/resume.pdf" target="_blank" rel="noreferrer">
+              <a href="/resume.pdf" target="_blank" rel="noreferrer" aria-label="Download Fariha Khan's resume (PDF)">
                 <span className="footer__social-icon">
                   <FontAwesomeIcon icon={faFileArrowDown} />
                 </span>

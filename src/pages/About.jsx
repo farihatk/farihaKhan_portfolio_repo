@@ -41,7 +41,7 @@ function About() {
       {/* ── Intro ── */}
       <section className="about-intro container">
         <div className="about-intro__stack">
-          <div className="about-card-stack">
+          <div className="about-card-stack" aria-hidden="true">
             {PICS.map((pic, i) => (
               <div
                 key={i}
@@ -73,7 +73,7 @@ function About() {
       <section className="about-story">
         <div className="about-story__photo-wrap">
           <div className="about-story__photo-frame">
-            <img src={AboutMyStory} alt="" className="about-story__photo" />
+            <img src={AboutMyStory} alt="Fariha Khan" className="about-story__photo" />
           </div>
         </div>
         <div className="about-story__text">
@@ -107,7 +107,7 @@ function About() {
         </div>
         <div className="about-education__photo-wrap">
           <div className="about-education__photo-frame">
-            <img src={AboutEducation} alt="" className="about-education__photo" />
+            <img src={AboutEducation} alt="Fariha Khan at her BCIT graduation" className="about-education__photo" />
           </div>
         </div>
       </section>

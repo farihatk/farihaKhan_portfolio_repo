@@ -34,7 +34,7 @@ function Header() {
       <div className="header__container">
 
         <Link to="/" className="header__brand" onClick={closeMenu}>
-          <img src={FkLogo} alt="Brand logo" className="header__logo" />
+          <img src={FkLogo} alt="Fariha Khan logo" className="header__logo" />
           <span className="header__name">Fariha Khan</span>
         </Link>
 

@@ -133,14 +133,14 @@ function ProjectPalace() {
                     {/* ── Brand Rationale ── */}
                     <section className="palace-section">
                         <h2 className="palace-section__heading">Brand Rationale</h2>
-                        <img src={Mockup3} alt="Brand rationale" className="palace-section__cover" />
+                        <img src={Mockup3} alt="The Palace brand rationale overview" className="palace-section__cover" />
                     </section>
 
                     <section id="rationale" className="palace-section">
                         
                         <div className="grid">
                             <div className="palace-final-logo__left col-6">
-                                <img src={LogoExplainImage} alt="Brand rationale" className="palace-full-img" />
+                                <img src={LogoExplainImage} alt="The Palace final logo with design annotations" className="palace-full-img" />
                             </div>
                             <div className="palace-final-logo__right col-6">
                                 <h3 className="palace-subsection__heading">Final Logo</h3>
@@ -217,12 +217,12 @@ function ProjectPalace() {
                     <section id="mockup" className="palace-section">
                         <h2 className="palace-section__heading">Mock ups</h2>
                         <div className="grid">
-                            <img src={Mockup2} alt="Environment mockup" className="palace-mockup-full col-12" />
-                            <img src={Mockup8} alt="Mockup" className="palace-half-img col-6 col-12-sm" />
-                            <img src={Mockup4} alt="Mockup" className="palace-half-img col-6 col-12-sm" />
-                            <img src={Mockup9} alt="Environment mockup" className="palace-mockup-full col-12" />
-                            <img src={Mockup5} alt="Mockup" className="palace-half-img col-6 col-12-sm" />
-                            <img src={Mockup6} alt="Mockup" className="palace-half-img col-6 col-12-sm" />
+                            <img src={Mockup2} alt="The Palace storefront exterior mockup" className="palace-mockup-full col-12" />
+                            <img src={Mockup8} alt="The Palace print collateral mockup" className="palace-half-img col-6 col-12-sm" />
+                            <img src={Mockup4} alt="The Palace merchandise mockup" className="palace-half-img col-6 col-12-sm" />
+                            <img src={Mockup9} alt="The Palace branded exterior mockup" className="palace-mockup-full col-12" />
+                            <img src={Mockup5} alt="The Palace stationery mockup" className="palace-half-img col-6 col-12-sm" />
+                            <img src={Mockup6} alt="The Palace digital mockup" className="palace-half-img col-6 col-12-sm" />
 
                         </div>
                     </section>
@@ -231,10 +231,10 @@ function ProjectPalace() {
                     <section className="palace-section">
                         <h2 className="palace-section__heading">Environmental Mock ups</h2>
                         <div className="grid">
-                            <img src={EnvMockup4} alt="Mockup" className="palace-half-img col-6 col-12-sm" />
-                            <img src={EnvMockup2} alt="Mockup" className="palace-half-img col-6 col-12-sm" />
-                            <img src={EnvMockup3} alt="Mockup" className="palace-half-img col-6 col-12-sm" />
-                            <img src={EnvMockup1} alt="Mockup" className="palace-half-img col-6 col-12-sm" />
+                            <img src={EnvMockup4} alt="The Palace environmental signage mockup" className="palace-half-img col-6 col-12-sm" />
+                            <img src={EnvMockup2} alt="The Palace outdoor billboard mockup" className="palace-half-img col-6 col-12-sm" />
+                            <img src={EnvMockup3} alt="The Palace environmental branding mockup" className="palace-half-img col-6 col-12-sm" />
+                            <img src={EnvMockup1} alt="The Palace venue exterior environmental mockup" className="palace-half-img col-6 col-12-sm" />
                         </div>
                     </section>
 

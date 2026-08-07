@@ -26,8 +26,8 @@ function ProjectPageNav({ navItems }) {
   }
 
   return (
-    <aside className="project-page-nav">
-      <nav>
+    <aside className="project-page-nav" aria-label="Project sections">
+      <nav aria-label="Jump to section">
         {navItems.map((item) => (
           <a
             key={item.href}

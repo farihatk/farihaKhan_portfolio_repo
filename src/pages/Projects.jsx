@@ -19,7 +19,7 @@ function ProjectCard({ project }) {
     <Link to={project.path || "#"} className={`project-card col-${project.colSpan} col-12-sm`}>
       {project.video
         ? <video src={project.video} autoPlay loop muted playsInline className="project-card__img" />
-        : <img src={project.img} alt="" className="project-card__img" />
+        : <img src={project.img} alt={project.title} className="project-card__img" />
       }
       <div className="project-card__overlay">
         <h3 className="project-card__title">{project.title}</h3>
@@ -50,12 +50,13 @@ function Projects() {
       </div>
 
       {/* Sub-navigation filters */}
-      <nav className="projects-filters">
+      <nav className="projects-filters" aria-label="Filter projects by category">
         {filters.map(f => (
           <button
             key={f.value}
             className={`projects-filters__btn ${activeFilter === f.value ? "projects-filters__btn--active" : ""}`}
             onClick={() => setActiveFilter(f.value)}
+            aria-pressed={activeFilter === f.value}
           >
             {f.label}
           </button>
