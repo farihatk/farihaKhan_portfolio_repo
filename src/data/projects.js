@@ -2,7 +2,7 @@ import HeyloFeatured from "../assets/heylo-featured.jpg"
 import PalaceFeatured from "../assets/palace-mockup3.jpg"
 import BTSPreviewVideo from "../assets/bts-motion-preview.mp4"
 import BTSPreviewImg from "../assets/bts-motion-previewImg.jpg"
-import MakioFeatured from "../assets/makio-featured2.png"
+import MakioFeatured from "../assets/makio-featured2.jpg"
 
 export const projects = [
   {
