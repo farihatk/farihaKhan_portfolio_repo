@@ -1,7 +1,7 @@
 import Richard from "../assets/testimonial-richard.jpeg"
 import Taka    from "../assets/testimonial-taka.jpg"
 import Jayme   from "../assets/testimonial-jayme.jpeg"
-import Vivien  from "../assets/testimonial-vivi.jpg"
+import Vivien  from "../assets/testimonial-vivi.JPG"
 
 export const testimonials = [
   {
