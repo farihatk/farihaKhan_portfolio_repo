@@ -48,14 +48,14 @@ function ProjectHeylo() {
                 <div className="project-content container">
 
                     {/* ── Challenge & Solution ── */}
-                    <section id="challenge" className="heylo-section">
-                        <div className="heylo-card">
+                    <section id="challenge" className="heylo-section grid">
+                        <div className="heylo-card col-6">
                             <h2 className="heylo-card__title">The Challenge</h2>
                             <p className="heylo-card__body">
                                 How do we create a visual identity that reflected the energy of Gen Z youth while preserving the credibility of clean and safe skin-care?
                             </p>
                         </div>
-                        <div className="heylo-card">
+                        <div className="heylo-card col-6">
                             <h2 className="heylo-card__title">Solution</h2>
                             <p className="heylo-card__body">
                                 Building a brand identity that uses colors to communicate energy and visual white-space to balance the minimalism of plant-based products.
@@ -66,7 +66,7 @@ function ProjectHeylo() {
                     {/* ── Concept Research ── */}
                     <section id="research" className="heylo-section">
                         <div className="heylo-research">
-                            <h2 className="heylo-section__heading">Concept Research</h2>
+                            <h2 className="heylo-research__heading">Concept Research</h2>
                             <p className="heylo-body">
                                 Research showed that for Gen-Z teens, skin care is not just a routine, but a form of self-expression. For 13-18 year olds, the brands they connect with are an extension of who they are. The same generation showed a strong interest in Y2K aesthetics — the bold colors, chunky typography, and tactile culture of the early 2000s. In a world that is largely digital, they enjoy having something tangible and visually expressive.
                             </p>
@@ -121,18 +121,20 @@ function ProjectHeylo() {
                     </section>
 
                     {/* ── Final Logo ── */}
-                    <section className="heylo-section">
-                        <h3 className="heylo-subsection__heading">Final Logo</h3>
-                        <img src={BrandRationaleImage} alt="Brand rationale" className="heylo-cover-img heylo-img-shift-up" />
-                        <p className="heylo-body">
-                            The final logo is built on a customized version of the typeface Cosmos. The counters of the "e" and "o" were replaced with star shapes — a subtle nod to glowing skin and the brand's energetic character. The ascenders and descenders were extended to give the wordmark more breathing room and a sense of balance across the full lockup. The overall weight of the letterforms was also reduced to complement the brand's softer, more delicate side and the quiet vulnerability of the teenage experience.
-                        </p>
+                    <section className="heylo-section grid">
+                        <img src={BrandRationaleImage} alt="Brand rationale" className="heylo-full-img heylo-img-shift-up col-6" />
+                        <div className="heylo-final-logo__desc col-6">
+                            <h3 className="heylo-subsection__heading">Final Logo</h3>
+                            <p className="heylo-body">
+                                The final logo is built on a customized version of the typeface Cosmos. The counters of the "e" and "o" were replaced with star shapes — a subtle nod to glowing skin and the brand's energetic character. The ascenders and descenders were extended to give the wordmark more breathing room and a sense of balance across the full lockup. The overall weight of the letterforms was also reduced to complement the brand's softer, more delicate side and the quiet vulnerability of the teenage experience.
+                            </p>
+                        </div>
                     </section>
 
                     {/* ── Color Palette ── */}
-                    <section className="heylo-section">
-                        <h3 className="heylo-subsection__heading">Color Palette</h3>
-                        <div className="heylo-palette">
+                    <section className="heylo-section grid">
+                        
+                        <div className="heylo-palette col-6">
                             <div className="heylo-palette__swatch heylo-palette__swatch--tall" style={{ backgroundColor: "#15123E" }}>
                                 <span className="heylo-palette__label" style={{ color: "#fcfcfc" }}>Blueberry<br />#15123E</span>
                             </div>
@@ -151,19 +153,22 @@ function ProjectHeylo() {
                                 </div>
                             </div>
                         </div>
-                        <p className="heylo-body">
-                            The palette was developed with packaging versatility and Y2K influence in mind. The colors are organized into two complementary sets — Lime, Spring Blue, and Blueberry form one combination, while Spring Blue, Dew Grey, and Pink form another, allowing for product variation while maintaining cohesion across the line.
-                        </p>
-                        <p className="heylo-body">
-                            Electric Rose and Lime echo the boldness of early 2000s aesthetics while Lime also serves as a quiet nod to the brand's plant-based roots. Dew Grey and Spring Blue bring freshness and softness to balance the more vibrant tones. Blueberry adds depth and contrast, grounding the overall palette.
-                        </p>
+                        <div className="heylo-color-palette__desc col-6">
+                            <h3 className="heylo-subsection__heading">Color Palette</h3>
+                            <p className="heylo-body">
+                                The palette was developed with packaging versatility and Y2K influence in mind. The colors are organized into two complementary sets — Lime, Spring Blue, and Blueberry form one combination, while Spring Blue, Dew Grey, and Pink form another, allowing for product variation while maintaining cohesion across the line.
+                            </p>
+                            <p className="heylo-body">
+                                Electric Rose and Lime echo the boldness of early 2000s aesthetics while Lime also serves as a quiet nod to the brand's plant-based roots. Dew Grey and Spring Blue bring freshness and softness to balance the more vibrant tones. Blueberry adds depth and contrast, grounding the overall palette.
+                            </p>
+                        </div>
                     </section>
 
                     {/* ── Typography ── */}
                     <section className="heylo-section">
-                        <h3 className="heylo-subsection__heading">Typography</h3>
-                        <div className="heylo-typography">
-                            <div className="heylo-type-showcase">
+                        
+                        <div className="heylo-typography grid">
+                            <div className="heylo-type-showcase col-6">
                                 <p className="heylo-type__name" style={{ color: "#DB599F", fontFamily: "'New Kansas', serif" }}>New Kansas Medium</p>
                                 <p className="heylo-type__size">Regular 64px</p>
                                 <p className="heylo-type__example" style={{ fontFamily: "'New Kansas', serif", fontSize: "64px" }}>Example Title Text</p>
@@ -173,10 +178,12 @@ function ProjectHeylo() {
                                 <p className="heylo-type__size">Regular 16px</p>
                                 <p className="heylo-type__example" style={{ fontFamily: "'Figtree', sans-serif", fontSize: "24px" }}>This is an example of a body text.</p>
                             </div>
-
-                            <p className="heylo-type-desc">
-                                New Kansas was selected as the primary typeface for its soft serif character, pairing naturally with Blueberry from the color palette to position Heylo as elevated without feeling overly luxurious. Figtree accompanies it as the sans-serif pairing — its rounded forms reinforce the brand's friendly voice while keeping body copy clean and readable for a younger audience.
-                            </p>
+                            <div className="heylo-type__desc col-6">
+                                <h3 className="heylo-subsection__heading">Typography</h3>
+                                <p className="heylo-body">
+                                    New Kansas was selected as the primary typeface for its soft serif character, pairing naturally with Blueberry from the color palette to position Heylo as elevated without feeling overly luxurious. Figtree accompanies it as the sans-serif pairing — its rounded forms reinforce the brand's friendly voice while keeping body copy clean and readable for a younger audience.
+                                </p>
+                            </div>
 
                         </div>
                     </section>

@@ -83,11 +83,11 @@ function ProjectPalace() {
                         <div className="palace-research">
                             <h2 className="palace-research__heading">Concept Research</h2>
                             <p className="palace-research__subheading">History of Indie Cinema:</p>
-                            <p className="palace-research__body">
+                            <p className="palace-body">
                                 Before starting the design process, it was important to understand what the theatre was offering: indie, classic, art house films and cult favourites. I spent time studying the history of independent cinema and its roots as a revolutionary movement against mainstream Hollywood. I drew out two key brand voices: elegant and confident.
                             </p>
                             <p className="palace-research__subheading">20th Century Architecture:</p>
-                            <p className="palace-research__body">
+                            <p className="palace-body">
                                 Because indie cinema flourished in the 20th century, I drew visual inspirations from architectural styles of that era such as arches, columns, and triangular and dome rooftops. These structural details later helped me create the logo design itself.
                             </p>
                         </div>
