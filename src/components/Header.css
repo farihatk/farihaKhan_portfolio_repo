@@ -11,9 +11,9 @@
 }
 
 .header--scrolled {
-  background-color: rgba(209, 174, 255, 0.2);
+  background-color: rgba(180, 131, 244, 0.2);
   backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);           /* Safari */
+  /* -webkit-backdrop-filter: blur(12px); */
 }
 
 .header__container {
