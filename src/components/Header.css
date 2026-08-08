@@ -11,15 +11,9 @@
 }
 
 .header--scrolled {
-  background-color: rgba(254, 254, 254, 0.70);
+  background-color: rgba(209, 174, 255, 0.2);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);           /* Safari */
-}
-
-@media (min-width: 1025px) {
-  .header--scrolled {
-    transform: translateZ(0);                    /* Chrome backdrop-filter fix */
-  }
 }
 
 .header__container {
