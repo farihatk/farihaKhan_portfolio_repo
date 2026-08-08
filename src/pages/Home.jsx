@@ -13,6 +13,7 @@ import Headphones from "../assets/hero-headphones.png"
 import Switch from "../assets/hero-switch.png"
 import Boba from "../assets/hero-boba.png"
 import HeroCharacter from "../assets/fk-logo.webm"
+import HeroCharacterMov from "../assets/fk-logo-hevc.mov"
 
 
 function Home() {
@@ -34,7 +35,10 @@ function Home() {
 
         <div className="hero__visuals col-6 col-12-sm" aria-hidden="true">
           <div className="hero__avatar">
-            <video src={HeroCharacter} autoPlay muted loop playsInline />
+            <video autoPlay muted loop playsInline>
+              <source src={HeroCharacterMov} type='video/mp4; codecs="hvc1"' />
+              <source src={HeroCharacter} type="video/webm" />
+            </video>
           </div>
 
           <div className="hero__obj-wrap hero__obj--boba">
