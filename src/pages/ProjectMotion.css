@@ -31,19 +31,21 @@
     background-color: var(--violet);
     border-radius: 20px;
     padding: 2.5rem 3rem;
+    border: 1px solid var(--lime);
+    box-shadow: 6px 6px 0 3px var(--lime);
 }
 
 .motion-card__title {
     font-family: var(--handrawn);
     /* font-size: 3rem; */
     font-weight: 400;
-    color: white;
+    color: var(--lime);
     margin-bottom: 1.25rem;
 }
 
 .motion-card__body {
     font-family: var(--articulat);
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 400;
     color: white;
     line-height: 1.6;
@@ -52,10 +54,15 @@
 /* ── Body text ───────────────────────────────── */
 .motion-body {
     font-family: var(--articulat);
-    font-size: 1.25rem;
-    color: black;
+    font-size: 1rem;
+    color: white;
     line-height: 1.6;
     text-align: justify;
+    background-color: var(--violet);
+    border-radius: 20px;
+    padding: 2.5rem 3rem;
+    border: 1px solid var(--lime);
+    box-shadow: 6px 6px 0 3px var(--lime);
 }
 
 /* ── Color palette ───────────────────────────── */
@@ -116,19 +123,24 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    background-color: var(--violet);
+    border-radius: 20px;
+    padding: 2.5rem 3rem;
+    border: 1px solid var(--lime);
+    box-shadow: 6px 6px 0 3px var(--lime);
 }
 
 .motion-comp__heading {
-    font-family: var(--handrawn);
+    font-family: var(--articulat);
     /* font-size: 3rem; */
-    font-weight: 400;
-    color: var(--violet);
+    font-weight: 600;
+    color: var(--lime);
 }
 
 .motion-comp__body {
     font-family: var(--articulat);
-    font-size: 1.25rem;
-    color: black;
+    font-size: 1rem;
+    color: white;
     line-height: 1.6;
 }
 

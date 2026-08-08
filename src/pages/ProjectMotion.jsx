@@ -72,10 +72,7 @@ function ProjectMotion() {
                         <h2 className="motion-section__heading">Concept & Storyboard</h2>
                         <img src={Storyboard} alt="BTS Swim Motion hand-drawn storyboard" className="motion-full-img" />
                         <p className="motion-body">
-                            The original music video for Swim follows a woman, representing the fandom who felt adrift during the group's six-year hiatus. The song is a love letter from the members telling their fans that they have been watching over them during this time. I wanted to represent this concept in my own way by positioning the animation through the eyes of a BTS fan experiencing their comeback.
-                        </p>
-                        <p className="motion-body">
-                            To map this out, I built a hand-drawn frame-by-frame storyboard in Procreate. My original plan was to illustrate each component, vectorize in Illustrator, and then animate in After Effects. However, due to a tight deadline and limitations of my illustration skills, there were moments I had to improvise certain scenes. Still, having a storyboard made that pivoting process smoother.
+                            The original music video for Swim follows a woman, representing the fandom who felt adrift during the group's six-year hiatus. The song is a love letter from the members telling their fans that they have been watching over them during this time. I wanted to represent this concept in my own way by positioning the animation through the eyes of a BTS fan experiencing their comeback. To map this out, I built a hand-drawn frame-by-frame storyboard in Procreate. My original plan was to illustrate each component, vectorize in Illustrator, and then animate in After Effects. However, due to a tight deadline and limitations of my illustration skills, there were moments I had to improvise certain scenes. Still, having a storyboard made that pivoting process smoother.
                         </p>
                        
                     </section>
@@ -103,10 +100,7 @@ function ProjectMotion() {
                             </div>
                         </div>
                         <p className="motion-body">
-                            Since the song is called Swim, and it is a melodious soothing song, I wanted the audience to feel calm and a feeling of longing throughout the video. For this, a predominantly blue colour palette seemed like a natural fit. BTS's new album also carries a red accent colour throughout its visual identity, so I wove that in deliberately in the beginning to represent the band members in their current era.
-                        </p>
-                        <p className="motion-body">
-                            For the visual style, I drew inspiration from Japanese animation. I am a huge fan of its ability to blend 2D illustration with movement to create deliberate storytelling. I wanted to bring that same aesthetic into this project. Using illustrated and hand-traced components gave the animation that 2D rough crafted visual than being completely slick and digital.
+                            Since the song is called Swim, and it is a melodious soothing song, I wanted the audience to feel calm and a feeling of longing throughout the video. For this, a predominantly blue colour palette seemed like a natural fit. BTS's new album also carries a red accent colour throughout its visual identity, so I wove that in deliberately in the beginning to represent the band members in their current era. For the visual style, I drew inspiration from Japanese animation. I am a huge fan of its ability to blend 2D illustration with movement to create deliberate storytelling. I wanted to bring that same aesthetic into this project. Using illustrated and hand-traced components gave the animation that 2D rough crafted visual than being completely slick and digital.
                         </p>
                     </section>
 
@@ -156,10 +150,7 @@ function ProjectMotion() {
                     <section id="reflection" className="motion-section">
                         <h2 className="motion-section__heading">Challenge and Reflection</h2>
                         <p className="motion-body">
-                            One of the biggest challenges for this project was matching my illustration skills to the ambition of my initial storyboard. I realized quickly that several components needed to be rethought, and at times that uncertainty brought me to a full creative block. That said, having the storyboard as a foundation made pivoting far more manageable. It kept me anchored to the concept even when the execution had to change.
-                        </p>
-                        <p className="motion-body">
-                            This was my first major project in After Effects, and I leaned into it as a learning opportunity. It pushed me to trust the process even when things felt uncertain, and in the end I came away with a clearer sense of what it truly means to work as a motion designer.
+                            One of the biggest challenges for this project was matching my illustration skills to the ambition of my initial storyboard. I realized quickly that several components needed to be rethought, and at times that uncertainty brought me to a full creative block. That said, having the storyboard as a foundation made pivoting far more manageable. It kept me anchored to the concept even when the execution had to change. This was my first major project in After Effects, and I leaned into it as a learning opportunity. It pushed me to trust the process even when things felt uncertain, and in the end I came away with a clearer sense of what it truly means to work as a motion designer.
                         </p>
                     </section>
 
