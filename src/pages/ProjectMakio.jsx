@@ -128,9 +128,9 @@ function ProjectMakio() {
                 <div className="project-content container">
 
                     {/* ── Challenge ── */}
-                    <section id="challenge" className="makio-section">
+                    <section id="challenge" className="makio-section grid">
 
-                        <div className="makio-card">
+                        <div className="makio-card col-6">
                             <h2>The Challenge</h2>
                             <p className="makio-challenge__quote">
                                 "Pinterest and Instagram were not made for creatives."
@@ -140,14 +140,14 @@ function ProjectMakio() {
                             </p>
                         </div>
 
-                        <div className="makio-card">
+                        <div className="makio-card col-6">
                             <h2>Solution</h2>
                             <p className="makio-card__body">
                                 Makio aims to solve this challenge by providing users with a niche platform that focuses on creative hobbyists. It brings together a curated inspiration feed, local events suggestions, and peer feedback through community forums. Content is tailored to each user's interests, whether they're an artist, photographer, or any other kind of maker.
                             </p>
                         </div>
 
-                        <div className="makio-design-goal">
+                        <div className="makio-design-goal col-12">
                             <p className="makio-design-goal__title">Design Goal</p>
                             <p className="makio-design-goal__text">
                                 How might we create a space that allows creatives to grow in their practice while preserving community digitally?
@@ -178,7 +178,7 @@ function ProjectMakio() {
                             </div>
                         </div>
 
-                        <h3>Most Wanted Features</h3>
+                        <h3 className="makio-features__title">Most Wanted Features</h3>
                         <div className="makio-bar-chart">
                             {researchFeatures.map((f) => (
                                 <div key={f.label} className="makio-bar-chart__row">
@@ -198,9 +198,6 @@ function ProjectMakio() {
                     {/* ── User Persona ── */}
                     <section className="makio-section">
                         <h2>User Persona</h2>
-                        <p className="makio-body">
-                            The data above helped to consolidate and create an example of the ideal target audience for Makio.
-                        </p>
                         <img src={PersonaImage} alt="User Persona" className="makio-full-img" />
                     </section>
 
@@ -258,10 +255,12 @@ function ProjectMakio() {
                         </p>
 
                         {iterations.map((iter) => (
-                            <div key={iter.title} className="makio-iteration">
-                                <h3 className="makio-iteration__title">{iter.title}</h3>
-                                <p className="makio-body">{iter.body}</p>
-                                <div className="makio-before-after">
+                            <div key={iter.title} className="makio-iteration grid">
+                                <div className=" makio-iteration__text col-6">
+                                    <h3 className="makio-iteration__title">{iter.title}</h3>
+                                    <p className="makio-iteration__body">{iter.body}</p>
+                                </div>
+                                <div className="makio-before-after col-6">
                                     <div className="makio-before-after__side">
                                         <span className="makio-before-after__label">Before</span>
                                         <img src={iter.before} alt={`${iter.title} — before`} className="makio-phone-screen" />
@@ -285,9 +284,9 @@ function ProjectMakio() {
                     </section>
 
                     {/* ── Reflection ── */}
-                    <section className="makio-section">
-                        <h2>Reflection</h2>
-                        <p className="makio-body">
+                    <section className="makio-section makio-reflection">
+                        <h2 className="makio-reflection__title">Reflection</h2>
+                        <p className="makio-body makio-reflection__body">
                             Designing a creative app, I thought the visual aesthetic should be the focus. However, I quickly realized that no matter the application, user interface and comfort always comes first. It is also important to flesh out the layout spacing and typography ahead of time before starting to design the high fidelity wireframes. This case study truly helped me understand the concept of "less is more" and what is most important in UI/UX.
                         </p>
                     </section>
