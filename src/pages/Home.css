@@ -91,10 +91,11 @@
   /* added */
 }
 
-.hero__avatar video {
+.hero__avatar video,
+.hero__avatar canvas {
   display: block;
   width: clamp(250px, 28vw, 400px);
-  object-fit: cover;
+  height: auto;
   animation: float 3.2s ease-in-out infinite;
 }
 
