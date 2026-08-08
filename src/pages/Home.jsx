@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import FeaturedProjects from "../components/FeaturedProjects";
@@ -45,7 +45,7 @@ function HeroVideo() {
           for (let x = 0; x < width; x++) {
             const si = row + x * 4;
             const di = (y * width + x) * 4;
-            dst[di]     = src[si];
+            dst[di] = src[si];
             dst[di + 1] = src[si + 1];
             dst[di + 2] = src[si + 2];
             dst[di + 3] = src[si + half];
@@ -85,7 +85,16 @@ function HeroVideo() {
 
 
 function Home() {
+  const [showHint, setShowHint] = useState(false);
 
+  useEffect(() => {
+    const t = setTimeout(() => setShowHint(true), 5000);
+    return () => clearTimeout(t);
+  }, []);
+
+  function dismissHint() {
+    setShowHint(false);
+  }
   return (
     <>
 
@@ -106,29 +115,26 @@ function Home() {
             <HeroVideo />
           </div>
 
-          <div className="hero__obj-wrap hero__obj--boba">
+          <div className="hero__obj-wrap hero__obj--boba" onMouseEnter={dismissHint}>
             <img src={Boba} alt="" className="hero__obj" />
             <div className="hero__textpop">My Energy Drink</div>
           </div>
 
-          <div className="hero__obj-wrap hero__obj--cat">
+          <div className="hero__obj-wrap hero__obj--cat" onMouseEnter={dismissHint}>
             <img src={Cat} alt="" className="hero__obj" />
             <div className="hero__textpop">My void baby Theo</div>
           </div>
 
-          {/* <div className="hero__obj-wrap hero__obj--flower">
-            <img src={Flower} alt="" className="hero__obj" />
-            <div className="hero__textpop">My favourite flower</div>
-          </div> */}
-
-          <div className="hero__obj-wrap hero__obj--headphones">
+          <div className="hero__obj-wrap hero__obj--headphones" onMouseEnter={dismissHint}>
             <img src={Headphones} alt="" className="hero__obj" />
             <div className="hero__textpop">My motivation</div>
           </div>
 
-          <div className="hero__obj-wrap hero__obj--switch">
+          <div className="hero__obj-wrap hero__obj--switch" onMouseEnter={dismissHint}>
             <img src={Switch} alt="" className="hero__obj" />
-            <div className="hero__textpop">My creative release</div>
+            <div className={`hero__textpop${showHint ? ' hero__textpop--visible' : ''}`}>
+              {showHint ? 'hover us!' : 'My creative release'}
+            </div>
           </div>
         </div>
 
