@@ -77,12 +77,7 @@ function HeroVideo() {
 
   return (
     <>
-      <video
-        ref={videoRef}
-        src={HeroCharacterLuma}
-        autoPlay muted loop playsInline
-        style={{ position: 'absolute', opacity: 0, pointerEvents: 'none', width: '1px', height: '1px' }}
-      />
+      <video ref={videoRef} src={HeroCharacterLuma} autoPlay muted loop playsInline style={{ display: 'none' }} />
       <canvas ref={canvasRef} />
     </>
   );
