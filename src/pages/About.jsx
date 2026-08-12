@@ -64,7 +64,7 @@ function About() {
             <p className="about-fact">👚 Self-employed outfit curator — MUST match a color palette </p>
             <p className="about-fact">♊️ Quirkiest Gemini you'll meet 😉</p>
             <p className="about-fact">🧋 OBSESSED with milk tea — no pearls though 😏</p>
-            <p className="about-fact">📸 I'm not shy, I don't look at the camera for the ✨mystery✨</p>
+            <p className="about-fact">💇🏽‍♀️ I change my hair ALOT</p>
           </div>
         </div>
       </section>
